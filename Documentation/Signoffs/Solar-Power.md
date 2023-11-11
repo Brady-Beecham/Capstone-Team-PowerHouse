@@ -23,8 +23,8 @@ Table 1. Constraints and origins of the constraints.
 
 | No. | Subsystem | Voltage | Current |
 | --- | ----------- | ------ | ------ |
-| a.  | Sensor | 15 V | 0.05 A |
-| b.  | Data interpretation, Transmission, and Storage | 10 V | 0.05 A |
+| a.  | Sensor | 9 V | 0.06 A |
+| b.  | Data interpretation, Transmission, and Storage | 5 V | 0.25 A |
 | c.  | Charge Controller | 5 V | 0.05 A |
 
 
@@ -50,7 +50,7 @@ Table 2.  Parameters for the voltages and currents for the subsystems.
 # Analysis
 
 ## Solar Panel
-1. The monocrystalline solar panels will be implemented in this subsystem. The common choices when selecting solar panels are between monocrystalline and polycrystalline. Overall, the monocrystalline has better efficiency with about 3 % performance ratio [ 2 ]. In this subsystem, the load and the backup battery will require a single solar panel with ratings of 25 W and 12 V. These selections are based on hand calculations by using CEDengineering.com documents that can be found in the course document of “ Design and Sizing of Solar Photovoltaic Systems” course [ 3 ].
+1. The monocrystalline solar panels will be implemented in this subsystem. The common choices when selecting solar panels are between monocrystalline and polycrystalline. The monocrystalline has better efficiency with about 3 % performance ratio [ 2 ]. In this subsystem, the load and the backup battery will require a single solar panel with ratings of 25 W and 12 V. These selections are based on hand calculations by using CEDengineering.com documents that can be found in the course document of “ Design and Sizing of Solar Photovoltaic Systems” course [ 3 ].
 
 Use Table 2 to get the voltage and current required by the three subsystems.
 ```math
