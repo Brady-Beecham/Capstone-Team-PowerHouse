@@ -1,25 +1,25 @@
 # Solar Power Subsystem
-The purpose of the solar power subsystem is to generate energy using solar panels and a backup battery. The solar panels utilize a Photovoltaic system to generate the required energy to meet the load's needs. The backup battery stores the generated energy from the solar panels during daylight hours, making it available for use at night. The subsystem will supply the necessary rated energy to the other subsystems. By using a charge controller connected to both the solar panels and the backup battery, the charge controller will transmit the energy to the power controller. The power controller's role is to convert the needed voltage and currents to the loads using buck and boost converters.  
+The purpose of the solar power subsystem is to generate energy using solar panels and a backup battery. The solar panels utilize a Photovoltaic system to generate the required energy to meet the load's needs. The backup battery stores the generated energy from the solar panels during daylight hours, making it available for use at night. The subsystem will supply the necessary rated energy to the other subsystems. By using a charge controller connected to both the solar panels and the backup battery, the charge controller will transmit the energy to the power controller.  
 # Constraints
 | No. | Constraints | Origin | 
 | --- | ----------- | ------ |
-| 1.  | The subsystem shall power three subsystems with the required voltage and current by using the voltage regulator that is powered by the charge controller. | System Requirements |
+| 1.  | The solar panel and the backup battery shall be connected to the charge controller.  System Requirements |
 | 2.  | The solar panel should be installed at the right direction and angle that can capture the maximum amount of sunlight. | System Requirements |
-| 3.  | The solar panel shall power three subsystems using the voltage regulator and charge the battery without overload, overcurrent, or causing any damage to the components. | System Requirements |
-| 4.  | The backup battery shall power the three subsystems without overload, overcurrent, or causing any damage to the components.| System Requirements |
+| 3.  | The charge controller shall maximize the output power from the solar panel. | System Requirements |
+| 4.  | The backup battery shall have enough capacity to prevent the charge controller from discharging more than 50%.| System Requirements |
 | 5.  | The backup battery shall either be in the charging or discharging phase, and it cannot be in both simultaneously. | System Requirements |
-| 6.  | The  Solar panel wiring and the backup battery wiring shall have a kill switch to disconnect from the charge controller. | System Requirements |
+| 6.  | The  Solar panel and the backup battery wiring shall have a kill switch to disconnect from the charge controller. | System Requirements |
 
 
 Table 1. Constraints and origins of the constraints.
 
 
-1. The solar array and the backup battery will consistently supply power to three subsystems throughout the day using a voltage regulator that can operate in buck, boost, or buck-boost configurations. The specific voltage and current requirements for each subsystem are specified based on their load specifications can be seen below. 
+1. The solar panel and the backup battery will be connected to a charge controller to manage the solar panel output power. Also, it controls the battery charging and discharging phases.     
 2. The direction of the solar panels depends on various aspects, as the sunlight differs based on the geographical location. For the case of installing solar panels in North America, the optimal direction is oriented toward facing the south [ 1 ]. Also, the positioning angle of the solar panels plays an essential role in having maximum sunlight. Moreover, it is crucial to place solar panels where they receive direct sunlight, free of obstructions such as trees, buildings, or fences.
-3. The voltage regulator will have a buck, boost, or buck-boost DC–DC converter to feed the needed voltages and currents by the load.
-4. The backup battery will power the voltage regulator through the charge controller. The voltage regulator includes buck, boost, and buck-boost converters. By powering the voltage regulator, the buck, boost, and buck-boost converters will step down and step up to fulfill the requirements of voltage and current by each subsystem.
+3. The charge controller will be responsible for maximizing the output power of the solar panels. The output power of the solar panel can vary throughout the day. Therefore, the charge controller must step up or down the solar panels' output to supply the needed voltages and currents by the loads, including the charging of the backup battery.  
+4. The backup battery must have enough capacity to be at most 50% of its capacity while discharging throughout the day of autonomy. The backup battery will have three days of autonomy, considered the worst-case.      
 5. The backup battery can only perform one procedure at a time. Doing both simultaneously will impact the process of the charging and discharging phase. The charging phase can only occur if it is not discharging simultaneously. On the other hand, The discharging phase can only happen if the battery is not charging simultaneously.
-6. Using a kill switch is a good feature to have in case maintenance is required.
+6. A physical kill switch is added to the subsystem for manual control. The kill switch can be used in cases where maintenance is required or to stop either the solar panel or the battery from generating power.
 
 | No. | Subsystem | Voltage | Current |
 | --- | ----------- | ------ | ------ |
@@ -136,7 +136,7 @@ Battery\  Capacity (Ah) =\ 15.75\ Ah
 ```
 For a battery capacity of 15.75 Ah, increasing the battery capacity is considered a good practice when choosing battery capacity for a solar power system. Also, considering the depth of discharge and other loss power factors, the desired battery capacity will be 24 Ah, which means we will need two batteries with 12 V and 12 Ah in parallel. Since connecting a battery in parallel will increase the battery capacity, the battery capacity will increase to 24 Ah, and the battery voltage will remain the same at 12 V. 
 
-## Power Controller
+
 
 
 
