@@ -23,9 +23,9 @@ Table 1. Constraints and origins of the constraints.
 
 | No. | Subsystem | Voltage | Current |
 | --- | ----------- | ------ | ------ |
-| a.  | Sensor | 9 V | 0.06 A |
-| b.  | Data interpretation, Transmission, and Storage | 5 V | 0.25 A |
-| c.  | Charge Controller | 5 V | 0.05 A |
+| a.  | Sensor | 9 V | 0.05 A |
+| b.  | Data interpretation, Transmission, and Storage | 5.5 V | 0.25 A |
+| c.  | Charge Controller | 5.5 V | 0.25 A |
 
 
 Table 2.  Parameters for the voltages and currents for the subsystems.
