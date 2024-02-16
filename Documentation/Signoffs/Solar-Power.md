@@ -158,21 +158,21 @@ Total\ amp-hour\ demand\ per\ day = \frac{76.8Wh }{ 12V }
 ```math
 Total\ amp-hour\ demand\ per\ day = {6.4 Ah} 
 ```
-The days of storage are desired to be three days ( Autonomy ). Also, the allowable depth of discharge limit is 0.8.
+The days of storage are desired to be 3 days ( Autonomy ). Also, the allowable depth of discharge limit is 0.8.
 Using the given values, we will be able to calculate the required battery capacity ( Ah)
 ```math
 Required\ battery\ capacity (Ah)  = \frac{ amp -  hour\ demand\ per\ day \ \times\ Days\ of\ Autonomy } { Depth\ of\   discharge }
 ```
 
 ```math
-Required \ battery \ capacity \ (Ah)  = \frac{ 3.2Ah \ \times\  3\ days } { 12V }
+Required \ battery \ capacity \ (Ah)  = \frac{ 6.4Ah \ \times\  3\ days } { 0.8 }
 ```
 ```math
-Required \ battery \ capacity \ (Ah) = {38.4 Ah} 
+Required \ battery \ capacity \ (Ah) = {24 Ah} 
 ```
 
 
-For a battery capacity of 38.4 Ah, increasing the battery capacity is considered a good practice when choosing battery capacity for a solar power system. Also, considering the depth of discharge and other loss power factors, the desired battery capacity will be 40 Ah, which means we will need two batteries with 12 V and 20 Ah in parallel. Since connecting a battery in parallel will increase the battery capacity, the battery capacity will increase to 40 Ah, and the battery voltage will remain the same at 12 V.
+For a battery capacity of 24 Ah, increasing the battery capacity is considered a good practice when choosing battery capacity for a solar power system. Also, considering the depth of discharge and other loss power factors, the desired battery capacity will be 40 Ah, which means we will need two batteries with 12 V and 20 Ah in parallel. Since connecting a battery in parallel will increase the battery capacity, the battery capacity will increase to 40 Ah, and the battery voltage will remain the same at 12 V.
 
 
 
