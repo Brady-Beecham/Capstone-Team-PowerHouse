@@ -137,12 +137,6 @@ Module\ energy\ output\ at\ operating\ temperature\ (Wh) = 0.8\ \times\ 132\  =\
 ```math
 Number\ of\ modules\ required\ to\ meet\ energy\ requirements\ =\ \frac{90.35\ Wh}{105.6\ Wh} =\ 0.86\ \approx 1\ module\ \
 ```
-
-
-```math
-```
-
-
 Based on the hand calculations, this subsystem will require one solar module for a rated power of 30 W.
 
 
