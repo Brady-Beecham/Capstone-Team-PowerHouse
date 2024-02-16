@@ -71,6 +71,10 @@ Use Table 2 to get the voltage and current required by the three subsystems.
 {\rm Energy}_{Daily}=\ \ 76.8\ Wh
 ```
 
+
+```math
+W_{PV}=\ \ \frac{{\rm Energy}_{Daily}}{PSH\ \times\ (\ 0.65\ )}\ =\ 12.59\ W_p
+```
 1. W_PV: peak wattage of the array (W_p)
 2. E: daily energy requirement (Wh)
 3. PSH: average daily number of Peak Sun Hours in the design month for the inclination (hours)
