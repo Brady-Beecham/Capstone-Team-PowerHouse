@@ -188,7 +188,7 @@ For a battery capacity of 24 Ah, increasing the battery capacity is considered a
 | Total | ----- | ----- | ----- | $91.97 
 
 
-Solar Panel: https://www.amazon.com/gp/product/B01IFJ73X4/ref=ewc_pr_img_1?smid=A5KU5HDAPDC75&psc=1
+Solar Panel: https://www.amazon.com/Newpowa-High-Efficiency-Monocrystalline-Designed-Battery/dp/B00W81BZTO/ref=sr_1_4?crid=2P3ESUCBDXZ4N&keywords=30W+12V+MONOCRYSTALLINE+SOLAR+PANEL&qid=1708053575&s=lawn-garden&sprefix=30w+12v+monocrystalline+solar+panel%2Clawngarden%2C92&sr=1-4
 
 Seal lead acid Battery: https://www.amazon.com/ML12-12-Battery-Terminal-Mighty-Product/dp/B00K53FG5Q/ref=sr_1_4?crid=2ENRDXKVGB5V8&keywords=ml12-12%2Bbattery&qid=1698983669&s=electronics&sprefix=ML12-12%2B%2Celectronics%2C153&sr=1-4&th=1
 
