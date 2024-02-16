@@ -64,6 +64,7 @@ Use Table 2 to get the voltage and current required by the three subsystems.
 ```math
 {\rm Energy}_{Daily}=\ {\rm Power}_{Consumtion}\ \times\ 24\ Hours
 ```
+
 ```math
 {\rm Energy}_{Daily}=\ 3.2\ \times\ 24\ Hours
 ```
@@ -78,8 +79,10 @@ Use Table 2 to get the voltage and current required by the three subsystems.
 3. PSH: average daily number of Peak Sun Hours in the design month for the inclination (hours)
 
 ```math
+
 W_{PV}=\ \ \frac{{\rm Energy}_{Daily}}{PSH\ \times\ (\ 0.65\ )}\
 ```
+
 
 ```math
 W_{PV}=\ \ \frac{76.8\ Wh}{4.4\ \times\ (\ 0.65\ )}\ =\ 26.85\ W_p
@@ -135,10 +138,8 @@ Module\ energy\ output\ at\ operating\ temperature\ (Wh) = 0.8\ \times\ 132\  =\
 Number\ of\ modules\ required\ to\ meet\ energy\ requirements\ =\ \frac{90.35\ Wh}{105.6\ Wh} =\ 0.86\ \approx 1\ module\ \
 ```
 
+
 ```math
-
-
-
 ```
 
 
