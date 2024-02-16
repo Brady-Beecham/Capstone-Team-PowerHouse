@@ -137,20 +137,42 @@ The battery type is Sealed Lead Acid AGM. The sealed lead acid has a depth of di
  
 The batteries will be located outdoors; therefore, the discharge capacity according to the temperature should be considered. The discharge capacity for the battery being outdoors for 20 hours at a temperature of -15 C will reduce the battery capacity to 65%.
 
+
+| No. | Subsystem | Voltage | Current | Rated Wattage[W]| Hours per day used [ h ] | Energy Consumption [ Wh ] |
+| --- | -------- | ------ | ----- | ------------------------ | --------- | ------------------ |
+| a. | Sensor | 9 V | 0.05 A | 9 * 0.05 = 0.45W | 24h | 10.8Wh |
+| b. | Data interpretation, Transmission, and Storage | 5.5 V | 0.25A | 5.5 * 0.25 = 1.375W | 24h | 33Wh | 
+| c. | Charge Controller | 5.5 V | 0.25 A | 5.5 * 0.25 = 1.375W | 24h | 33Wh |
+| | | | | Total Rated Wattage = 3.2W | | Energy Consumption=76.8Wh |
+
+
+
 ```math
-Battery\ Capacity (Ah) = \ \frac{Daily\ Electrical\ Load\ \times\ Days\ of\ Autonomy\ \times\ Temperature\ Compensation\ }{Load\ Subsystem\ Efficiency\ \times\ Depth\ of\ Discharge\ \times\ Voltage}
+Total\ amp-hour\ demand\ per\ day = \frac{Total\ energy\ demand\ per\ day }{ Battery\ Voltage }
+```
+
+```math
+Total\ amp-hour\ demand\ per\ day = \frac{76.8Wh }{ 12V }
+```
+
+```math
+Total\ amp-hour\ demand\ per\ day = {6.4 Ah} 
+```
+The days of storage are desired to be three days ( Autonomy ). Also, the allowable depth of discharge limit is 0.8.
+Using the given values, we will be able to calculate the required battery capacity ( Ah)
+```math
+Required\ battery\ capacity (Ah)  = \frac{ amp -  hour\ demand\ per\ day \ \times\ Days\ of\ Autonomy } { Depth\ of\   discharge }
+```
+
+```math
+Required \ battery \ capacity \ (Ah)  = \frac{ 3.2Ah \ \times\  3\ days } { 12V }
 ```
 ```math
+Required \ battery \ capacity \ (Ah) = {38.4 Ah} 
 ```
-```math
-Battery\ Capacity (Ah)= \ \frac{ 22.5 \times\ 3 \times\ 1.19 }{ 0.85 \times\ 0.5 \times\ 12}
-```
-```math
-```
-```math
-Battery\  Capacity (Ah) =\ 15.75\ Ah
-```
-For a battery capacity of 15.75 Ah, increasing the battery capacity is considered a good practice when choosing battery capacity for a solar power system. Also, considering the depth of discharge and other loss power factors, the desired battery capacity will be 24 Ah, which means we will need two batteries with 12 V and 12 Ah in parallel. Since connecting a battery in parallel will increase the battery capacity, the battery capacity will increase to 24 Ah, and the battery voltage will remain the same at 12 V. 
+
+
+For a battery capacity of 38.4 Ah, increasing the battery capacity is considered a good practice when choosing battery capacity for a solar power system. Also, considering the depth of discharge and other loss power factors, the desired battery capacity will be 40 Ah, which means we will need two batteries with 12 V and 20 Ah in parallel. Since connecting a battery in parallel will increase the battery capacity, the battery capacity will increase to 40 Ah, and the battery voltage will remain the same at 12 V.
 
 
 
