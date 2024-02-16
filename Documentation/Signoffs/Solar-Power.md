@@ -118,14 +118,16 @@ Energy\ output\ per\ module\ per\ day\left(Wh\right) = 30Wh\times4.4 =\ 132Wh\ ;
 Module\ energy\ output\ at\ operating\ temperature\ (Wh) = 0.8\ \times\ 132\  =\ 105.6Wh  \ ;\ \ rating\ factor\ for\ critical\ applications =\ 0.8
 ```
 
-
 ```math
 \ \ \frac{Required\ array\ output\ per\ day}{Module\ energy\ output\ at\ operating\ temperature}
 ```
 
 ```math
-Number\ of\ modules\ required\ to\ meet\ energy\ requirements\ =\ \frac{90.35\ Wh}{105.6\ Wh} =\ 0.86\ \approx 1\ module\ \
+\ \ \Number\ of\ modules\ required\ to\ meet\ energy\ requirements\ =\ \frac{90.35\ Wh}{105.6\ Wh} =\ 0.86 \ \approx 1\ module\ \
 ```
+
+
+
 Based on the hand calculations, this subsystem will require one solar module for a rated power of 30 W.
 
 
