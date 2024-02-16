@@ -17,7 +17,7 @@ Table 1. Constraints and origins of the constraints.
 1. The solar panel and the backup battery will be connected to a charge controller to manage the solar panel output power. Also, it controls the battery charging and discharging phases.     
 2. The direction of the solar panels depends on various aspects, as the sunlight differs based on the geographical location. For the case of installing solar panels in North America, the optimal direction is oriented toward facing the south [ 1 ]. Also, the positioning angle of the solar panels plays an essential role in having maximum sunlight. Moreover, it is crucial to place solar panels where they receive direct sunlight, free of obstructions such as trees, buildings, or fences.
 3. The charge controller will be responsible for maximizing the output power of the solar panels. The output power of the solar panel can vary throughout the day. Therefore, the charge controller must step up or down the solar panels' output to supply the needed voltages and currents by the loads, including the charging of the backup battery.  
-4. The backup battery must have enough capacity to be at most 50% of its capacity while discharging throughout the day of autonomy. The backup battery will have three days of autonomy, considered the worst-case.      
+4. The backup battery must have enough capacity to be at most 50% of its capacity while discharging throughout the day of autonomy. The backup battery will have three days of autonomy, which is considered the worst-case.      
 5. The backup battery can only perform one procedure at a time. Doing both simultaneously will impact the process of the charging and discharging phase. The charging phase can only occur if it is not discharging simultaneously. On the other hand, The discharging phase can only happen if the battery is not charging simultaneously.
 6. A physical kill switch is added to the subsystem for manual control. The kill switch can be used in cases where maintenance is required or to stop either the solar panel or the battery from generating power.
 
@@ -54,18 +54,21 @@ Table 2.  Parameters for the voltages and currents for the subsystems.
 
 Use Table 2 to get the voltage and current required by the three subsystems.
 ```math
-{\rm Power}_{Consumtion} =\ 15\ V\times\ 0.05\ A+\ 10\ V\times\ 0.05\ A+\ 5\ V\times\ 0.05\ A
+{\rm Power}_{Consumtion} =\ 9\ V\times\ 0.05\ A+\ 5.5\ V\times\ 0.25\ A+\ 5.5\ V\times\ 0.25\ A
 ```
 
 ```math
-{\rm Power}_{Consumtion}\ =\ 1.5\ W
+{\rm Power}_{Consumtion}\ =\ 3.2\ W
 ```
 
 ```math
 {\rm Energy}_{Daily}=\ {\rm Power}_{Consumtion}\ \times\ 24\ Hours
 ```
 ```math
-{\rm Energy}_{Daily}=\ \ 36\ Wh
+{\rm Energy}_{Daily}=\ 3.2\ \times\ 24\ Hours
+```
+```math
+{\rm Energy}_{Daily}=\ \ 76.8\ Wh
 ```
 
 1. W_PV: peak wattage of the array (W_p)
