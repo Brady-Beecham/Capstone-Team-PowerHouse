@@ -115,18 +115,7 @@ Energy\ output\ per\ module\ per\ day\left(Wh\right) = 30Wh\times4.4 =\ 132Wh\ ;
 
 
 ```math
-    
-```
-
-
-```math
 Module\ energy\ output\ at\ operating\ temperature\ (Wh) = 0.8\ \times\ 132\  =\ 105.6Wh  \ ;\ \ rating\ factor\ for\ critical\ applications =\ 0.8
-```
-
-```math
-
-
-
 ```
 
 
