@@ -72,16 +72,17 @@ Use Table 2 to get the voltage and current required by the three subsystems.
 ```
 
 
-```math
-W_{PV}=\ \ \frac{{\rm Energy}_{Daily}}{PSH\ \times\ (\ 0.65\ )}\ =\ 12.59\ W_p
-```
+
 1. W_PV: peak wattage of the array (W_p)
 2. E: daily energy requirement (Wh)
 3. PSH: average daily number of Peak Sun Hours in the design month for the inclination (hours)
 
+```math
+W_{PV}=\ \ \frac{{\rm Energy}_{Daily}}{PSH\ \times\ (\ 0.65\ )}\
+```
 
 ```math
-W_{PV}=\ \ \frac{36\ Wh}{4.4\ \times\ (\ 0.65\ )}\ =\ 12.59\ W_p
+W_{PV}=\ \ \frac{76.8\ Wh}{4.4\ \times\ (\ 0.65\ )}\ =\ 26.85\ W_p
 ```
 
 2. PV sizing:
@@ -95,13 +96,16 @@ Required\ array\ output\ per\ day\left(Wh\right)=\frac{{\rm Energy}_{Daily}}{0.8
     
 ```
 ```math
-Required\ array\ output\ per\ day\left(Wh\right) =\frac{36}{0.85} =\ 42.35
+Required\ array\ output\ per\ day\left(Wh\right) =\frac{76.8}{0.85} =\ 90.35\ Wh
 ```
 ```math
     
 ```
 ```math
-Energy\ output\ per\ module\ per\ day\left(Wh\right) = 25Wh\times4.4 =\ 110Wh\ ;\ \ W_{PV}=25Wh\ \ \times\ sunshine\ in\ Feb=4.4
+Energy\ output\ per\ module\ per\ day\left(Wh\right) = Selected\ array\ output\ per\ day\left(Wh\right)\times4.4 =\ 110Wh\ ;\ \ W_{PV}=25Wh\ \, sunshine\ in\ Feb=4.4
+```
+```math
+Energy\ output\ per\ module\ per\ day\left(Wh\right) = 30Wh\times4.4 =\ 110Wh\ ;\ \ W_{PV}=25Wh\ \, sunshine\ in\ Feb=4.4
 ```
 ```math
     
