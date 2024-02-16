@@ -32,11 +32,13 @@ Table 2.  Parameters for the voltages and currents for the subsystems.
 
 # Buildable schematic
 
-![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/90190d97-494c-4989-bda5-5b015d1d8a00)
+![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/c43fe0d0-df82-4a14-9b3e-42961ebf59bf)
+
 
 *Figure 1. Solar Power Block Diagram*
 
-![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/9747e6d6-a8f2-4858-9b76-fd6fab358187)
+![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/9ced9a4d-dd15-4b96-a150-ac5a0f4a8828)
+
 
 
 *Figure 2. Panel Dimensions*    
@@ -183,7 +185,7 @@ For a battery capacity of 24 Ah, increasing the battery capacity is considered a
 # BOM
 | Part | Part Number | Quantity | Price Per Unit | Total Price |
 | ------------ | ------------- | --------- | -------- | ---------- |
-| Solar Panel | AM-L02P25-1 | 1 | $35.99 |  $35.99 |
+| Solar Panel | AM-L02P25-1 | 1 | $35.99 |  $44.79 |
 | Seal Lead Acid | ML12-12F2 | 2 | $27.99 | $55.98 |
 | Total | ----- | ----- | ----- | $91.97 
 
