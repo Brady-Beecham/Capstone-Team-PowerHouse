@@ -80,7 +80,7 @@ Use Table 2 to get the voltage and current required by the three subsystems.
 
 ```math
 
-W_{PV}=\ \ \frac{{\rm Energy}_{Daily}}{PSH\ \times\ (\ 0.65\ )}\
+W_{PV}=\ \ \frac{{\rm Energy}_{Daily}}{PSH\ \times\ (\ 0.65\ )}
 ```
 
 
@@ -93,7 +93,7 @@ The solar panel sizing can be determined by doing steps of calculation. The sola
 
 
 ```math
-Required\ array\ output\ per\ day\left(Wh\right)=\frac{{\rm Energy}_{Daily}}{0.85}\ ;\ \ SLD\ Battery efficiency = 0.85
+Required\ array\ output\ per\ day\left(Wh\right)=\frac{{\rm Energy}_{Daily}}{0.85}\ ;\ \ SLD\ Battery\  Efficiency\ = 0.85
 ```
 ```math
     
@@ -110,7 +110,7 @@ Energy\ output\ per\ module\ per\ day\left(Wh\right) = W_{PV}\times4.4 =\ 110Wh\
 The selected array output per Day is W_PV = 30Wh
 
 ```math
-Energy\ output\ per\ module\ per\ day\left(Wh\right) = 30Wh\times4.4 =\ 132Wh\ ;\ \ W_{PV}=30Wh\ \, sunshine\ in\ Feb=4.4
+Energy\ output\ per\ module\ per\ day\left(Wh\right) = 30Wh\times4.4 =\ 132Wh\ ;\ \ W_{PV}=30Wh\ \ and\ the\ sunshine\ in\ Feb=4.4
 ```
 
 
@@ -119,16 +119,16 @@ Module\ energy\ output\ at\ operating\ temperature\ (Wh) = 0.8\ \times\ 132\  =\
 ```
 
 ```math
-\ \ \frac{Required\ array\ output\ per\ day}{Module\ energy\ output\ at\ operating\ temperature}
+ Number\ of\ modules\ required\ to\ meet\ energy\ requirements\ =\ \ \frac{Required\ array\ output\ per\ day}{Module\ energy\ output\ at\ operating\ temperature}
 ```
 
 ```math
-\ \ \Number\ of\ modules\ required\ to\ meet\ energy\ requirements\ =\ \frac{90.35\ Wh}{105.6\ Wh} =\ 0.86 \ \approx 1\ module\ \
+ Number\ of\ modules\ required\ to\ meet\ energy\ requirements\ =\ \frac{90.35\ Wh}{105.6\ Wh} =\ 0.86 \approx 1\ module
 ```
 
 
 
-Based on the hand calculations, this subsystem will require one solar module for a rated power of 30 W.
+Based on the hand calculations, this subsystem will require one solar module for a rated power of 30 W to satisfy the system requirement.
 
 
 ## Battery
