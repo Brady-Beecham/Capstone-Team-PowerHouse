@@ -102,21 +102,31 @@ Required\ array\ output\ per\ day\left(Wh\right) =\frac{76.8}{0.85} =\ 90.35\ Wh
     
 ```
 ```math
-Energy\ output\ per\ module\ per\ day\left(Wh\right) = Selected\ array\ output\ per\ day\left(Wh\right)\times4.4 =\ 110Wh\ ;\ \ W_{PV}=25Wh\ \, sunshine\ in\ Feb=4.4
+Energy\ output\ per\ module\ per\ day\left(Wh\right) = W_{PV}\times4.4 =\ 110Wh\ ;\ \ W_{PV}=25Wh\ \, sunshine\ in\ Feb=4.4
 ```
+The selected array output per Day is W_PV = 30Wh
+
 ```math
-Energy\ output\ per\ module\ per\ day\left(Wh\right) = 30Wh\times4.4 =\ 110Wh\ ;\ \ W_{PV}=25Wh\ \, sunshine\ in\ Feb=4.4
+Energy\ output\ per\ module\ per\ day\left(Wh\right) = 30Wh\times4.4 =\ 132Wh\ ;\ \ W_{PV}=30Wh\ \, sunshine\ in\ Feb=4.4
 ```
+
+
 ```math
     
 ```
 
 
 ```math
-Module\ energy\ output\ at\ operating\ temperature\ (Wh) = 0.8\ \times\ 110\  =\ 88Wh  \ ;\ \ rating\ factor\ for\ critical\ applications =\ 0.8
+Module\ energy\ output\ at\ operating\ temperature\ (Wh) = 0.8\ \times\ 132\  =\ 105.6Wh  \ ;\ \ rating\ factor\ for\ critical\ applications =\ 0.8
 ```
+
+
 ```math
-Number\ of\ modules\ required\ to\ meet\ energy\ requirements\ =\ \frac{42.35\ Wh}{88\ Wh} =\ 0.48\ \approx 1\ module\  \ ;\ \ \frac{Required\ array\ output\ per\ day}{Module\ energy\ output\ at\ operating\ temperature}
+\ \ \frac{Required\ array\ output\ per\ day}{Module\ energy\ output\ at\ operating\ temperature}
+```
+
+```math
+Number\ of\ modules\ required\ to\ meet\ energy\ requirements\ =\ \frac{90.35\ Wh}{105.6\ Wh} =\ 0.86\ \approx 1\ module\  \ ;\ \ \frac{Required\ array\ output\ per\ day}{Module\ energy\ output\ at\ operating\ temperature}
 ```
 ```math
     
