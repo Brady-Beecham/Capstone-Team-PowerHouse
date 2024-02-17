@@ -15,13 +15,18 @@ The purpose of the Loop Controller is to be able to monitor the change in freque
 
 3. For the Loop Controller to function properly, it must be capable of operating both inductive loops at a designated entrance/exit.  The Loop Controller must be able to detect when a vehicle passes over one of the loops and determine the direction of the vehicle based on which loop experiences a change in frequency first followed by the other loop experiencing a change in frequency.  As an example, in order to monitor the Engineering Quad parking lot (parking lot between the four buildings for the College of Engineering), two sets consisting of two loops each and one detector each will be used to monitor the two designated entrances/exits of the parking lot.
 
-4. Due to the necessary connections to the ESP32 Microcontroller to transmit data received from the loops, the unanimous decision by the team was to make the Loop Controller not be a stand alone device, but instead rely upon the ESP32 to process the output and monitor both the frequency and voltage to detect changes due to vehicles passing over the loops.  With the ESP32 having a programmed capability of a sample rate of 40 MHz, the ESP32 Microcontroller is fully capable receiving the output from the Loop Controller, processing the information for when a change in voltage/frequency occurs, and transmitting the data to the server where the count for the number of available parking spots will be updated for those needing the information.
+4. Due to the necessary connections to the ESP32 Microcontroller to transmit data received from the loops, the unanimous decision by the team was to make the Loop Controller not be a stand alone device, but instead rely upon the ESP32 to process the output and monitor both the frequency and voltage to detect changes due to vehicles passing over the loops.  With the ESP32 having a programmed capability of a sample rate of 40 MHz, the ESP32 Microcontroller is fully capable of receiving the output from the Loop Controller, processing the information for when a change in voltage/frequency occurs, and transmitting the data to the server where the count for the number of available parking spots will be updated for those needing the information.
 
 # Buildable Schematic
 
 ![LTSpice Schematic for Loop A](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/142754780/5d138bcc-e474-4e75-a71d-2b88b8d16f0d)
 
 *LTSpice Schematic for Loop Controller*
+
+![Voltage Current Supply for 9V](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/142754780/03554fe8-b3d0-4c50-a440-5a1c892b4702)
+
+*Current for 9V Power Supply*
+
 
 ![LTSpice Simulation of OscA and Output Non Detailed](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/142754780/6f1de013-c7e5-46af-81d3-ef709ee27908)
 
@@ -62,13 +67,52 @@ The purpose of the Loop Controller is to be able to monitor the change in freque
 
 ## LTSpice Schematic and Entire Loop Controller Schematic
 
+For the Loop Controller to work, the Loop Controller will have a power supply of 9 VDC with a max current draw of 50 mA for all components to work in the intended manner.  Though the Colpitts oscillator does not have specific requirements for voltage and current input, it was decided to use a voltage input of 9 V.  When looking at the LTSpice simulation for the voltage supply at 9V, the current output from the power source is less than 40 mA (current is negative as voltage supply in LTSpice follows passive sign convention rule for circuits, so the current value is negative as current flows from the positive terminal to the negative terminal of 9 V).  Since the circuit will draw only the power it needs to function, supplying 50 mA of current will allow the circuit to function in the same manner as the simulation at the specific voltage of 9 V. 
+
+ According to the LTSpice Schematic diagram, a radio frequency choke inductor (RFC at a value of 100mH) is placed following the 9V source.  By using a radio frequency choke inductor, only DC power and low frequency AC sources are allowed to pass through to the rest of the circuit.  The purpose of this component is to protect the circuit from high frequencies that could negatively affect both the operation of the controller and affect the output by giving incorrect values.  If incorrect values are passed from the Loop Controller to the ESP32 MCU, the number of available parking spots in a parking lot will be incorrect and mislead users needing the information.  
+
+After the 220 Ω resistor (RC),  the circuit then branches in two directions: the first branch is to a capacitor and resistor (CB_BC and RB) that are connected to the inductive loop that will be placed in the roadway as the sensory device for vehicle detection and the second branch is to the collector of a 2N3904 NPN transistor (Q1) that connects the output of the oscillator circuit portion of the Loop Controller to the Square Wave Generator circuit.  CB_BC is a bypass capacitor that goes from the LC tank to the collector.  This capacitor is essential to the circuit as it blocks DC current from the collector supply voltage of the 2N3904 NPN transistor.  Without this capacitor, large amounts of DC current could pass from the RC resistor to the base pin of the NPN transistor.  Due to this, AC power only passes through which is necessary for feedback into the LC tank.  The output is connected to the base of the 2N3904 NPN transistor (Q1).  By using a NPN transistor and connecting the output of the oscillator circuit to the collector pin of the NPN transistor and a 1 mF capacitor (CB_Out), the peak-to-peak voltage decreases and the starting voltage of the waveform is decreased from 1.9V to 0V.  
+
+After the capacitor (CB_Out), the oscillator circuit portion of the Loop Controller ends and the Sine to Square Wave circuit starts with both a capacitor (C3) and resistor (R7).  Capacitor C3 increases the starting voltage from 0V to 1.65V and keeps the peak-to-peak voltage the same as the output of oscillator circuit.  Resistor R7 decreases the peak-to-peak voltage and removes all negative voltages from the waveform in the process of decreasing the peak-to-peak voltage of the waveform.  The output from R7 is connected to the inverting input of the LT1720 comparator IC chip (U1) and the 3.3 V that is in series with a 10kΩ resistor (R4).  Through the other resistors in the Sine to Square Wave circuit (R3, R6, R5, R1, and R2), the output from the LT1720 IC chip produces a square wave that has a voltage range from 0 V to 3.12 V that matches the output from the oscillator circuit but produces a square wave version of the sinusoidal waveform.  The square waveform that is shown in the Buildable Schematic section shows the square waveform and that it is safe to connect it to the ESP32 without the risk of damaging the MCU due to negative voltage values.  
+
+For Loop B, the same process is repeated and is very similar to Loop A but with different names for the components.  The schematic drawing labeled “Entire Loop Controller Schematic” and PCB designs (2D and 3D) show how the circuit is built and what the final product will look like once it is fabricated and complete for the testing phase of the project.  In both the 2D and 3D images of the PCB, numerous test points are placed to verify voltage values are correct before connecting components to the circuit and risk causing damage to the components.
+
 
 ## LTSpice Simulation of Oscillator Output
+
+As mentioned in the previous section explaining the schematic of the loop controller, the oscillator circuit has numerous components that have an important role in the controller.  The oscillator circuit used replicates a Colpitts Oscillator that uses a combination of capacitors, inductors, and resistors to produce an oscillation at a specific frequency.  By using the formulas shown below and given the necessary frequency and inductance values, the values for the capacitors can be determined<sup>3</sup>:
+
+```math
+f_{0} = \frac{1}{(2π)\sqrt{(L)(\frac{C_{1}C_{2}}{C_{1} + C_{2}}})}
+```
+
+As shown in the LTSpice schematic on the left side of the words “Loop A”, the Loop inductor is given to have a set inductance of 100 μH.  For the circuit to function within the range of 10 kHz - 200 kHz (Reference 2), the starting frequency is set to 60 kHz. The calculations for capacitors C1 and C2 were unknown, but by adding an arbitrary value of 220 nF to capacitor C1, capacitor C2 can be determined and results in 100 nF.  For the simulation of the oscillator circuit, the oscillation has a peak-to-peak voltage around 4 V with most of the waveform in the negative voltage range.  Due to the waveform having voltage values that are negative, the voltage must be transformed into all positive voltage values for the ESP32 MCU to safely monitor the change in frequency of the inductive loop.  If the voltage values for the waveform is not positive, then the ESP32 will not be able to properly monitor changes and instead will be damaged as it is not capable of handling negative voltage.
+
+Though there are many different oscillator circuits that can be used for this controller, such as a Hartley oscillator or phase shift oscillator, the Colpitts oscillator has many advantages that are useful to the controller.  For this controller to work and also be connected to the ESP32, the system needs to have a stable frequency source for the ESP32 MCU to recognize and not have incorrect readings due to an unstable frequency.  A Colpitts oscillator provides a broad frequency range that ranges from kHz to GHz<sup>4</sup>.  Due to this, the frequency can be set to the necessary frequency with a simple change in component values such as capacitors or resistors. (Both are first reference in the Word document, this is a note to be removed at a later time).  Though the Colpitts oscillator is very similar to the Hartley oscillator, the Colpitts oscillator uses a LC tank circuit that has a tap between two capacitors instead of having a tap between two inductive coils.  By having two capacitors instead of two inductive coils, the frequency of the oscillator can be changed by simply changing the values of the capacitors.  Without the LC tank circuit, it would be more difficult to have a stable frequency at the inductance value that is set for the inductive loops.
+
+For the frequency of the inductive loops, the ESP32 must be able to sample twice the number of the frequency to correctly monitor for changes in the loops,  By implementing the Nyquist sampling rate formula:
+
+```math
+f_{s} = 2 \times B
+```
+
+Where f<sub>s</sub> is equal to the sample rate and B is equal to the maximum frequency of the circuit, the sampling rate for the 60 kHz frequency is 120,000 samples in order to have an accurate reading of the original frequency and also any changes that occur due to a vehicle passing over the inductive loop, which will affect the set frequency of the inductive loop.  By using the ESP32 MCU from the Data Subsystem that has the capabilities of monitoring frequencies of up to 40 MHz, the frequency for this circuit is very feasible for the Loop Controller.
 
 
 ## LTSpice Simulation of Sine to Square Wave Generator Output
 
 Under the image name of "LTSpice Simulation for Frequency of Oscillator Output", the output of the oscillator circuit is a sinusoidal waveform.  This waveform includes negative voltage values and can damage the ESP32 Microcontroller if this enters the MCU.  To prevent damage happening to the MCU and to also detect when a vehicle passes over the loops, a square wave is needed as the ESP32 only recognizes square waves instead of sinusoidal waves.  By using a Sine Wave to Square Wave generator with a supply voltage of 3.3 VDC (provided by the main 9V power supply that is connected to the L78L33ABZ-AP Voltage Regulator) to allow for a safe maximum voltage to power the circuit and send the information to the ESP32 without causing damage to the pin connections.  Under the image name "LTSpice Schematic for Loop Controller", the Sine to Square Wave Generator begins at C3 after the label "OscA".  Both C3 and R7 components in a series connection reduce the sinusoidal waveform peak-to-peak value and also adjusts the waveform to where every value in the peak-to-peak range is a positive voltage.  Due to this, the waveform can now be adjusted from a positive sinusoidal wave to a square waveform.  By connecting the output from R7 to the negative input of the LT1720 IC chip and using both a 3.3 VDC power supply with an assortment of resistors to control the voltage,  the output from the IC chip is a square waveform that has a range of close to 0 V to a maximum voltage of 3.13 VDC.  This voltage range of the square waveform is well within the safe voltage limits of the ESP32 MCU and can be directly connected to the ESP32 without the risk of damaging any components.
+
+## ESP 32 Frequency Measurement
+
+The ESP32 microcontroller will be used to interpret the signals generated from the loop controller circuit. Since the ESP32 pulse counter can only measure square wave pulses and not sine waves, this is why the square wave generator circuit is necessary. 
+
+The ESP32 will use the hardware pulse counter module (PCNT)<sup>5</sup> to count the number of rising edges in a specified sampling window. The PCNT module can count pulses at a maximum frequency of 40 MHz, which greatly exceeds the 120.5 kHz required to meet the Nyquist sampling rate. 
+
+Hardware watch points will be used to trigger interrupts when a specified threshold is exceeded, corresponding to a large enough change in frequency. The order of which the interrupts are called will be used to determine the direction of traffic flow. Knowing the direction of traffic will allow the ESP32 to keep track of the current delta of cars that have entered or exited the lot at the point where the ESP32 and its’ associated inductive loop system is installed.
+
+FreeRTOS will be utilized to keep LoRa communications uninterrupted and pulse counting accurate. LoRa blocks instruction execution frequently to complete transmitting or receiving of data. LoRa could block for as much as hundreds of milliseconds depending on the settings for spreading factor and bandwidth. This could cause many problems. To combat that issue, the system will take advantage of the dual core nature of the ESP32 using FreeRTOS. LoRa will be able to run on core0 of the ESP32, while the pulse counting (and its’ associated logic) can be done on core1. FreeRTOS is also capable of multitasking, which will benefit the accuracy of pulse counting.
+
 
 
 
@@ -78,7 +122,7 @@ Under the image name of "LTSpice Simulation for Frequency of Oscillator Output",
 # BOM
 | Value                  | Parts                               | Part Number      | Qty | Price per Part | Total Price |
 |------------------------|-------------------------------------|------------------|-----|----------------|-------------|
-| 220nF                  | C1, C5                              | R82DC3220AA60K   | 1   | $0.30          | $0.30       |
+| 220nF                  | C1, C5                              | R82DC3220AA60K   | 2   | $0.30          | $0.60       |
 | 100nF                  | C2, C4                              | K104K10X7RF53L2  | 2   | $0.17          | $0.34       |
 | 1mF                    | CB-BC, CB-BC1, CB-E, CB-E1, CB-Out, | UVR1H102MHD      | 6   | $0.98          | $5.88       |
 |                        | CB-Out1                             |                  |     |                |             |
@@ -96,12 +140,15 @@ Under the image name of "LTSpice Simulation for Frequency of Oscillator Output",
 | 2 Position Connector   | J1                                  | 1711026          | 1   | $2.02          | $2.02       |
 | 5 Position Connector   | J2                                  | 1905201          | 1   | $4.55          | $4.55       |
 | 3.3V Voltage Regulator | IC1                                 | L78L33ABZ-AP     | 1   | $0.36          | $0.36       |
-| Total                  |                                     |                  | 40  |                | $30.45      |
+| Total                  |                                     |                  | 40  |                | $30.75      |
 
 
-*Note: The prices listed above do not include sales tax or shipping costs.*
+*Note: The prices listed above do not include sales tax, shipping costs, or PCB price.*
 
 
 # References
 1.  “ARRL,” Part 15 - Radio Frequency Devices, http://www.arrl.org/part-15-radio-frequency-devices#Technical (accessed Feb. 14, 2024).
 2.  “Chapter 2, Traffic Detector Handbook: Third edition-volume I,” FHWA, https://www.fhwa.dot.gov/publications/research/operations/its/06108/02.cfm (accessed Feb. 14, 2024).
+3.  “Colpitts oscillator,” Wikipedia, https://en.wikipedia.org/wiki/Colpitts_oscillator (accessed Feb. 16, 2024).
+4.  Matan, “Colpitts oscillators: How it works, application & advantages,” Electricity, https://www.electricity-magnetism.org/colpitts-oscillators/ (accessed Feb. 16, 2024).
+5.  “Pulse counter (PCNT),” ESP32, https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/pcnt.html#pcnt-watch-points (accessed Feb. 16, 2024). 
