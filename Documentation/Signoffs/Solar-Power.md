@@ -39,7 +39,7 @@ Table 2.  Parameters for the voltages and currents for the subsystems.
 
 ![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/9ced9a4d-dd15-4b96-a150-ac5a0f4a8828)
 
-
+  
 
 *Figure 2. Panel Dimensions*    
 
