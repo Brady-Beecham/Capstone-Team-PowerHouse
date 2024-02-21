@@ -1,5 +1,5 @@
 # Solar Power Subsystem
-The purpose of the solar power subsystem is to generate energy using solar panels and be able to store energy in the battery. The solar panels utilize a Photovoltaic system to generate the required energy to meet the load's needs. The backup battery stores the generated energy from the solar panels during daylight hours, making it available for use at night or whenever the solar panel does not deliver the needed voltage and current. The subsystem will supply the necessary rated energy to the other subsystems. By using a charge controller connected to both the solar panels and the backup battery, the charge controller will then transmit the energy to the power controller.
+The purpose of the solar power subsystem is to generate energy using solar panels and be able to store energy in the battery. The solar panels utilize a Photovoltaic system to generate the required energy to meet the load's needs. The battery is used to store energy for later consumption when there is no sunlight, making it available for use at night or whenever the solar panel does not deliver the needed voltage and current. The subsystem will supply the necessary rated energy to the other subsystems. By using a charge controller connected to both the solar panels and the backup battery, the charge controller will then transmit the energy to the power controller.
 
 
 
@@ -181,6 +181,13 @@ For a battery capacity of 24 Ah, increasing the battery capacity is considered a
 
 
 ## Connection Between Solar Power Subsystem and Charge Controller Subsystem
+
+
+### Solar Panel to Charge Controller
+
+The solar power subsystem is connected to the charge Controller to maximize the output power from the solar panel during the sunlight hours. The solar panel output is connected to the charge controller through a wire that outputs 30 watts at optimal conditions. As the charge controller subsystem is delivering 12 V for the battery and the power controller, that means it will have 2.5 A using P = V * I. Therefore, the charge controller subsystem is going to maximize whatever wattage is being delivered from the solar panel and ensure it will satisfy the required voltage and current from both the battery and the power controller. 
+
+To be able to deliver the needed voltage and current, the charge controller uses an MPPC method that includes a current sensor, Arduino Nano, Pulse Width Modulation, and Output Circuit. The advantage of using MPPC is that the solar panel does not satisfy the needed voltage. The MPPC can increase the voltage to 12 V using a Buck-Boost IC. However, using just the Buck-Boost IC will not be enough since it needs to control different outputs that are connected to the charge controller. Therefore, the charge controller will use a certain logic through a pulse width modulation to optimize the output of the solar panel and then charge or discharge the battery and deliver the needed voltage and current to the power controller subsystem.
 
 
 
