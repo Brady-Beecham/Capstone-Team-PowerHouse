@@ -1,9 +1,12 @@
 # Solar Power Subsystem
-The purpose of the solar power subsystem is to generate energy using solar panels and a backup battery. The solar panels utilize a Photovoltaic system to generate the required energy to meet the load's needs. The backup battery stores the generated energy from the solar panels during daylight hours, making it available for use at night. The subsystem will supply the necessary rated energy to the other subsystems. By using a charge controller connected to both the solar panels and the backup battery, the charge controller will transmit the energy to the power controller.  
+The purpose of the solar power subsystem is to generate energy using solar panels and be able to store energy in the battery. The solar panels utilize a Photovoltaic system to generate the required energy to meet the load's needs. The backup battery stores the generated energy from the solar panels during daylight hours, making it available for use at night or whenever the solar panel does not deliver the needed voltage and current. The subsystem will supply the necessary rated energy to the other subsystems. By using a charge controller connected to both the solar panels and the backup battery, the charge controller will then transmit the energy to the power controller.
+
+
+
 # Constraints
 | No. | Constraints | Origin | 
 | --- | ----------- | ------ |
-| 1.  | The solar panel and the backup battery shall be connected to the charge controller.  System Requirements |
+| 1.  | The solar panel and the backup battery shall be connected to the charge controller.| System Requirements |
 | 2.  | The solar panel should be installed at the right direction and angle that can capture the maximum amount of sunlight. | System Requirements |
 | 3.  | The charge controller shall maximize the output power from the solar panel. | System Requirements |
 | 4.  | The backup battery shall have enough capacity to prevent the charge controller from discharging more than 50%.| System Requirements |
@@ -32,7 +35,7 @@ Table 2.  Parameters for the voltages and currents for the subsystems.
 
 # Buildable schematic
 
-![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/c43fe0d0-df82-4a14-9b3e-42961ebf59bf)
+![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/09fa8f26-7f7d-4a73-b9f8-48a802698a48)
 
 
 *Figure 1. Solar Power Block Diagram*
@@ -177,6 +180,7 @@ Required \ battery \ capacity \ (Ah) = {24 Ah}
 For a battery capacity of 24 Ah, increasing the battery capacity is considered a good practice when choosing battery capacity for a solar power system. Also, considering the depth of discharge and other loss power factors, the desired battery capacity will be 40 Ah, which means we will need two batteries with 12 V and 20 Ah in parallel. Since connecting a battery in parallel will increase the battery capacity, the battery capacity will increase to 40 Ah, and the battery voltage will remain the same at 12 V.
 
 
+## Connection Between Solar Power Subsystem and Charge Controller Subsystem
 
 
 
