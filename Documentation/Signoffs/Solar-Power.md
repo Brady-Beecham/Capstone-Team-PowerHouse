@@ -189,8 +189,15 @@ The solar power subsystem is connected to the charge Controller to maximize the 
 
 To be able to deliver the needed voltage and current, the charge controller uses an MPPC method that includes a current sensor, Arduino Nano, Pulse Width Modulation, and Output Circuit. The advantage of using MPPC is that if the solar panel does not satisfy the needed voltage. The MPPC will increase the voltage to 12 V using a Buck-Boost IC. However, using just the Buck-Boost IC will not be enough since it needs to control different outputs that are connected to the charge controller. Therefore, the charge controller will use a certain logic through a pulse width modulation to optimize the output of the solar panel and then charge or discharge the battery and deliver the needed voltage and current to the power controller subsystem.
 
+<img width="593" alt="image" src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/7cd75682-f407-4854-af1f-3bae6b7934ee">
 
+Figure 4: Connection between the solar panel and the charge controller that includes the MPPC, current sensor, pulse width modulation, and battery charge and discharge switching logic
 
+<img width="500" alt="image" src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/d3c32821-6519-4881-bc9b-6475a4162e7d">
+
+*Figure 5: LTC4020 Schematic that has a range of input voltages from 4.5 V to 55 V and handles the different charging modes for sealed lead acid batteries.
+
+For more details, refer to the charge controller subsystem[ https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/blob/main/Documentation/Signoffs/Charge_Controller.md ]
 
 
 # BOM
