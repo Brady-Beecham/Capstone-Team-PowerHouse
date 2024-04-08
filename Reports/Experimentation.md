@@ -1,3 +1,35 @@
+|System Contraints |
+| C1  | Subsystem shall detect cars/pickup trucks (vehicles) that are entering and exiting a parking lot. | Loop Controller |
+| C2  | Vehicle detector shall be compliant with the FCC frequency range for Intentional Radiators and verifying the detector is within permissible part 15 frequencies.  | Loop Controller |
+| C3  | Each entrance/exit of a parking lot shall use a total of one loop controller that will control the two inductive loops at the entrance/exit. | Loop Controller |
+| C4  | The Loop Controller shall be connected to the ESP32 Microcontroller that is used with the Data system of the project to communicate a change in frequency in both of the loops and determine whether a vehicle is entering or exiting a parking lot. | Loop Controller |
+| C5  | Data shall be transmitted on the unlicensed 915 MHz ISM band bounded by 902 MHz and 928 MHz.                                                    | FCC Section 15.247 | Data Subsystem |
+| C6  | Data shall be transmitted according to the standards set by The LoRa Alliance that define the LoRa protocol.                                    | System Requirements| Data Subsystem |
+| C7  | The system shall be able to communicate effectively over a distance of 915 meters or 1 kilometer in order to scale over all of campus. This is the approximate distance from Brown Hall to the far edge of Purple Lot. This was determined to be the farthest point on campus from Brown Hall using Google Maps. This distance must be achieved even when the signal has to pass through several layers of material.| Data Subsystem |
+| C8  | The system is constrained by the limited data rate that is inherent to the LoRaWAN protocol. Specifically, the bit rate can range between 0.3 kbps to 27 kbps depending on the spreading factor and bandwidth used.| Data Subsystem |
+| C9  | The system is constrained by the maximum payload size afforded by LoRaWAN. Depending on the spreading factor, the maximum payload size can range from 51 bytes to 222 bytes.| Data Subsystem |
+| C10 | Subsystem shall detect cars/pickup trucks (vehicles) and motorcycles that are entering a parking lot at a maximum speed of 20 mph and leaving a parking lot at a maximum speed of 20 mph. | Ground Based Sensor Subsystem|
+| C11 | Vehicle detector shall cover a range of at least 50 &mu;H to 1000 &mu;H at a frequency at 50 kHz | NEMA Detector Standard 6.5.2.11 Loop/Lead in Electrical Properties | Ground Based Sensor Subsystem |
+| C13 | Vehicle detector shall be compliant with the FCC frequency range for Intentional Radiators and verifying the detector is within permissible part 15 frequencies.| Ground Based Sensor Subsystem |
+| C14 | Each entrance/exit of a parking lot shall have a total of two inductive loops for determining whether a car/pickup truck is entering a parking lot or leaving a parking lot.| Ground Based Sensor Subsystem |
+| C15 | All components of the subsystem, with the exception of the inductive loops and lead-in wire to the induction loops, shall be placed in an area that does not affect pedestrian traffic along the road or nearby sidewalks.| Ground Based Sensor Subsystem |
+| C16 | All turns in the inductive loop shall be a 45° turn (or 135° as noted in the schematic drawing) to avoid damaging the wire(s) that create the inductive loop that comes from using 90° turns. | Ground Based Sensor Subsystem |
+| C17 | Any wire that is used as part of the loop and is connected to the vehicle detector shall be protected using a heavy-duty cable protector that is capable of protecting the wires under the weight of a vehicle or pedestrian while protecting the wires from the weather. | Ground Based Sensor Subsystem|
+| C18 | Vehicle detector shall detect vehicles and motorcycles that are tailgating (when the front bumper of one vehicle is close to the back bumper and the two vehicles are in the same loop at the same time on one side of the roadway).| Ground Based Sensor Subsystem |
+| C19 | Vehicle detector shall detect vehicles and motorcycles that are going in opposite directions on the roadway, but are within the detection range of the same loop at the exact same time.| Ground Based Sensor Subsystem |
+| C20 | Inductive loops shall be placed a minimum of 4 ft. apart from the edge of one loop to the edge of the other loop to avoid cross talk between the loops and possibly give false signals.| Ground Based Sensor Subsystem |
+| C21 | Voltage equivalence: The main wall power subsystem needs to protect devices from the damage caused by voltage and guarantee the safety of the electrical system, as well as preserve the whole subsystem. | Wall power Subsystem |
+| C22 | During main power failures, power flow is controlled by the switch controller. | Wall power Subsystem |
+| C23 | It should be within wire capabilities. | Wall power Subsystem |
+| C24 | Must be a kill switch to disconnect all the power from the source. | Wall power Subsystem |
+| C25 | The subsystem shall power each subsystem's demanded voltage and current with a 10% tolerance. | Power Controller Subsystem |
+| C26 | The subsystem output shall be connected to the other subsystems through three fuses.| Power Controller Subsystem |
+| C27 | The subsystem shall have a DC nominal voltage of 12V. | Power Controller Subsystem |
+| C28 | Controller shall maximize the output power from the solar panel. | Charge Controller Subsystem |
+| C29 | Controller shall output 12 V with a 10% tolerance to the Power Controller. |Charge Controller Subsystem |
+| C30 | Controller shall prevent the batteries from being damaged due to over-charging | Charge Controller Subsystem |
+
+
 # Loop Controller
 The purpose of this experiment is to not only test the Power Subsystems
 to verify they function as expected, but also test the Loop Controller and 
