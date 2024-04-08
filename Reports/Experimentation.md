@@ -1,4 +1,6 @@
-|System Contraints |
+## System Contraints
+| Constraint Number | Constraint Information | Subsystem Defined | 
+|--------|------------------|----------------|
 | C1  | Subsystem shall detect cars/pickup trucks (vehicles) that are entering and exiting a parking lot. | Loop Controller |
 | C2  | Vehicle detector shall be compliant with the FCC frequency range for Intentional Radiators and verifying the detector is within permissible part 15 frequencies.  | Loop Controller |
 | C3  | Each entrance/exit of a parking lot shall use a total of one loop controller that will control the two inductive loops at the entrance/exit. | Loop Controller |
