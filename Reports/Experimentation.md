@@ -1,3 +1,13 @@
+# System Measures of Success
+
+These measures of success are derived from the project proposal.
+
+| Measure of Success | Name   | Details |
+|-------------------|--------|------|
+| M1 | Full Time Operation | All parts of the system shall be constantly functioning. This includes having a backup power supply. |
+| M2 | Wireless Communication | The sensor shall communicate with the server wirelessly.|
+| M3 | Local Space Availability Retention| The sensor shall keep track of the amount of vehicles in a parking lot locally.|
+| M4 | Space Availability Retention | The system shall keep a local count of vehicles that enter or exit a parking lot.|
 # System Contraints
 | Constraint Number | Constraint Information | Subsystem Defined | 
 |--------|------------------|----------------|
