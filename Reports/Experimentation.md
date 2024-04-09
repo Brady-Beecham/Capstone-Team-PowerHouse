@@ -1,4 +1,4 @@
-## System Contraints
+# System Contraints
 | Constraint Number | Constraint Information | Subsystem Defined | 
 |--------|------------------|----------------|
 | C1  | Subsystem shall detect cars/pickup trucks (vehicles) that are entering and exiting a parking lot. | Loop Controller |
@@ -32,7 +32,7 @@
 | C29 | Controller shall prevent the batteries from being damaged due to over-charging | Charge Controller Subsystem |
 
 
-# Loop Controller Subsystem and Ground Based Sensor Subsystem
+## Loop Controller Subsystem and Ground Based Sensor Subsystem Experimentation
 The purpose of this experiment is to not only test the Power Subsystems
 to verify they function as expected, but also test the Loop Controller and 
 its function.  For all trials, the loop(s) were placed in the road and the 
@@ -44,7 +44,7 @@ kHz and this change will be detected by the ESP32 MCU to send
 information to the server alerting of the mentioned sedan 
 entering/exiting a parking lot.
 
-## Constraints of the Loop Controller
+## Loop Controller Constraints
 
 ### Constraint C1: Subsystem shall detect cars/pickup trucks (vehicles) that are entering and exiting a parking lot.
 
@@ -133,5 +133,8 @@ For the first two trials, one loop was connected to the Loop Controller (Loop A 
 
 For trials 3-7, both loops were connected to the Loop Controller (Loop A Output and Loop B Output).  The speed of the vehicle was included and increased at increments of 5 mph until it reached a maximum speed of 20 mph for a total number of four tests/trials.  For speed values of 5, 10, and 15 mph, the frequency in both loops experienced a change of +1 kHz.  This change in frequency is expected as the ESP32 MCU will be able to detect the 1 kHz change in frequency and send information to the server alerting of a vehicle either entering or exiting a parking lot.  For the speed value of 20 mph, Loop B Output experienced a change of less than 1 kHz (change in frequency is 400 Hz).  This small change is not expected to alert the ESP32 MCU of a vehicle passing over the loop(s).  Ultimately, the Loop Controller is able to detect vehicles passing over the loop(s) that are entering or exiting a parking lot based on the information that is received in the data tables.
 
-
+## Data Subsystem Experimentation
+## Wall power Subsystem Experimentation
+## Power Controller Subsystem Experimentation
+## Charge Controller Experimentation
    
