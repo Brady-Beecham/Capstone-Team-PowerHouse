@@ -146,5 +146,32 @@ For trials 3-7, both loops were connected to the Loop Controller (Loop A Output 
 ## Data Subsystem Experimentation
 ## Wall power Subsystem Experimentation
 ## Power Controller Subsystem Experimentation
+
 ## Charge Controller Experimentation
-   
+
+### Charge Controller Contraints
+| Constraint Number | Constraint Information |
+|--|---|
+| C27 | Controller shall maximize the output power from the solar panel.|
+| C28 | Controller shall output 12 V with a 10% tolerance to the Power Controller. |
+| C29 | Controller shall prevent the batteries from being damaged due to over-charging |
+
+#### C27
+
+Maximization of the solar panel's power has not been acheived. 
+
+#### C28
+
+The output of 12 V with a 10% tolerance has not been achieved. 
+
+*Output Voltage vs Solar Input Voltage*
+
+![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/45153206/e1713e10-1328-416a-8230-5f17e62a60c4)
+
+*Output Voltage vs Solar and Battery Input Voltage*
+![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/45153206/5a194e37-c948-4352-90aa-86ca275d404e)
+
+#### C29
+
+As the batteries are not able to be charged, this constraint has not been achieved. 
+
