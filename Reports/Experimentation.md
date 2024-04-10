@@ -166,6 +166,13 @@ Maximization of the solar panel's power has not been acheived.
 
 The output of 12 V with a 10% tolerance has not been achieved. 
 
+1) Purpose of the experiment
+2) Description of what you did
+3) The expected result
+4) The number of trials
+5) Data table or graph of the results
+6) Interpretation of the data
+
 *Output Voltage vs Solar Input Voltage*
 
 ![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/45153206/e1713e10-1328-416a-8230-5f17e62a60c4)
