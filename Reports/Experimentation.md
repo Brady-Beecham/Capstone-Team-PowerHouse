@@ -158,6 +158,8 @@ For trials 3-7, both loops were connected to the Loop Controller (Loop A Output 
 | C28 | Controller shall output 12 V with a 10% tolerance to the Power Controller. |
 | C29 | Controller shall prevent the batteries from being damaged due to over-charging |
 
+#### Problems Encountered
+
 #### C27
 
 Maximization of the solar panel's power has not been acheived. 
@@ -166,19 +168,34 @@ Maximization of the solar panel's power has not been acheived.
 
 The output of 12 V with a 10% tolerance has not been achieved. 
 
-1) Purpose of the experiment
-2) Description of what you did
-3) The expected result
-4) The number of trials
-5) Data table or graph of the results
-6) Interpretation of the data
+This experiment is testing the output based on the input of the solar panels alone. 
+
+To simulate the varying input from the solar panel, a power supply has been used on the input of the subsystem with voltages ranging from 0 V to 20 V. According to the solar panel's datasheet, the maximum output voltage of the panel is 18 V. After testing the panel's voltage during a sunny day, the voltage was read to be 19.5 V. This is the reason that it has been tested to 20 V instead of the original 18 V.
+
+The output has been read using a digital multimeter set to read a DC voltage.
+
+The results can be shown below in the *Output Voltage vs Solar Input Voltage* Graph.
 
 *Output Voltage vs Solar Input Voltage*
 
 ![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/45153206/e1713e10-1328-416a-8230-5f17e62a60c4)
 
+The *Output Voltage vs Solar Input Voltage* Graph shows that the output voltage is not within 10% of the 12 V constraint at any input. This is due to the problems written about earlier in the Charge Controller Experimentation section.
+
+The next experiment is testing the out based on the input of both the solar panel and also a backup battery.
+
+To simulate the varying input from the solar panel, a power supply has been used on the input of the subsystem with voltages ranging from 0 V to 20 V. According to the solar panel's datasheet, the maximum output voltage of the panel is 18 V. After testing the panel's voltage during a sunny day, the voltage was read to be 19.5 V. This is the reason that it has been tested to 20 V instead of the original 18 V.
+
+A single backup battery is also attached to the battery input for the system to use at its discretion. 
+
+The output has been read using a digital multimeter set to read a DC voltage.
+
+The results can be shown below in the *Output Voltage vs Solar and Battery Input Voltage* Graph.
+
 *Output Voltage vs Solar and Battery Input Voltage*
 ![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/45153206/5a194e37-c948-4352-90aa-86ca275d404e)
+
+The *Output Voltage vs Solar and Battery Input Voltage* Graph shows that the output voltage is within 10% of the 12 V contraint from 0 to 4 V. This is by design as the MPPC voltage regulator should have started operation at 5 V to supply the output with 12 V. Without it, C28 has not been fulfilled even with batteries attached.
 
 #### C29
 
