@@ -74,7 +74,7 @@ entering/exiting a parking lot.
 
 ### Constraint C10: Subsystem shall detect cars/pickup trucks (vehicles) and motorcycles that are entering a parking lot at a maximum speed of 20 mph and leaving a parking lot at a maximum speed of 20 mph.
 
-
+   a. This constraint was achieved as proven in the results.
 
 ### Constraint C11: Vehicle detector shall cover a range of at least 50 μH to 1000 μH at a frequency at 50 kHz
 
@@ -86,11 +86,11 @@ entering/exiting a parking lot.
 
 ### Constraint C15: All turns in the inductive loop shall be a 45° turn (or 135° as noted in the schematic drawing) to avoid damaging the wire(s) that create the inductive loop that comes from using 90° turns.
 
-
+   a. This constraint was achieved as all turns in each inductive loop were set as close as possible to a 45° angle.
 
 ### Constraint C16: Any wire that is used as part of the loop and is connected to the vehicle detector shall be protected using a heavy-duty cable protector that is capable of protecting the wires under the weight of a vehicle or pedestrian while protecting the wires from the weather.
 
-
+   a. This constraint was not achieved as it was determined by the team that it would be unnecessary to purchase cable protectors due to the loops having more durability and resistance to wear from vehicle movement than originally expected at the beginning of the project.
 
 ### Constraint C17: Vehicle detector shall detect vehicles and motorcycles that are tailgating (when the front bumper of one vehicle is close to the back bumper and the two vehicles are in the same loop at the same time on one side of the roadway).
 
@@ -101,6 +101,8 @@ entering/exiting a parking lot.
 
 
 ### Constraint C19: Inductive loops shall be placed a minimum of 4 ft. apart from the edge of one loop to the edge of the other loop to avoid cross talk between the loops and possibly give false signals.
+
+   a. This constraint was achieved as all inductive loops were placed at a distance greater than 4 ft apart from each loop.  The distance allowed the loops to avoid cross talk between one another and all signals received from the loops were similar to the expected results.
 
 ## No Loop(s) Connected to the Controller
 |        | Expected Results | Actual Results |
