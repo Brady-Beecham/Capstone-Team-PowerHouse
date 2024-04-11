@@ -252,6 +252,8 @@ As the batteries are not able to be charged due to the problems encountered, thi
 ## Data Subsystem Experimentation
 
 ### Data Subsystem Constraints
+| Constraint Number | Constraint Information |
+|--|---|
 | C5  | Data shall be transmitted on the unlicensed 915 MHz ISM band bounded by 902 MHz and 928 MHz.|
 | C6  | Data shall be transmitted according to the standards set by The LoRa Alliance that define the LoRa protocol.|
 | C7  | The system shall be able to communicate effectively over a distance of 915 meters or 1 kilometer in order to scale over all of campus. This is the approximate distance from Brown Hall to the far edge of Purple Lot. This was determined to be the farthest point on campus from Brown Hall using Google Maps. This distance must be achieved even when the signal has to pass through several layers of material.|
