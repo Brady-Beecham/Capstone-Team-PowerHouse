@@ -245,7 +245,7 @@ As the batteries are not able to be charged, this constraint has not been achiev
 
 ### Purpose of the Experiment
 The purpose of this experiment is to determine if the range of the LoRaWAN network is sufficient to scale to the entirety of the Tennessee Tech campus. The original constraint specifies a range of 915 meters is needed to reach all of campus if the gateway is located in Brown Hall. 
-I would argue that this constraint is unrealistic and not a typical way to scale a LoRaWAN application across a campus. One gateway should not be expected to receive all the data from end devices across the entire campus. Instead, there should be multiple spread across campus, with purposely lower range. One Semtech SX1302 LoRa baseband chip (like the one in this system’s gateway) can handle an absolute maximum of 9 end devices at one time (8+8+1 decoders). While it may seem uncommon that 9 end devices would want to send their data at the same time, many end devices would make packet loss a problem in this scenario. This would not be feasible for an application with many more than 9 end devices unless multiple gateways were used.
+I argue that this constraint is unrealistic and not a typical way to scale a LoRaWAN application across a campus. One gateway should not be expected to receive all the data from end devices across the entire campus. Instead, there should be multiple spread across campus, with purposely lower range. One Semtech SX1302 LoRa baseband chip (like the one in this system’s gateway) can handle an absolute maximum of 9 end devices at one time (8+8+1 decoders). While it may seem uncommon that 9 end devices would want to send their data at the same time, many end devices would make packet loss a problem in this scenario. This would not be feasible for an application with many more than 9 end devices unless multiple gateways were used.
 Therefore, I propose splitting the coverage of campus into smaller regions as pictured below. This should be more like an actual implementation.
 
 *Image of campus split into 8 regions, Bing Maps*
@@ -291,7 +291,7 @@ The tests will be:
 | 3 | 65 |
 
 #### Spreading Factor 10, Bandwidth 125 kHz
-| Trial | Range achieved (meters)  |
+| Trial | Range achieved (meters)  |W
 |-------|--------------------------|
 | 1 | 60 |
 | 2 | 60 |
@@ -308,7 +308,9 @@ Data shall be transmitted according to the standards set by The LoRa Alliance th
    - LMIC library: https://github.com/mcci-catena/arduino-lmic
 
 #### C7 
-The system shall be able to communicate effectively over a distance of 915 meters or 1 kilometer in order to scale over all of campus. This is the approximate distance from Brown Hall to the far edge of Purple Lot. This was determined to be the farthest point on campus from Brown Hall using Google Maps. This distance must be achieved even when the signal has to pass through several layers of material. Additionally, for a region-based, multi-gateway approach, a range of approximately 354 meters is needed. The reasoning for this has been explained in the "Purpose of the Experiment" section.
+The system shall be able to communicate effectively over a distance of 915 meters or 1 kilometer in order to scale over all of campus. This is the approximate distance from Brown Hall to the far edge of Purple Lot. This was determined to be the farthest point on campus from Brown Hall using Google Maps. This distance must be achieved even when the signal has to pass through several layers of material. 
+
+**Update:** Additionally, for a region-based, multi-gateway approach, a range of approximately 354 meters is needed. The reasoning for this has been explained in the "Purpose of the Experiment" section.
    - The subsystem fails to meet this constraint. The range of the previous LoRa physical layer protocol achieved in January (500-520 meters) was unable to be replicated. A maximum range of only 65 meters was achieved with LoRaWAN.
 
 #### C8 
@@ -320,5 +322,5 @@ The system is constrained by the maximum payload size afforded by LoRaWAN. Depen
    - The data contained in the LoRaWAN frames will never exceed 3 bytes, this constraint is met.
 
 ### Interpretation
+The experimentation does not indicate that this subsystem, in its current state, is suitable for campus-wide scale. I suspect there are problems with hardware and/or software configuration. The RFM95W transceiver is intended to be a cheap LoRa transceiver for hobbyists. It is not intended to be a LoRaWAN-compliant device, although it is possible as I have proven. The informal range testing I conducted in January indicates the potential of the RFM95W transceivers for point-to-point communication but attempts to replicate those results have failed. The point-to-point setup now has similar range to the LoRaWAN range test results. I would like to test the true gain of my antennas. I suspect they are not as good as they advertise. LoRaWAN is known to have long-range capability, although this testing indicates my hardware is not up to the task. Better hardware would be the easy solution to this problem. I believe, based on how widely used LoRaWAN is in industry and record-setting ranges that have been achieved (up to 830 miles), that LoRaWAN is still a viable option for campus-scale IoT communication, despite the failure of my current hardware/software.
 
-#### Problems Encountered
