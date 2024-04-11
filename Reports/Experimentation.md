@@ -256,9 +256,7 @@ I have split the campus up into 8 regions of varying size. I will use the larges
 
 ### Experimental Procedure
 As mentioned before, this experiment will verify if the WM1302 + Raspberry Pi gateway and ESP32 + RFM95W end device can communicate effectively both over the maximum distance from Brown Hall, 915 meters, and the largest region of the proposed multi-gateway implementation. 
-To get a number for the largest region (region 3), let’s assume the LoRa chirps will propagate outward from the center of the region in a sphere. Let’s also assume that instead of a rectangle 450 meters by 500 meters, we have a square 500 meters by 500 meters. The circle that bounds this square will be the range of the LoRaWAN network required to reach all 4 corners of the square. We are concerned with the radius of this circle. We can find the radius of the circle by:
-
-$$r=500 \sqrt{2} \over 2$$
+To get a number for the largest region (region 3), let’s assume the LoRa chirps will propagate outward from the center of the region in a sphere. Let’s also assume that instead of a rectangle 450 meters by 500 meters, we have a square 500 meters by 500 meters. The circle that bounds this square will be the range of the LoRaWAN network required to reach all 4 corners of the square. We are concerned with the radius of this circle. We can find the radius of the circle by: $$500 \sqrt{2} \over 2$$
 
 We get r = 354 meters. Therefore 354 meters is what is needed for the LoRaWAN network to span region 3.
 The experiment will be conducted by setting up the LoRaWAN gateway in the Capstone Lab and a person will walk with an end device toward purple lot until the signal is lost. The location where the signal is lost will be recorded and the distance from the gateway will be measured with Google or Bing maps. Tests will be done with and without adaptive data rate functionality, and with different frequency plans. I will also test the range of LoRa PHY, the physical layer only implementation. This is because I can choose higher spreading factors and lower bandwidths than with LoRaWAN.
