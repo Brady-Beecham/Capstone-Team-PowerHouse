@@ -295,20 +295,26 @@ The tests will be:
 
 #### C5
 Data shall be transmitted on the unlicensed 915 MHz ISM band bounded by 902 MHz and 928 MHz.
-   - This constraint is satisfied by setting the region for the end device and gateway to US915.
+   - This constraint is satisfied by setting the region for the end device and gateway to US915 when configuring them.
 
 #### C6 
 Data shall be transmitted according to the standards set by The LoRa Alliance that define the LoRa protocol.
+   - This constraint is satisfied by using a library based on the official LoRaMAC-In-C (LMIC) library by IBM, currently maintained by MCCI.
+   - Link to the library used: https://github.com/manuelbl/ttn-esp32
+   - LMIC library: https://github.com/mcci-catena/arduino-lmic
 
 #### C7 
-The system shall be able to communicate effectively over a distance of 915 meters or 1 kilometer in order to scale over all of campus. This is the approximate distance from Brown Hall to the far edge of Purple Lot. This was determined to be the farthest point on campus from Brown Hall using Google Maps. This distance must be achieved even when the signal has to pass through several layers of material.
+The system shall be able to communicate effectively over a distance of 915 meters or 1 kilometer in order to scale over all of campus. This is the approximate distance from Brown Hall to the far edge of Purple Lot. This was determined to be the farthest point on campus from Brown Hall using Google Maps. This distance must be achieved even when the signal has to pass through several layers of material. 
+Update: Additionally, for a region-based, multi-gateway approach, a range of approximately 354 meters is needed. The reasoning for this has been explained in the "Purpose of the Experiment" section.
+   - The subsystem fails to meet this constraint. The range of the previous LoRa physical layer protocol achieved in January (500-520 meters) was unable to be replicated. A maximum range of only 65 meters was achieved with LoRaWAN.
 
 #### C8 
 The system is constrained by the limited data rate that is inherent to the LoRaWAN protocol. Specifically, the bit rate can range between 0.3 kbps to 27 kbps depending on the spreading factor and bandwidth used.
+   - This is more than sufficient for transmitting a maximum of 3 bytes at intervals such as every 5 minutes. Infrequent data transmission is common in LoRaWAN applications. The delta will be sent at a regular interval in the order of minutes instead of immediately upon a change being detected. This constraint is met.
 
 #### C9 
 The system is constrained by the maximum payload size afforded by LoRaWAN. Depending on the spreading factor, the maximum payload size can range from 51 bytes to 222 bytes.
-
+   - The data contained in the LoRaWAN frames will never exceed 3 bytes, this constraint is met.
 
 ### Interpretation
 
