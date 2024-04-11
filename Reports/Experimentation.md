@@ -291,7 +291,7 @@ The tests will be:
 | 3 | 65 |
 
 #### Spreading Factor 10, Bandwidth 125 kHz
-| Trial | Range achieved (meters)  |W
+| Trial | Range achieved (meters)  |
 |-------|--------------------------|
 | 1 | 60 |
 | 2 | 60 |
