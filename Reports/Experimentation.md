@@ -248,7 +248,10 @@ As the batteries are not able to be charged, this constraint has not been achiev
 The purpose of this experiment is to determine if the range of the LoRaWAN network is sufficient to scale to the entirety of the Tennessee Tech campus. The original constraint specifies a range of 915 meters is needed to reach all of campus if the gateway is located in Brown Hall. 
 I would argue that this constraint is unrealistic and not a typical way to scale a LoRaWAN application across a campus. One gateway should not be expected to receive all the data from end devices across the entire campus. Instead, there should be multiple spread across campus, with purposely lower range. One Semtech SX1302 LoRa baseband chip (like the one in this system’s gateway) can handle an absolute maximum of 9 end devices at one time (8+8+1 decoders). While it may seem uncommon that 9 end devices would want to send their data at the same time, many end devices would make packet loss a problem in this scenario. This would not be feasible for an application with many more than 9 end devices unless multiple gateways were used.
 Therefore, I propose splitting the coverage of campus into smaller regions as pictured below. This should be more like an actual implementation.
+
+*Image of campus split into 8 regions, Bing Maps*
 ![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/119456660/ead65eea-cf4e-4393-a3e1-65f46a022bb4)
+
 I have split the campus up into 8 regions of varying size. I will use the largest region, region 3 as the benchmark for range. In summary, the purpose of this experiment is to both test if one single gateway can reach across all of campus (from Brown Hall to the edge of purple lot), and/or the largest region in a multi-gateway implementation. 
 
 
@@ -264,7 +267,7 @@ I predict that the 354 meter range will be achieved, but the 915 meter range may
 The propagation model I used in the signoff to predict the range of the LoRaWAN network is indeed not well suited to this LoRaWAN network. Immense range with LoRa is achieved by having your gateway antennas very high up, big, with line of sight, high spreading factor (11 or 12), and low bandwidth. LoRaWAN, more specifically the “The Things Network” standard frequency plans tend to use the lowest spreading factors and high bandwidths. This means much lower range than what the LoRa physical layer modulation technique is truly capable of.
 
 ### Number of Trials
-There will be 3 trials of each test. The individual tests are intended to examine how different parameters will affect the range achieved. 
+There will be 3 trials of each test. The individual tests are intended to examine how different parameters will affect the range achieved. Tests of more configurations were planned, but due to excessive join times, they were not tested. 
 The tests will be: 
 -	LoRaWAN gateway to end device network tests:
    1.	Adaptive data rate
@@ -305,7 +308,7 @@ Data shall be transmitted according to the standards set by The LoRa Alliance th
 
 #### C7 
 The system shall be able to communicate effectively over a distance of 915 meters or 1 kilometer in order to scale over all of campus. This is the approximate distance from Brown Hall to the far edge of Purple Lot. This was determined to be the farthest point on campus from Brown Hall using Google Maps. This distance must be achieved even when the signal has to pass through several layers of material. 
-Update: Additionally, for a region-based, multi-gateway approach, a range of approximately 354 meters is needed. The reasoning for this has been explained in the "Purpose of the Experiment" section.
+**Update:** Additionally, for a region-based, multi-gateway approach, a range of approximately 354 meters is needed. The reasoning for this has been explained in the "Purpose of the Experiment" section.
    - The subsystem fails to meet this constraint. The range of the previous LoRa physical layer protocol achieved in January (500-520 meters) was unable to be replicated. A maximum range of only 65 meters was achieved with LoRaWAN.
 
 #### C8 
