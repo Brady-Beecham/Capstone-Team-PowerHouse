@@ -78,11 +78,12 @@ entering/exiting a parking lot.
 
 ### Constraint C11: Vehicle detector shall cover a range of at least 50 μH to 1000 μH at a frequency at 50 kHz
 
+   a. This constraint was descoped from the project as it was determined during the halfway point of the timeline of the project that this constraint would not apply to the Loop Controller.  The final design of the Loop Controller is very different from the original idea of the Loop Controller as numerous changes were made to the Loop Controller.  Due to these changes, this constraint no longer fits the Loop Controller standards.
 
 
 ### Constraint C14: All components of the subsystem, with the exception of the inductive loops and lead-in wire to the induction loops, shall be placed in an area that does not affect pedestrian traffic along the road or nearby sidewalks.
 
-
+   a. This constraint was achieved as the equipment was placed away from pedestrian traffic and pedestrians were able to walk on the sidewalks without being affected by the placement of the Loop Controller.  For the lead-in wire connections to the inductive loops, measurements were taken from the center of the roadway to the edge of the concrete to determine the minimum distance to avoid interfering with pedestrian traffic.  With the minimum distance determined, extra length was added to the lead-in connnections to avoid possible human errors when calculating the distance.
 
 ### Constraint C15: All turns in the inductive loop shall be a 45° turn (or 135° as noted in the schematic drawing) to avoid damaging the wire(s) that create the inductive loop that comes from using 90° turns.
 
