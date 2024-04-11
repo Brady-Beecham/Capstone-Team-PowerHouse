@@ -155,16 +155,27 @@ For trials 3-7, both loops were connected to the Loop Controller (Loop A Output 
 |--|---|
 | C24 | The subsystem shall power each subsystem's demanded voltage and current with a 10% tolerance|
 | C25 | The subsystem output shall be connected to the other subsystems through three fuses|
-| C26 | The subsystem shall have a DC nominal voltage of 12V.	Power Controller Subsystem |
+| C26 | The subsystem shall have a DC nominal voltage of 12V |
 
 #### C24
-The subsystem achieved each subsystem's demand for voltage and current with less than 10% tolerance.
+The subsystem did not meet the 10% tolerance requirement because the resistor used on the PCB had different values. The resistor we ordered for this subsystem was difficult to solder, so we had to solder it through holes in the PCB with slightly different values. This caused the tolerance to be higher than what we had anticipated.
 
 |No. | Subsystem        | Expected Voltage | Actual Voltage| Expected Current |  Actual Current | Tolerance |
 |--- |------------------|------------------|---------------|------------------|-----------------|-----------|
 | a  | Inductive loop   | 9  VDC           | 9.52 VDC      | 0.05 A         | 0.043 A           | 9.031%    |
-| b  | Data Subsystem   | 5.5 VDC          | 5.48 VDC      | 0.25 A         | 0.212 A           |
-| c  | Charge Controller| 5.5 VDC          | 5.44 VDC      | 0.25 A         | 0.223 A           |
+| b  | Data Subsystem   | 5.5 VDC          | 5.48 VDC      | 0.25 A         | 0.212 A           | 15.51%    |
+| c  | Charge Controller| 5.5 VDC          | 5.44 VDC      | 0.25 A         | 0.223 A           | 11.78%    |
+
+
+
+#### C25
+
+This constraint was not fully achieved due to an unfinished subsystem. However, the data and inductive loop subsystems are connected through a fuse that protects against overcurrent.
+
+#### C26
+
+ This constraint was achieved. The power controller was able to take an input voltage with a minimum of 9 VDC and a maximum of 17 VDC. For that range of input, the power controller will deliver the needed voltages and currents for each subsystem. 
+
 
 
 
