@@ -146,7 +146,6 @@ For the first two trials, one loop was connected to the Loop Controller (Loop A 
 
 For trials 3-7, both loops were connected to the Loop Controller (Loop A Output and Loop B Output).  The speed of the vehicle was included and increased at increments of 5 mph until it reached a maximum speed of 20 mph for a total number of four tests/trials.  For speed values of 5, 10, and 15 mph, the frequency in both loops experienced a change of +1 kHz.  This change in frequency is expected as the ESP32 MCU will be able to detect the 1 kHz change in frequency and send information to the server alerting of a vehicle either entering or exiting a parking lot.  For the speed value of 20 mph, Loop B Output experienced a change of less than 1 kHz (change in frequency is 400 Hz).  This small change is not expected to alert the ESP32 MCU of a vehicle passing over the loop(s).  Ultimately, the Loop Controller is able to detect vehicles passing over the loop(s) that are entering or exiting a parking lot based on the information that is received in the data tables.
 
-## Data Subsystem Experimentation
 ## Wall power Subsystem Experimentation
 ## Power Controller Subsystem Experimentation
 
@@ -184,7 +183,7 @@ This constraint was not fully achieved due to an unfinished subsystem. However, 
 
 ## Charge Controller Experimentation
 
-### Charge Controller Contraints
+### Charge Controller Constraints
 | Constraint Number | Constraint Information |
 |--|---|
 | C27 | Controller shall maximize the output power from the solar panel.|
@@ -195,7 +194,7 @@ This constraint was not fully achieved due to an unfinished subsystem. However, 
 
 #### C27
 
-Maximization of the solar panel's power has not been acheived. 
+Maximization of the solar panel's power has not been achieved. 
 
 #### C28
 
@@ -228,7 +227,7 @@ The results can be shown below in the *Output Voltage vs Solar and Battery Input
 *Output Voltage vs Solar and Battery Input Voltage*
 ![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/45153206/5a194e37-c948-4352-90aa-86ca275d404e)
 
-The *Output Voltage vs Solar and Battery Input Voltage* Graph shows that the output voltage is within 10% of the 12 V contraint from 0 to 4 V. This is by design as the MPPC voltage regulator should have started operation at 5 V to supply the output with 12 V. Without it, C28 has not been fulfilled even with batteries attached.
+The *Output Voltage vs Solar and Battery Input Voltage* Graph shows that the output voltage is within 10% of the 12 V constraint from 0 to 4 V. This is by design as the MPPC voltage regulator should have started operation at 5 V to supply the output with 12 V. Without it, C28 has not been fulfilled even with batteries attached.
 
 #### C29
 
@@ -256,9 +255,11 @@ I have split the campus up into 8 regions of varying size. I will use the larges
 
 
 ### Experimental Procedure
-As mentioned before, this experiment will verify if the WM1302 + Raspberry pi gateway and ESP32 + RFM95W end device can communicate effectively both over the maximum distance from Brown Hall, 915 meters, and the largest region of the proposed multi-gateway implementation. 
+As mentioned before, this experiment will verify if the WM1302 + Raspberry Pi gateway and ESP32 + RFM95W end device can communicate effectively both over the maximum distance from Brown Hall, 915 meters, and the largest region of the proposed multi-gateway implementation. 
 To get a number for the largest region (region 3), let’s assume the LoRa chirps will propagate outward from the center of the region in a sphere. Let’s also assume that instead of a rectangle 450 meters by 500 meters, we have a square 500 meters by 500 meters. The circle that bounds this square will be the range of the LoRaWAN network required to reach all 4 corners of the square. We are concerned with the radius of this circle. We can find the radius of the circle by:
-r=(500√2)/2
+
+$$r=500 \sqrt{2} \over 2$$
+
 We get r = 354 meters. Therefore 354 meters is what is needed for the LoRaWAN network to span region 3.
 The experiment will be conducted by setting up the LoRaWAN gateway in the Capstone Lab and a person will walk with an end device toward purple lot until the signal is lost. The location where the signal is lost will be recorded and the distance from the gateway will be measured with Google or Bing maps. Tests will be done with and without adaptive data rate functionality, and with different frequency plans. I will also test the range of LoRa PHY, the physical layer only implementation. This is because I can choose higher spreading factors and lower bandwidths than with LoRaWAN.
 
@@ -307,8 +308,7 @@ Data shall be transmitted according to the standards set by The LoRa Alliance th
    - LMIC library: https://github.com/mcci-catena/arduino-lmic
 
 #### C7 
-The system shall be able to communicate effectively over a distance of 915 meters or 1 kilometer in order to scale over all of campus. This is the approximate distance from Brown Hall to the far edge of Purple Lot. This was determined to be the farthest point on campus from Brown Hall using Google Maps. This distance must be achieved even when the signal has to pass through several layers of material. 
-**Update:** Additionally, for a region-based, multi-gateway approach, a range of approximately 354 meters is needed. The reasoning for this has been explained in the "Purpose of the Experiment" section.
+The system shall be able to communicate effectively over a distance of 915 meters or 1 kilometer in order to scale over all of campus. This is the approximate distance from Brown Hall to the far edge of Purple Lot. This was determined to be the farthest point on campus from Brown Hall using Google Maps. This distance must be achieved even when the signal has to pass through several layers of material. Additionally, for a region-based, multi-gateway approach, a range of approximately 354 meters is needed. The reasoning for this has been explained in the "Purpose of the Experiment" section.
    - The subsystem fails to meet this constraint. The range of the previous LoRa physical layer protocol achieved in January (500-520 meters) was unable to be replicated. A maximum range of only 65 meters was achieved with LoRaWAN.
 
 #### C8 
