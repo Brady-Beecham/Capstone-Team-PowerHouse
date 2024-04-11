@@ -149,6 +149,27 @@ For trials 3-7, both loops were connected to the Loop Controller (Loop A Output 
 ## Wall power Subsystem Experimentation
 ## Power Controller Subsystem Experimentation
 
+
+| Constraint Number | Constraint Information |
+|--|---|
+| C24 | The subsystem shall power each subsystem's demanded voltage and current with a 10% tolerance|
+| C25 | The subsystem output shall be connected to the other subsystems through three fuses|
+| C26 | The subsystem shall have a DC nominal voltage of 12V.	Power Controller Subsystem |
+
+#### C24
+The subsystem achieved each subsystem's demand for voltage and current with less than 10% tolerance.
+
+|No. | Subsystem        | Expected Voltage | Actual Voltage| Expected Current |  Actual Current | Tolerance |
+|--- |------------------|------------------|---------------|------------------|-----------------|-----------|
+| a  | Inductive loop   | 9  VDC           | 9.52 VDC      | 0.05 A         | 0.043 A           | 9.031%    |
+| b  | Data Subsystem   | 5.5 VDC          | 5.48 VDC      | 0.25 A         | 0.212 A           |
+| c  | Charge Controller| 5.5 VDC          | 5.44 VDC      | 0.25 A         | 0.223 A           |
+
+
+
+
+
+
 ## Charge Controller Experimentation
 
 ### Charge Controller Contraints
