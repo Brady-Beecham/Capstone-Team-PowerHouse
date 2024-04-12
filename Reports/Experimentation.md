@@ -102,20 +102,19 @@ These measures of success are derived from the project proposal.
 
 ### Purpose of the Experiment
 
-The purpose of this experiment is to not only test the Power Subsystems
-to verify they function as expected, but also test the Loop Controller and 
-its function.  
+The purpose of this experiment is test the Loop Controller and 
+its function and verify it operates as it is intended.  
 
 ### Experimental Procedure
 
-For all trials, the loop(s) were placed in the road and the 
-vehicle passed over the loop(s) and not to the side of the loop(s).  For the
-test vehicle, a Toyota Camry was used for all trials.  Throughout 
-the entirety of the trials, it is expected that the frequency of the 
+For all tests, the loop(s) were placed in the road and the 
+vehicle passed over the loop(s) and not to the side of the loop(s).  Throughout 
+the entirety of the tests, it is expected that the frequency of the 
 loops/Loop Controller will change with a noticeable difference of ± 1 
 kHz and this change will be detected by the ESP32 MCU to send 
 information to the server alerting of the mentioned sedan 
-entering/exiting a parking lot.
+entering/exiting a parking lot.  To monitor the changes in frequency in both inductive loops,
+the results for each test are found when using a Rigol DS1104 Oscilloscope.
 
 ## **^^^^^^^^^^MENTION IT WAS OSCILLOSCOPE TESTED^^^^^^^^^^**
 
