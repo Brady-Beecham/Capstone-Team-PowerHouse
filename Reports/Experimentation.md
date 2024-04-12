@@ -234,76 +234,89 @@ The subsystem did not meet the 10% tolerance requirement because the resistor us
 
 ## Charge Controller Experimentation
 
-### Charge Controller Contraints
+### Charge Controller Constraints
 | Constraint Number | Constraint Information |
 |--|---|
 | C27 | Controller shall maximize the output power from the solar panel.|
 | C28 | Controller shall output 12 V with a 10% tolerance to the Power Controller. |
 | C29 | Controller shall prevent the batteries from being damaged due to over-charging |
 
-#### Problems Encountered
+### Problems Encountered
 
 1) Main PCB problems
    
-This PCB has encountered problems while soldering the QFN components, mainly the boost switching regulator used to assist the arudino in controlling the MPPC voltage regulator's output.
+This PCB has encountered problems while soldering the QFN components, mainly the boost switching regulator used to assist the Arudino in controlling the MPPC voltage regulator's output.
 
-   This switching regulator has a fairly simple circuit as shown in the figure below. As simple as the circuitry is, the chip itself is very small with a QFN packaging, and due to the heat sink on the bottom, requires the use of a heat oven to be properly soldered. The combination of size, heatsink, and novice soldering skills caused this chip to be short circuited on the first round of soldering. This short circuit led to the MPPC Voltage regulator along with the boost regulator to be desoldered with a heat gun and placed back into the heat oven. In total the MPPC went through the heat oven four times and the boost regulator went in three times. (The second time for both was prior to the discovery of the short circuit and was intended to ensure the solder properly flowed. Third for MPPC was to resolder it to the board without the voltage regulator. Fourth for MPPC and thrid for the boost regulator was to apply the boost regulator.)  
+   This switching regulator has a fairly simple circuit as shown in the figure below. The circuitry is simple and the chip is very small with QFN packaging. Also, due to the heat sink on the bottom, it requires the use of a heat oven to be properly soldered. The combination of size, heatsink, and novice soldering skills caused this chip to be short-circuited on the first round of soldering. This short circuit led to the MPPC Voltage regulator along with the boost regulator to be desoldered with a heat gun and placed back into the heat oven. In total, the MPPC went through the heat oven four times and the boost regulator went in three times. (The second time for both was prior to the discovery of the short circuit and was intended to ensure the solder properly flowed. The third time in the oven for the MPPC was to resolder it to the board without the voltage regulator. The fourth time for the MPPC and the third for the boost regulator was to apply the boost regulator.)  
 
 ![BoostPWMCircuit](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/45153206/b4cdc252-34ae-443d-bc0f-fa34f01c6c57)
 
-   I hypothesize that the minutes spent under the heat gun and multiple trips through the heat oven damaged both the MPPC Voltage regulator and the boost voltage regulator. The main reason for this hypothesis is because the MPPC voltage regulator was working as expected prior to the last (fourth) trip in the heat oven when the boost regulator was added. 
+   I hypothesize that the minutes spent under the heat gun and multiple trips through the heat oven damaged both the MPPC Voltage regulator and the boost voltage regulator. The main reason for this hypothesis is that the MPPC voltage regulator was working as expected prior to the last (fourth) trip in the heat oven when the boost regulator was added. 
    
    To test this hypothesis, the boost voltage regulator was removed with a heat gun once again and the MPPC was tested once more (the MPPC is much more important to the subsystem since it maximizes the input solar power.) The result was that the MPPC did not produce the same results prior to the last round in the heat oven. 
 
-   While this test is not conclusive, due to time constraints the subsystem had to move foward. A LM317T Voltage regulator was used to bypass the MPPC regulator and supply the output with 9.25 V as 9 V is required by the Power Controller with 0.25 V of room for error. As the LM317T is only a buck convertor and not a buckboost, the output will not reach an acceptable voltage between solar input voltages of 5 V (when the relay is designed to switch to the MPPC regulator output) to somewhere around 9.25 V.
+   While this test is not conclusive, due to time constraints progress on the main PCB had to take precedence over continued testing. An LM317T Voltage regulator was used to bypass the MPPC regulator and supply the output with 9.25 V as 9 V is required by the Power Controller with 0.25 V of room for error. As the LM317T is only a buck converter and not a buck-boost, the output will not reach an acceptable voltage between solar input voltages of 5 V (when the relay is designed to switch to the MPPC regulator output) to somewhere around 9.25 V.
 
-   Without the boost regulator, the arduino is not able to control the output of either the MPPC or LM317T. Without the arduino to regulate the voltage the battery PCBs are not able to be sent power without harming the system during times of low light levels.
+   Without the boost regulator, the Arduino can't control the output of either the MPPC or LM317T. Without the Arduino to regulate the voltage the battery PCBs are not able to be sent power without harming the system during times of low light levels.
 
 2) Battery Charging PCB Problems
    
 
-#### C27
+### C27
 
-Maximization of the solar panel's power has not been acheived. 
+Maximization of the solar panel's power has not been achieved. 
 
-#### C28
+### C28
 
 The output of 12 V with a 10% tolerance has not been achieved. 
 
+#### The Purpose of the Experiment
 This experiment is testing the output based on the input of the solar panels alone. 
 
+#### Experimental Procedure
 To simulate the varying input from the solar panel, a power supply has been used on the input of the subsystem with voltages ranging from 0 V to 20 V. According to the solar panel's datasheet, the maximum output voltage of the panel is 18 V. After testing the panel's voltage during a sunny day, the voltage was read to be 19.5 V. This is the reason that it has been tested to 20 V instead of the original 18 V.
 
 The output has been read using a digital multimeter set to read a DC voltage.
 
+
+#### Results
 The results can be shown below in the *Output Voltage vs Solar Input Voltage* Graph.
 
 *Output Voltage vs Solar Input Voltage*
 
 ![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/45153206/e1713e10-1328-416a-8230-5f17e62a60c4)
 
+#### Interpretation
 The *Output Voltage vs Solar Input Voltage* Graph shows that the output voltage is not within 10% of the 12 V constraint at any input. This is due to the problems written about earlier in the Charge Controller Experimentation section.
 
-The next experiment is testing the out based on the input of both the solar panel and also a backup battery.
 
+#### The Purpose of the Experiment
+The next experiment is testing the output based on the input of both the solar panel and also a backup battery.
+
+#### Experimental Procedure
 To simulate the varying input from the solar panel, a power supply has been used on the input of the subsystem with voltages ranging from 0 V to 20 V. According to the solar panel's datasheet, the maximum output voltage of the panel is 18 V. After testing the panel's voltage during a sunny day, the voltage was read to be 19.5 V. This is the reason that it has been tested to 20 V instead of the original 18 V.
 
 A single backup battery is also attached to the battery input for the system to use at its discretion. 
 
 The output has been read using a digital multimeter set to read a DC voltage.
 
+#### Results
 The results can be shown below in the *Output Voltage vs Solar and Battery Input Voltage* Graph.
 
 *Output Voltage vs Solar and Battery Input Voltage*
 ![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/45153206/5a194e37-c948-4352-90aa-86ca275d404e)
 
-The *Output Voltage vs Solar and Battery Input Voltage* Graph shows that the output voltage is within 10% of the 12 V contraint from 0 to 4 V due to the battery voltage being supplied. This is by design as the MPPC voltage regulator should start operation at 5 V to supply the output with 12 V. But without proper operation of the MPPC voltage regulator, C28 has not been fulfilled even with batteries attached.
+#### Interpretation
+The *Output Voltage vs Solar and Battery Input Voltage* Graph shows that the output voltage is within 10% of the 12 V constraint from 0 to 4 V due to the battery voltage being supplied. This is by design as the MPPC voltage regulator should start operation at 5 V to supply the output with 12 V. But without proper operation of the MPPC voltage regulator, C28 has not been fulfilled even with batteries attached.
 
-#### C29
+### C29
 
 As the batteries are not able to be charged due to the problems encountered, this constraint has not been achieved. 
 
 ### Interpretation and Proposed Changes
+
+
+
 ## Data Subsystem Experimentation
 
 ### Data Subsystem Constraints
