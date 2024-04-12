@@ -43,16 +43,6 @@ These measures of success are derived from the project proposal.
 
 
 ## Loop Controller Subsystem and Ground Based Sensor Subsystem Experimentation
-The purpose of this experiment is to not only test the Power Subsystems
-to verify they function as expected, but also test the Loop Controller and 
-its function.  For all trials, the loop(s) were placed in the road and the 
-vehicle passed over the loop(s) and not to the side of the loop(s).  For the
-test vehicle, a Toyota Camry was used for all trials.  Throughout 
-the entirety of the trials, it is expected that the frequency of the 
-loops/Loop Controller will change with a noticeable difference of ± 1 
-kHz and this change will be detected by the ESP32 MCU to send 
-information to the server alerting of the mentioned sedan 
-entering/exiting a parking lot.
 
 ## Loop Controller Constraints
 
@@ -101,23 +91,46 @@ entering/exiting a parking lot.
 
 
 
-### Constraint C19: Inductive loops shall be placed a minimum of 4 ft. apart from the edge of one loop to the edge of the other loop to avoid cross talk between the loops and possibly give false signals.
+### Constraint C19: Inductive loops shall be placed a minimum of 4 ft. apart from the edge of one loop to the edge of the other loop to avoid cross-talk between the loops and possibly give false signals.
 
-   a. This constraint was achieved as all inductive loops were placed at a distance greater than 4 ft apart from each loop.  The distance allowed the loops to avoid cross talk between one another and all signals received from the loops were similar to the expected results.
+   a. This constraint was achieved as all inductive loops were placed at a distance greater than 4 ft apart from each loop.  The distance allowed the loops to avoid cross-talk between one another and all signals received from the loops were similar to the expected results.
 
-## No Loop(s) Connected to the Controller
+### Purpose of the Experiment
+
+The purpose of this experiment is to not only test the Power Subsystems
+to verify they function as expected, but also test the Loop Controller and 
+its function.  
+
+### Experimental Procedure
+
+For all trials, the loop(s) were placed in the road and the 
+vehicle passed over the loop(s) and not to the side of the loop(s).  For the
+test vehicle, a Toyota Camry was used for all trials.  Throughout 
+the entirety of the trials, it is expected that the frequency of the 
+loops/Loop Controller will change with a noticeable difference of ± 1 
+kHz and this change will be detected by the ESP32 MCU to send 
+information to the server alerting of the mentioned sedan 
+entering/exiting a parking lot.
+
+## **^^^^^^^^^^MENTION IT WAS OSCILLOSCOPE TESTED^^^^^^^^^^**
+
+### Number of Trials
+
+### Results
+
+#### No Loop(s) Connected to the Controller
 |        | Expected Results | Actual Results |
 |--------|------------------|----------------|
 | Input  | 9 VDC            | 9.19 VDC       |
 | Output | 3.3 VDC          | 3.3 VDC        |
 
-## One Loop Connected to Controller with No Speed Test
+#### One Loop Connected to Controller with No Speed Test
 |        | Set Frequency | Max. Frequency |
 |--------|---------------|----------------|
 | Test 1 | 62.9 kHz      | 66 kHz         |
 | Test 2 | 62.9 kHz      | 67 kHz         |
 
-## Two Loops Connected to Controller
+#### Two Loops Connected to Controller
 ### 5 mph
 |        | Set Frequency | Max. Frequency |
 |--------|---------------|----------------|
@@ -142,11 +155,16 @@ entering/exiting a parking lot.
 | Loop A | 62.9 kHz      | 64.9 kHz       |
 | Loop B | 62.9 kHz      | 63.3 kHz       |
 
+### Interpretation
+
 For the first two trials, one loop was connected to the Loop Controller (Loop A Output).  When one loop was connected, there was no set speed value (in mph) and the Loop Controller detected when a vehicle passed over the loop.  Two trials were completed to verify the Loop Controller did function as expected and was not by coincidence.  In both Test 1 and Test 2 (as seen in the graph), the frequency of the loop increased by more than 3 kHz every time.  From this data, we can interpret that the Loop Controller does function as expected and can detect a change in frequency due to a vehicle passing over the loop.
 
-For trials 3-7, both loops were connected to the Loop Controller (Loop A Output and Loop B Output).  The speed of the vehicle was included and increased at increments of 5 mph until it reached a maximum speed of 20 mph for a total number of four tests/trials.  For speed values of 5, 10, and 15 mph, the frequency in both loops experienced a change of +1 kHz.  This change in frequency is expected as the ESP32 MCU will be able to detect the 1 kHz change in frequency and send information to the server alerting of a vehicle either entering or exiting a parking lot.  For the speed value of 20 mph, Loop B Output experienced a change of less than 1 kHz (change in frequency is 400 Hz).  This small change is not expected to alert the ESP32 MCU of a vehicle passing over the loop(s).  Ultimately, the Loop Controller is able to detect vehicles passing over the loop(s) that are entering or exiting a parking lot based on the information that is received in the data tables.
+For trials 3-7, both loops were connected to the Loop Controller (Loop A Output and Loop B Output).  The speed of the vehicle was included and increased at increments of 5 mph until it reached a maximum speed of 20 mph for a total number of four tests/trials.  For speed values of 5, 10, and 15 mph, the frequency in both loops experienced a change of +1 kHz.  This change in frequency is expected as the ESP32 MCU will be able to detect the 1 kHz change in frequency and update the delta accordingly.  For the speed value of 20 mph, Loop B Output experienced a change of less than 1 kHz (change in frequency is 400 Hz). Depending on the ESP32's algorithm for detecting changes in frequency, this may not be considered a significant enough change to count as a vehicle.
+
+Based on the test results above, the Loop Controller is able to detect vehicles passing over the loop(s) that are entering or exiting a parking lot based on the information that is received in the data tables.
 
 ## Wall power Subsystem Experimentation
+
 ## Power Controller Subsystem Experimentation
 
 
@@ -156,16 +174,37 @@ For trials 3-7, both loops were connected to the Loop Controller (Loop A Output 
 | C25 | The subsystem output shall be connected to the other subsystems through three fuses|
 | C26 | The subsystem shall have a DC nominal voltage of 12V |
 
+
+
+### Purpose of the Experiment
+To test the error of the voltage regulators.
+
+
+### Experimental Procedure
+
+
+
+### Prediction
+
+
+
+### Number of Trials
+
+
+
+### Results
+
+| Subsystem        | Expected Voltage | Actual Voltage| Expected Current |  Actual Current | Tolerance |
+|------------------|------------------|---------------|------------------|-----------------|-----------|
+| Inductive loop   | 9  VDC           | 9.52 VDC      | 0.05 A           | 0.043 A         | 9.031%    |
+| Data Subsystem   | 5.5 VDC          | 5.48 VDC      | 0.25 A           | 0.212 A         | 15.51%    |
+| Charge Controller| 5.5 VDC          | 5.44 VDC      | 0.25 A           | 0.223 A         | 11.78%    |
+
+
+
 #### C24
-The subsystem did not meet the 10% tolerance requirement because the resistor used on the PCB had different values. The resistor we ordered for this subsystem was difficult to solder, so we had to solder it through holes in the PCB with slightly different values. This caused the tolerance to be higher than what we had anticipated.
 
-|No. | Subsystem        | Expected Voltage | Actual Voltage| Expected Current |  Actual Current | Tolerance |
-|--- |------------------|------------------|---------------|------------------|-----------------|-----------|
-| a  | Inductive loop   | 9  VDC           | 9.52 VDC      | 0.05 A         | 0.043 A           | 9.031%    |
-| b  | Data Subsystem   | 5.5 VDC          | 5.48 VDC      | 0.25 A         | 0.212 A           | 15.51%    |
-| c  | Charge Controller| 5.5 VDC          | 5.44 VDC      | 0.25 A         | 0.223 A           | 11.78%    |
-
-
+The subsystem shall power each subsystem's demanded voltage and current with a 10% tolerance.
 
 #### C25
 
@@ -174,6 +213,17 @@ This constraint was not fully achieved due to an unfinished subsystem. However, 
 #### C26
 
  This constraint was achieved. The power controller was able to take an input voltage with a minimum of 9 VDC and a maximum of 17 VDC. For that range of input, the power controller will deliver the needed voltages and currents for each subsystem. 
+
+
+### Interpretation
+
+The subsystem did not meet the 10% tolerance requirement because the resistor used on the PCB had different values. The resistor we ordered for this subsystem was difficult to solder, so we had to solder it through holes in the PCB with slightly different values. This caused the tolerance to be higher than what we had anticipated.
+
+
+
+
+
+
 
 
 
