@@ -40,6 +40,11 @@ These measures of success are derived from the project proposal.
 | C27 | Controller shall maximize the output power from the solar panel. | Charge Controller Subsystem |
 | C28 | Controller shall output 12 V with a 10% tolerance to the Power Controller. |Charge Controller Subsystem |
 | C29 | Controller shall prevent the batteries from being damaged due to over-charging | Charge Controller Subsystem |
+| C30 | The solar panel and the backup battery shall be connected to the charge controller. | Solar Power Subsystem |
+| C31 | The solar panel should be installed at the right direction and angle that can capture the maximum amount of sunlight. | Solar Power Subsystem |
+| C32 | The charge controller shall maximize the output power from the solar panel. | Solar Power Subsystem |
+| C33 | The backup battery shall have enough capacity to prevent the charge controller from discharging more than 50%. | Solar Power Subsystem |
+| C34 | The backup battery shall either be in the charging or discharging phase, and it cannot be in both simultaneously. | Solar Power Subsystem |
 
 
 ## Loop Controller Subsystem and Ground Based Sensor Subsystem Experimentation
@@ -388,4 +393,29 @@ The system is constrained by the maximum payload size afforded by LoRaWAN. Depen
 
 ### Interpretation
 The experimentation does not indicate that this subsystem, in its current state, is suitable for campus-wide scale. I suspect there are problems with hardware and/or software configuration. The RFM95W transceiver is intended to be a cheap LoRa transceiver for hobbyists. It is not intended to be a LoRaWAN-compliant device, although it is possible as I have proven. The informal range testing I conducted in January indicates the potential of the RFM95W transceivers for point-to-point communication but attempts to replicate those results have failed. The point-to-point setup now has similar range to the LoRaWAN range test results. I would like to test the true gain of my antennas. I suspect they are not as good as they advertise. LoRaWAN is known to have long-range capability, although this testing indicates my hardware is not up to the task. Better hardware would be the easy solution to this problem. I believe, based on how widely used LoRaWAN is in industry and record-setting ranges that have been achieved (up to 830 miles), that LoRaWAN is still a viable option for campus-scale IoT communication, despite the failure of my current hardware/software.
+
+
+## Solar Power Subsystem
+
+#### 30
+
+This constraint was not fully achieved. The solar panel was connected to the charge controller and delivered the needed voltages and current. However, the battery was not connected to the charge controller due to the incompletion of the charge controller subsystem.      
+
+
+#### 31
+
+The constraint was accomplished. However, there was not much change in the output voltage from the solar panel if the solar was facing the sunlight. 
+
+#### 32
+
+The constraint was not accomplished. The reason is a change in the path for the charge controller subsystem. The new path for the charge controller subsystem was to drop the voltage coming from the solar panel and the voltage of the solar panel. Therefore, the charge controller subsystem steps down the voltage from the solar panel to the voltage needed for the power controller subsystem. 
+
+
+#### 33
+
+The constraint was not accomplished. The battery will not be able to charge from the solar panel through the charge controller because the battery charge controller for the charge controller subsystem was not fully accomplished. Therefore, the battery must be charged by a specific adapter, allowing it to charge at full capacity. 
+
+#### 34
+
+Constraint was not accomplished. The battery charge controller for the charge controller subsystem was not fully completed. Hence, if we connect the battery directly to the power controller subsystem, it will discharge. However, if the battery has sufficient capacity, it can deliver the required voltages and current. Therefore, before connecting the battery to the power controller, we should measure its voltage to get a good estimate of its capacity.
 
