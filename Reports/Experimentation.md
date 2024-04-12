@@ -49,7 +49,7 @@ These measures of success are derived from the project proposal.
 
 ## Loop Controller Subsystem and Ground Based Sensor Subsystem Experimentation
 
-## Loop Controller Constraints
+### Loop Controller Constraints
 
 ### Constraint C1: Subsystem shall detect cars/pickup trucks (vehicles) that are entering and exiting a parking lot.
 
@@ -224,13 +224,6 @@ This constraint was not fully achieved due to an unfinished subsystem. However, 
 The subsystem did not meet the 10% tolerance requirement because the resistor used on the PCB had different values. The resistor we ordered for this subsystem was difficult to solder, so we had to solder it through holes in the PCB with slightly different values. This caused the tolerance to be higher than what we had anticipated.
 
 
-
-
-
-
-
-
-
 ## Charge Controller Experimentation
 
 ### Charge Controller Constraints
@@ -254,7 +247,7 @@ This PCB has encountered problems while soldering the QFN components, mainly the
    
    To test this hypothesis, the boost voltage regulator was removed with a heat gun once again and the MPPC was tested once more (the MPPC is much more important to the subsystem since it maximizes the input solar power.) The result was that the MPPC did not produce the same results prior to the last round in the heat oven. 
 
-   While this test is not conclusive, due to time constraints progress on the main PCB had to take precedence over continued testing. An LM317T Voltage regulator was used to bypass the MPPC regulator and supply the output with 9.25 V as 9 V is required by the Power Controller with 0.25 V of room for error. As the LM317T is only a buck converter and not a buck-boost, the output will not reach an acceptable voltage between solar input voltages of 5 V (when the relay is designed to switch to the MPPC regulator output) to somewhere around 9.25 V.
+   While this test is not conclusive, due to time constraints progress on the main PCB had to take precedence over continued testing. An LM317T Voltage regulator was used to bypass the MPPC regulator and supply the output with 9.25 V as 9 V is required by the Power Controller with 0.25 V of room for error. As the LM317T is only a buck converter and not a buck-boost, the output will not reach an acceptable voltage between solar input voltages of 5 V (when the relay is designed to switch to the MPPC regulator output) to somewhere around 9.25 V. The solar input cannot be directly connected to the output due to voltage limitations on the power controller.
 
    Without the boost regulator, the Arduino can't control the output of either the MPPC or LM317T. Without the Arduino to regulate the voltage the battery PCBs are not able to be sent power without harming the system during times of low light levels.
 
@@ -270,13 +263,12 @@ Maximization of the solar panel's power has not been achieved.
 The output of 12 V with a 10% tolerance has not been achieved. 
 
 #### The Purpose of the Experiment
-This experiment is testing the output based on the input of the solar panels alone. 
+This experiment is testing the output based on the input of the solar panels alone.  Although the constraint requires 12 V with a 10% tolerance, with the LM317T, I expect to see 9.25 V on the output after reaching 9.25 V on the input.
 
 #### Experimental Procedure
-To simulate the varying input from the solar panel, a power supply has been used on the input of the subsystem with voltages ranging from 0 V to 20 V. According to the solar panel's datasheet, the maximum output voltage of the panel is 18 V. After testing the panel's voltage during a sunny day, the voltage was read to be 19.5 V. This is the reason that it has been tested to 20 V instead of the original 18 V.
+To simulate the varying input from the solar panel, a power supply has been used on the input of the subsystem with voltages ranging from 0 V to 20 V at 1 V increments. The maximum voltage tested is 20 V instead of the solar panel's maximal output according to the datasheet, 18 V, is due to the actual reading of the solar panel during a sunny day being 19.5 V.
 
 The output has been read using a digital multimeter set to read a DC voltage.
-
 
 #### Results
 The results can be shown below in the *Output Voltage vs Solar Input Voltage* Graph.
@@ -286,16 +278,15 @@ The results can be shown below in the *Output Voltage vs Solar Input Voltage* Gr
 ![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/45153206/e1713e10-1328-416a-8230-5f17e62a60c4)
 
 #### Interpretation
-The *Output Voltage vs Solar Input Voltage* Graph shows that the output voltage is not within 10% of the 12 V constraint at any input. This is due to the problems written about earlier in the Charge Controller Experimentation section.
-
+The *Output Voltage vs Solar Input Voltage* Graph shows that the output voltage is not within 10% of the 12 V constraint at any input. This is expected due to the LM317T addition.
 
 #### The Purpose of the Experiment
-The next experiment is testing the output based on the input of both the solar panel and also a backup battery.
+The next experiment is testing the output based on the input of both the solar panel and also a backup battery. With the battery attached, the output voltage should be the same as the battery voltage until 5 V is reached, which the relay will be triggered to switch to the solar panel input.
 
 #### Experimental Procedure
-To simulate the varying input from the solar panel, a power supply has been used on the input of the subsystem with voltages ranging from 0 V to 20 V. According to the solar panel's datasheet, the maximum output voltage of the panel is 18 V. After testing the panel's voltage during a sunny day, the voltage was read to be 19.5 V. This is the reason that it has been tested to 20 V instead of the original 18 V.
+To simulate the varying input from the solar panel, a power supply has been used on the input of the subsystem with voltages ranging from 0 V to 20 V at 1 V increments. The maximum voltage tested is 20 V instead of the solar panel's maximal output according to the datasheet, 18 V, is due to the actual reading of the solar panel during a sunny day being 19.5 V.
 
-A single backup battery is also attached to the battery input for the system to use at its discretion. 
+A single backup battery is also attached to the battery input for the system to use at its discretion. Its voltage reading prior to testing is 12.95 V.
 
 The output has been read using a digital multimeter set to read a DC voltage.
 
