@@ -186,7 +186,7 @@ To test the error of the voltage regulators.
 
 ### Experimental Procedure
 
-
+In the experiment, we connected an input voltage source with a range between 9 VDC and 15 VDC to test its ability to supply the required voltages and current. Once we connected the input voltage, we measured the voltage to ensure that we were receiving the expected voltage reading. subsystem and the second output to the loop inductive subsystem using a wire with fuses between them.
 
 ### Prediction
 
