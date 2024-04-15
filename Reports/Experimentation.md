@@ -351,10 +351,6 @@ The *Output Voltage vs Solar and Battery Input Voltage* Graph shows that the out
 
 As the batteries are not able to be charged due to the problems encountered, this constraint has not been achieved. 
 
-### Interpretation and Proposed Changes
-
-
-
 ## Data Subsystem Experimentation
 
 ### Data Subsystem Constraints
