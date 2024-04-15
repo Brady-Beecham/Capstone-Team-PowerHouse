@@ -49,6 +49,9 @@ These measures of success are derived from the project proposal.
 
 ## Loop Controller Subsystem and Ground Based Sensor Subsystem Experimentation
 
+### Design Changes
+   Update later and add section explaining changes
+
 ### Loop Controller Constraints
 
 ### C1
@@ -74,12 +77,12 @@ The Loop Controller shall be connected to the ESP32 Microcontroller that is used
 ### C10
 Subsystem shall detect cars/pickup trucks (vehicles) and motorcycles that are entering a parking lot at a maximum speed of 20 mph and leaving a parking lot at a maximum speed of 20 mph.
 
-   - This constraint was achieved as proven in the results.
+   - This constraint was not fully achieved as motorcyles were never tested throughout the experimentation phase of the project.  However, cars/pickup trucks were detected as stated in C1.
 
 ### C11 
 Vehicle detector shall cover a range of at least 50 μH to 1000 μH at a frequency at 50 kHz
 
-   - This constraint was descoped from the project as it was determined during the halfway point of the timeline of the project that this constraint would not apply to the Loop Controller.  The final design of the Loop Controller is very different from the original idea of the Loop Controller as numerous changes were made to the Loop Controller.  Due to these changes, this constraint no longer fits the Loop Controller standards.
+   - This constraint was descoped as it was determined during the halfway point of the project that it would not apply to the Loop Controller.  The original constraint was designed around an off the shelf Loop Controller, but as it was decided to design our own, this constraint was descoped.
 
 
 ### C14
@@ -95,7 +98,7 @@ All turns in the inductive loop shall be a 45° turn (or 135° as noted in the s
 ### C16 
 Any wire that is used as part of the loop and is connected to the vehicle detector shall be protected using a heavy-duty cable protector that is capable of protecting the wires under the weight of a vehicle or pedestrian while protecting the wires from the weather.
 
-   - This constraint was not achieved as it was determined by the team that it would be unnecessary to purchase cable protectors due to the loops having more durability and resistance to wear from vehicle movement than originally expected at the beginning of the project.
+   - This constraint was descoped as it was determined by the team that it would be unnecessary to purchase cable protectors due to the loops having more durability and resistance to wear from vehicle movement than originally expected at the beginning of the project.
 
 ### C17
 Vehicle detector shall detect vehicles and motorcycles that are tailgating (when the front bumper of one vehicle is close to the back bumper and the two vehicles are in the same loop at the same time on one side of the roadway).
@@ -128,6 +131,7 @@ kHz and this change will be detected by the ESP32 MCU to send
 information to the server alerting of the mentioned sedan 
 entering/exiting a parking lot.  To monitor the changes in frequency in both inductive loops,
 the results for each test are found when using a Rigol DS1104 Oscilloscope.
+
 
 ### Results
 
