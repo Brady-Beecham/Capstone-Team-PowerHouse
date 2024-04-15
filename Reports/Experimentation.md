@@ -465,6 +465,12 @@ Despite the failure of my current hardware/software, LoRaWAN is still a viable o
 
 ## Solar Power Subsystem
 
+| C30 | The solar panel and the backup battery shall be connected to the charge controller. | Solar Power Subsystem |
+| C31 | The solar panel should be installed at the right direction and angle that can capture the maximum amount of sunlight. | Solar Power Subsystem |
+| C32 | The charge controller shall maximize the output power from the solar panel. | Solar Power Subsystem |
+| C33 | The backup battery shall have enough capacity to prevent the charge controller from discharging more than 50%. | Solar Power Subsystem |
+| C34 | The backup battery shall either be in the charging or discharging phase, and it cannot be in both simultaneously. | Solar Power Subsystem |
+
 #### 30
 
 This constraint was not fully achieved. The solar panel was connected to the charge controller and delivered the needed voltages and current. However, the battery was not connected to the charge controller due to the incompletion of the charge controller subsystem.      
