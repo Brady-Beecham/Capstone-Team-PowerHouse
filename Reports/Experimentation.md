@@ -188,7 +188,8 @@ Based on the test results above, the Loop Controller is able to detect vehicles 
  ### C20
 This constraint was successful, as confirmed by the results. The power has fused to protect all the subsystems from damage caused by voltage, and there is a fuse between the outlet power and the backup battery. Also, to ensure the electrical system is safe.
 ### C21
-This constraint was successful, as confirmed by the results. if the outlet power 
+This constraint was successful, as confirmed by the results. If the outlet power fails, the controller immediately transforms to the backup power battery, which is a relay switch, to feed all the subsystems.
+
 ### C22
 ### C23
 
