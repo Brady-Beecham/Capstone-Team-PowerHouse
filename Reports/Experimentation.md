@@ -84,9 +84,10 @@ These measures of success are derived from the project proposal.
 
    a. This constraint was achieved as all turns in each inductive loop were set as close as possible to a 45° angle.
 
-### Constraint C16: Any wire that is used as part of the loop and is connected to the vehicle detector shall be protected using a heavy-duty cable protector that is capable of protecting the wires under the weight of a vehicle or pedestrian while protecting the wires from the weather.
+### C16 
+Any wire that is used as part of the loop and is connected to the vehicle detector shall be protected using a heavy-duty cable protector that is capable of protecting the wires under the weight of a vehicle or pedestrian while protecting the wires from the weather.
 
-   a. This constraint was not achieved as it was determined by the team that it would be unnecessary to purchase cable protectors due to the loops having more durability and resistance to wear from vehicle movement than originally expected at the beginning of the project.
+   - This constraint was not achieved as it was determined by the team that it would be unnecessary to purchase cable protectors due to the loops having more durability and resistance to wear from vehicle movement than originally expected at the beginning of the project.
 
 ### Constraint C17: Vehicle detector shall detect vehicles and motorcycles that are tailgating (when the front bumper of one vehicle is close to the back bumper and the two vehicles are in the same loop at the same time on one side of the roadway).
 
@@ -96,9 +97,10 @@ These measures of success are derived from the project proposal.
 
 
 
-### Constraint C19: Inductive loops shall be placed a minimum of 4 ft. apart from the edge of one loop to the edge of the other loop to avoid cross-talk between the loops and possibly give false signals.
+### C19 
+Inductive loops shall be placed a minimum of 4 ft. apart from the edge of one loop to the edge of the other loop to avoid cross-talk between the loops and possibly give false signals.
 
-   a. This constraint was achieved as all inductive loops were placed at a distance greater than 4 ft apart from each loop.  The distance allowed the loops to avoid cross-talk between one another and all signals received from the loops were similar to the expected results.
+   - This constraint was achieved as all inductive loops were placed at a distance greater than 4 ft apart from each loop.  The distance allowed the loops to avoid cross-talk between one another and all signals received from the loops were similar to the expected results.
 
 ### Purpose of the Experiment
 
@@ -115,10 +117,6 @@ kHz and this change will be detected by the ESP32 MCU to send
 information to the server alerting of the mentioned sedan 
 entering/exiting a parking lot.  To monitor the changes in frequency in both inductive loops,
 the results for each test are found when using a Rigol DS1104 Oscilloscope.
-
-## **^^^^^^^^^^MENTION IT WAS OSCILLOSCOPE TESTED^^^^^^^^^^**
-
-### Number of Trials
 
 ### Results
 
@@ -320,7 +318,9 @@ As the batteries are not able to be charged due to the problems encountered, thi
 
 ### Purpose of the Experiment
 The purpose of this experiment is to determine if the range of the LoRaWAN network is sufficient to scale to the entirety of the Tennessee Tech campus. The original constraint specifies a range of 915 meters is needed to reach all of campus if the gateway is located in Brown Hall. 
+
 I argue that this constraint is unrealistic and not a typical way to scale a LoRaWAN application across a campus. One gateway should not be expected to receive all the data from end devices across the entire campus. Instead, there should be multiple spread across campus, with purposely lower range. One Semtech SX1302 LoRa baseband chip (like the one in this system’s gateway) can handle an absolute maximum of 9 end devices at one time (8+8+1 decoders). While it may seem uncommon that 9 end devices would want to send their data at the same time, many end devices would make packet loss a problem in this scenario. This would not be feasible for an application with many more than 9 end devices unless multiple gateways were used.
+
 Therefore, I propose splitting the coverage of campus into smaller regions as pictured below. This should be more like an actual implementation.
 
 *Image of campus split into 8 regions, Bing Maps*
@@ -328,20 +328,24 @@ Therefore, I propose splitting the coverage of campus into smaller regions as pi
 
 I have split the campus up into 8 regions of varying size. I will use the largest region, region 3 as the benchmark for range. In summary, the purpose of this experiment is to both test if one single gateway can reach across all of campus (from Brown Hall to the edge of purple lot), and/or the largest region in a multi-gateway implementation. 
 
-
 ### Experimental Procedure
+
 As mentioned before, this experiment will verify if the WM1302 + Raspberry Pi gateway and ESP32 + RFM95W end device can communicate effectively both over the maximum distance from Brown Hall, 915 meters, and the largest region of the proposed multi-gateway implementation. 
 To get a number for the largest region (region 3), let’s assume the LoRa chirps will propagate outward from the center of the region in a sphere. Let’s also assume that instead of a rectangle 450 meters by 500 meters, we have a square 500 meters by 500 meters. The circle that bounds this square will be the range of the LoRaWAN network required to reach all 4 corners of the square. We are concerned with the radius of this circle. We can find the radius of the circle by: $$500 \sqrt{2} \over 2$$
 
 We get r = 354 meters. Therefore 354 meters is what is needed for the LoRaWAN network to span region 3.
-The experiment will be conducted by setting up the LoRaWAN gateway in the Capstone Lab and a person will walk with an end device toward purple lot until the signal is lost. The location where the signal is lost will be recorded and the distance from the gateway will be measured with Google or Bing maps. Tests will be done with and without adaptive data rate functionality, and with different frequency plans. I will also test the range of LoRa PHY, the physical layer only implementation. This is because I can choose higher spreading factors and lower bandwidths than with LoRaWAN.
+
+The experiment will be conducted by setting up the LoRaWAN gateway in the Capstone Lab and then a person will walk with an end device toward purple lot until the signal is lost. The location where the signal is lost will be recorded and the distance from the gateway will be measured with Google Maps. Tests will be done with and without adaptive data rate functionality, and with different frequency plans. I will also test the range of LoRa PHY, the physical layer only implementation. This is because I can choose higher spreading factors and lower bandwidths than with LoRaWAN.
 
 ### Prediction
-I predict that the 354 meter range will be achieved, but the 915 meter range may not. Based on testing I conducted around January, I found that the LoRa physical layer protocol could reach approximately 500-520 meters from Brown Hall using the same ESP32 microcontrollers and RFM95W transceivers. I estimated a maximum range of about 15 km in my signoff, but I now realize I do not have the hardware or setup for that level of coverage. The relatively cheap components of the RFM95W transceiver make frequency error a problem. A higher quality crystal oscillator that is temperature compensating (TCXO) would be much better than the cheap crystal in the RFM95W. This leads to problems with higher spreading factors and lower bandwidths. Also, the cheap antennas from Amazon likely do not produce the advertised gain numbers.
-The propagation model I used in the signoff to predict the range of the LoRaWAN network is indeed not well suited to this LoRaWAN network. Immense range with LoRa is achieved by having your gateway antennas very high up, big, with line of sight, high spreading factor (11 or 12), and low bandwidth. LoRaWAN, more specifically the “The Things Network” standard frequency plans tend to use the lowest spreading factors and high bandwidths. This means much lower range than what the LoRa physical layer modulation technique is truly capable of.
+I predict that the 354 meter range will be achieved, but the 915 meter range may not. 
+
+Based on informal testing I conducted around January, I found that the LoRa physical layer protocol could reach approximately 500-520 meters from Brown Hall using the same ESP32 microcontrollers and RFM95W transceivers. I estimated a maximum range of about 15 km in my signoff, but I now realize I do not have the hardware nor the setup for that level of coverage. The relatively cheap components of the RFM95W transceiver make frequency error a problem. This leads to problems with higher spreading factors and lower bandwidths. A higher quality crystal oscillator that is temperature compensating (TCXO) would enable the use of the lowest bandwidths such as 7.8 kHz for maximum range.  The RFM95W, with its crystal that is not temperature compensating, can only handle bandwidths as low as 62.5 kHz. Also, the antennas from Amazon likely do not produce the advertised gain numbers.
+
+The propagation model I used in the signoff to predict the range of the LoRaWAN network is not well suited to this LoRaWAN network. Immense range with LoRa is achieved by having your gateway antennas elevated, with high gain, high spreading factor (11 or 12), low bandwidth, and clear line of sight. LoRaWAN, more specifically the “The Things Network” standard frequency plans tend to use the lowest spreading factors and high bandwidths. This means much lower range than what the LoRa physical layer modulation technique is truly capable of.
 
 ### Number of Trials
-There will be 3 trials of each test. The individual tests are intended to examine how different parameters will affect the range achieved. Tests of more configurations were planned, but due to excessive join times, they were not tested. 
+There will be 3 trials of each test. The individual tests are intended to examine how different parameters affect the range achieved. Tests of more configurations were planned, but due to excessive join times, they were not tested. 
 The tests will be: 
 -	LoRaWAN gateway to end device network tests:
    1.	Adaptive data rate
@@ -395,7 +399,11 @@ The system is constrained by the maximum payload size afforded by LoRaWAN. Depen
    - The data contained in the LoRaWAN frames will never exceed 3 bytes, this constraint is met.
 
 ### Interpretation
-The experimentation does not indicate that this subsystem, in its current state, is suitable for campus-wide scale. I suspect there are problems with hardware and/or software configuration. The RFM95W transceiver is intended to be a cheap LoRa transceiver for hobbyists. It is not intended to be a LoRaWAN-compliant device, although it is possible as I have proven. The informal range testing I conducted in January indicates the potential of the RFM95W transceivers for point-to-point communication but attempts to replicate those results have failed. The point-to-point setup now has similar range to the LoRaWAN range test results. I would like to test the true gain of my antennas. I suspect they are not as good as they advertise. LoRaWAN is known to have long-range capability, although this testing indicates my hardware is not up to the task. Better hardware would be the easy solution to this problem. I believe, based on how widely used LoRaWAN is in industry and record-setting ranges that have been achieved (up to 830 miles), that LoRaWAN is still a viable option for campus-scale IoT communication, despite the failure of my current hardware/software.
+The experimentation does not indicate that this subsystem, in its current state, is suitable for campus-wide scale. 
+
+I suspect there are problems with hardware and/or software configuration. The RFM95W transceiver is intended to be a cheap LoRa transceiver for hobbyists. It is not intended to be a LoRaWAN-compliant device. The informal range testing conducted in January indicates the potential of the RFM95W transceivers for point-to-point communication but attempts to replicate those results have failed. The point-to-point setup now has similar range to the LoRaWAN range test results. LoRaWAN is known to have long-range capability, although this testing indicates my hardware is not up to the task. Better hardware would be the easy solution to this problem. 
+
+Despite the failure of my current hardware/software, LoRaWAN is still a viable option for campus-scale IoT communication based on the wide use of LoRaWAN in industry and the incredible ranges that have been achieved with the technology.
 
 
 ## Solar Power Subsystem
