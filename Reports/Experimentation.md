@@ -281,11 +281,19 @@ This PCB has encountered problems while soldering the QFN components, mainly the
    Without the boost regulator, the Arduino can't control the output of either the MPPC or LM317T. Without the Arduino to regulate the voltage the battery PCBs are not able to be sent power without harming the system during times of low light levels.
 
 2) Battery Charging PCB Problems
+
+The battery charging PCB was not devoted as much attention as the main PCB as it cannot be used without the main PCB being fully operational.
+
+The voltage regulator on this PCB, LTC4020, never showed signs of life during testing. The circuit schematic was triple checked across the datasheet, the capacitors and diodes were checked for correct orientation, and no shorts were found. 
+
+The LTC4020 has QFN packaging, so its possible the leads aren't properly soldered. It could be reflowed in the heat oven or taken completely off with a heat gun, but, due to time constraints with resoldering the circuit and the previous heat related problems in the previous PCB, this was not done. 
    
 
 ### C27
 
 Maximization of the solar panel's power has not been achieved. 
+
+Without the MPPC voltage regulator, the subsystem has no way of maximizing the input solar power.
 
 ### C28
 
