@@ -167,6 +167,37 @@ Based on the test results above, the Loop Controller is able to detect vehicles 
 
 ## Wall power Subsystem Experimentation
 
+| Constraint Number | Constraint Information |
+|--|---|
+| C20 | Voltage equivalence: The main wall power subsystem needs to protect devices from the damage caused by voltage and guarantee the safety of the electrical system, as well as preserve the whole subsystem. |  Wall power Subsystem |
+| C21 | During main power failures, power flow is controlled by the switch controller. | Wall power Subsystem |
+| C22 | It should be within wire capabilities. | Wall power Subsystem |
+| C23 | Must be a kill switch to disconnect all the power from the source. | Wall power Subsystem |
+ 
+### Purpose of the Experiment
+The purpose of this experiment is to test the main wall power subsystem, which has an adapter power supply that converts AC to DC. However, we have another subsystem which is a backup battery. If the main wall power shuts down, a relay switch will activate the backup power battery to feed the two subsystems. The goal point for this testing is the resultant value deriving from both inputs for wall power and backup battery.
+### Experimental Procedure
+In this experiment, I connected the adapter power supply and the backup battery to the PCB with wires to get the voltage and current from both powers. When we connect, it will feed the two subsystems. As soon as the input voltage was connected which can, we measured the voltage reading that we expected to come out. Using wires with fuses between them are used as the output for two subsystems.
+### Prediction  
+### Number of Trials
+### Results
+Wall power
+
+| No.| Subsystem      | Expected Voltage | Actual Voltage |  Expected Current | Actual Current |
+| ---  | ------------------ | ---------------------------------|------------------|-----------------|-----------|
+| a  | Sensor | 9  VDC  | 9.303 VDC  | 0.05 A  | 0.0523 A   |
+| b  | Date interpretation, Transmission and storge | 5.5 VDC  | 5.48 VDC  | 0.25 A  | 0.2123 A  |          
+
+Backup battery 
+
+|No. | Subsystem        | Expected Voltage | Actual Voltage| Expected Current | Actual Current |
+|--- |------------------|--------------------------------|------------------|-----------------|-----------|
+| a  | Sensor | 9  VDC           | 9.303 VDC      | 0.05 A  | 0.05227 A |
+| b  | Date interpretation, Transmission and storge | 5.5 VDC   | 5.418 VDC | 0.25 A  | 0.2207 A |          
+
+
+
+
 ## Power Controller Subsystem Experimentation
 
 
