@@ -191,6 +191,8 @@ This constraint was successful, as confirmed by the results. The power has fused
 This constraint was successful, as confirmed by the results. If the outlet power fails, the controller immediately transforms to the backup power battery, which is a relay switch, to feed all the subsystems.
 
 ### C22
+This constraint was successful, as confirmed by the results. The wires can withstand voltage drops and overheating.
+
 ### C23
 
 ### Purpose of the Experiment
