@@ -51,56 +51,67 @@ These measures of success are derived from the project proposal.
 
 ### Loop Controller Constraints
 
-### Constraint C1: Subsystem shall detect cars/pickup trucks (vehicles) that are entering and exiting a parking lot.
+### C1
+Subsystem shall detect cars/pickup trucks (vehicles) that are entering and exiting a parking lot.
 
-   a. This constraint was achieved as proven in the results.
+   - This constraint was achieved as proven in the results.
    
-### Constraint C2 and C12: Vehicle detector shall be compliant with the FCC frequency range for Intentional Radiators and verifying the detector is within permissible part 15 frequencies.
+### C2 and C12
+Vehicle detector shall be compliant with the FCC frequency range for Intentional Radiators and verifying the detector is within permissible part 15 frequencies.
 
-   a. This constraint was achieved as proven in the results.
+   - This constraint was achieved as proven in the results.
    
-### Constraint C3 and C13: Each entrance/exit of a parking lot shall use a total of one loop controller that will control the two inductive loops at the entrance/exit.
+### C3 and C13
+Each entrance/exit of a parking lot shall use a total of one loop controller that will control the two inductive loops at the entrance/exit.
 
-   a. This constraint was achieved as the Loop Controller that was used for Experimentation controls both inductive loops accordingly and the frequency of both inductive loops are similar to the expected results in the Loop Controller Signoff.
+   - This constraint was achieved as the Loop Controller that was used for Experimentation controls both inductive loops accordingly and the frequency of both inductive loops are similar to the expected results in the Loop Controller Signoff.
    
-### Constraint C4: The Loop Controller shall be connected to the ESP32 Microcontroller that is used with the Data system of the project to communicate a change in frequency in both of the loops and determine whether a vehicle is entering or exiting a parking lot.
+### C4
+The Loop Controller shall be connected to the ESP32 Microcontroller that is used with the Data system of the project to communicate a change in frequency in both of the loops and determine whether a vehicle is entering or exiting a parking lot.
 
-   a. This constraint was achieved and further evaluation of this constraint is located in Data Subsystem Analysis section of Experimentation.
+   - This constraint was achieved and further evaluation of this constraint is located in Data Subsystem Analysis section of Experimentation.
 
-### Constraint C10: Subsystem shall detect cars/pickup trucks (vehicles) and motorcycles that are entering a parking lot at a maximum speed of 20 mph and leaving a parking lot at a maximum speed of 20 mph.
+### C10
+Subsystem shall detect cars/pickup trucks (vehicles) and motorcycles that are entering a parking lot at a maximum speed of 20 mph and leaving a parking lot at a maximum speed of 20 mph.
 
-   a. This constraint was achieved as proven in the results.
+   - This constraint was achieved as proven in the results.
 
-### Constraint C11: Vehicle detector shall cover a range of at least 50 μH to 1000 μH at a frequency at 50 kHz
+### C11 
+Vehicle detector shall cover a range of at least 50 μH to 1000 μH at a frequency at 50 kHz
 
-   a. This constraint was descoped from the project as it was determined during the halfway point of the timeline of the project that this constraint would not apply to the Loop Controller.  The final design of the Loop Controller is very different from the original idea of the Loop Controller as numerous changes were made to the Loop Controller.  Due to these changes, this constraint no longer fits the Loop Controller standards.
+   - This constraint was descoped from the project as it was determined during the halfway point of the timeline of the project that this constraint would not apply to the Loop Controller.  The final design of the Loop Controller is very different from the original idea of the Loop Controller as numerous changes were made to the Loop Controller.  Due to these changes, this constraint no longer fits the Loop Controller standards.
 
 
-### Constraint C14: All components of the subsystem, with the exception of the inductive loops and lead-in wire to the induction loops, shall be placed in an area that does not affect pedestrian traffic along the road or nearby sidewalks.
+### C14
+All components of the subsystem, with the exception of the inductive loops and lead-in wire to the induction loops, shall be placed in an area that does not affect pedestrian traffic along the road or nearby sidewalks.
 
-   a. This constraint was achieved as the equipment was placed away from pedestrian traffic and pedestrians were able to walk on the sidewalks without being affected by the placement of the Loop Controller.  For the lead-in wire connections to the inductive loops, measurements were taken from the center of the roadway to the edge of the concrete to determine the minimum distance to avoid interfering with pedestrian traffic.  With the minimum distance determined, extra length was added to the lead-in connnections to avoid possible human errors when calculating the distance.
+   - This constraint was achieved as the equipment was placed away from pedestrian traffic and pedestrians were able to walk on the sidewalks without being affected by the placement of the Loop Controller.  For the lead-in wire connections to the inductive loops, measurements were taken from the center of the roadway to the edge of the concrete to determine the minimum distance to avoid interfering with pedestrian traffic.  With the minimum distance determined, extra length was added to the lead-in connnections to avoid possible human errors when calculating the distance.
 
-### Constraint C15: All turns in the inductive loop shall be a 45° turn (or 135° as noted in the schematic drawing) to avoid damaging the wire(s) that create the inductive loop that comes from using 90° turns.
+### C15
+All turns in the inductive loop shall be a 45° turn (or 135° as noted in the schematic drawing) to avoid damaging the wire(s) that create the inductive loop that comes from using 90° turns.
 
-   a. This constraint was achieved as all turns in each inductive loop were set as close as possible to a 45° angle.
+   - This constraint was achieved as all turns in each inductive loop were set as close as possible to a 45° angle.
 
 ### C16 
 Any wire that is used as part of the loop and is connected to the vehicle detector shall be protected using a heavy-duty cable protector that is capable of protecting the wires under the weight of a vehicle or pedestrian while protecting the wires from the weather.
 
    - This constraint was not achieved as it was determined by the team that it would be unnecessary to purchase cable protectors due to the loops having more durability and resistance to wear from vehicle movement than originally expected at the beginning of the project.
 
-### Constraint C17: Vehicle detector shall detect vehicles and motorcycles that are tailgating (when the front bumper of one vehicle is close to the back bumper and the two vehicles are in the same loop at the same time on one side of the roadway).
+### C17
+Vehicle detector shall detect vehicles and motorcycles that are tailgating (when the front bumper of one vehicle is close to the back bumper and the two vehicles are in the same loop at the same time on one side of the roadway).
 
+   - This constraint was not achieved due to time constraints and requires further evaluation of both the Loop Controller and Data Subsystem in order to meet this constraint.
 
+### C18 
+Vehicle detector shall detect vehicles and motorcycles that are going in opposite directions on the roadway, but are within the detection range of the same loop at the exact same time.
 
-### Constraint C18: Vehicle detector shall detect vehicles and motorcycles that are going in opposite directions on the roadway, but are within the detection range of the same loop at the exact same time.
-
-
+   - This constraint was not achieved due to time constraints and requires further evaluation of both the Loop Controller and Data Subsystem in order to meet this constraint.
 
 ### C19 
 Inductive loops shall be placed a minimum of 4 ft. apart from the edge of one loop to the edge of the other loop to avoid cross-talk between the loops and possibly give false signals.
 
    - This constraint was achieved as all inductive loops were placed at a distance greater than 4 ft apart from each loop.  The distance allowed the loops to avoid cross-talk between one another and all signals received from the loops were similar to the expected results.
+
 
 ### Purpose of the Experiment
 
