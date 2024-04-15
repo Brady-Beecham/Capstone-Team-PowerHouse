@@ -194,17 +194,17 @@ In this experiment, I connected the adapter power supply and the backup battery 
 ### Results
 Wall power
 
-| No.| Subsystem      | Expected Voltage | Actual Voltage |  Expected Current | Actual Current |
-| ---  | ------------------ | ---------------------------------|------------------|-----------------|-----------|
-| a  | Sensor | 9  VDC  | 9.303 VDC  | 0.05 A  | 0.0523 A   |
-| b  | Date interpretation, Transmission and storge | 5.5 VDC  | 5.48 VDC  | 0.25 A  | 0.2123 A  |          
+| No.| Subsystem    | Expected Voltage | Actual Voltage |  Expected Current | Actual Current |Tolerance | 
+| ---  | ------------------ | -------------------|--------------|------------------|-----------------|-----------|
+| a  | Sensor | 9  VDC  | 9.303 VDC  | 0.05 A  | 0.0523 A   |  %  | 
+| b  | Date interpretation, Transmission and storge | 5.5 VDC  | 5.48 VDC  | 0.25 A  | 0.2123 A  |  %  |        
 
 Backup battery 
 
-|No. | Subsystem        | Expected Voltage | Actual Voltage| Expected Current | Actual Current |
-|--- |------------------|--------------------------------|------------------|-----------------|-----------|
-| a  | Sensor | 9  VDC           | 9.303 VDC      | 0.05 A  | 0.05227 A |
-| b  | Date interpretation, Transmission and storge | 5.5 VDC   | 5.418 VDC | 0.25 A  | 0.2207 A |          
+|No. | Subsystem        | Expected Voltage | Actual Voltage| Expected Current | Actual Current |Tolerance |
+|--- |------------------|-------------------| -------------|------------------|-----------------|-----------|
+| a  | Sensor | 9  VDC           | 9.303 VDC      | 0.05 A  | 0.05227 A | %  | 
+| b  | Date interpretation, Transmission and storge | 5.5 VDC   | 5.418 VDC | 0.25 A  | 0.2207 A |  % |          
 
 
 
