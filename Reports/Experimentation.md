@@ -194,6 +194,7 @@ This constraint was successful, as confirmed by the results. If the outlet power
 This constraint was successful, as confirmed by the results. The wires can withstand voltage drops and overheating.
 
 ### C23
+This constraint was successful, as confirmed by the results. For emergencies, I used a physical kill switch to shut down all the power if something happened.
 
 ### Purpose of the Experiment
 The purpose of this experiment is to test the main wall power subsystem, which has an adapter power supply that converts AC to DC. However, we have another subsystem which is a backup battery. If the main wall power shuts down, a relay switch will activate the backup power battery to feed the two subsystems. The goal point for this testing is the resultant value deriving from both inputs for wall power and backup battery.
@@ -213,9 +214,9 @@ Wall power
 Backup battery 
 
 |No. | Subsystem        | Expected Voltage | Actual Voltage| Expected Current | Actual Current |Tolerance |
-|--- |------------------|-------------------| -------------|------------------|-----------------|-----------|
-| a  | Sensor | 9  VDC           | 9.303 VDC      | 0.05 A  | 0.05227 A | %  | 
-| b  | Date interpretation, Transmission and storge | 5.5 VDC   | 5.418 VDC | 0.25 A  | 0.2207 A |  % |          
+|--- |------------------|-------------------| -------------|------------------|------------------|-----------|
+| a  | Sensor | 9  VDC           | 9.303 VDC      | 0.05 A  | 0.0522 A | %  | 
+| b  | Date interpretation, Transmission and storge | 5.5 VDC   | 5.418 VDC | 0.25 A| 0.2207 A |  % |          
 
 
 
