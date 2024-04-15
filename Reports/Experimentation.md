@@ -249,11 +249,11 @@ In the experiment, we connected an input voltage source with a range between 9 V
 
 ### Results
 
-| Subsystem        | Expected Voltage | Actual Voltage| Expected Current |  Actual Current | Tolerance |
-|------------------|------------------|---------------|------------------|-----------------|-----------|
-| Inductive loop   | 9  VDC           | 9.52 VDC      | 0.05 A           | 0.043 A         | 9.031%    |
-| Data Subsystem   | 5.5 VDC          | 5.48 VDC      | 0.25 A           | 0.212 A         | 15.51%    |
-| Charge Controller| 5.5 VDC          | 5.44 VDC      | 0.25 A           | 0.223 A         | 11.78%    |
+| Subsystem        | Expected Voltage | Actual Voltage| Expected Current |  Actual Current |Expected Power |  Actual Power | Tolerance |
+|------------------|------------------|---------------|------------------|-----------------|---------------|---------------|-----------|
+| Inductive loop   | 9  VDC           | 9.52 VDC      | 0.05 A           | 0.043 A         | 0.45 W        |  0.41 W       | 8.89%     |
+| Data Subsystem   | 5.5 VDC          | 5.48 VDC      | 0.25 A           | 0.212 A         | 1.375 W       |  1.16 W       | 15.63%    |
+| Charge Controller| 5.5 VDC          | 5.44 VDC      | 0.25 A           | 0.223 A         | 1.375 W       |  1.21 W       | 12.00%    |
 
 
 
