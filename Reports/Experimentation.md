@@ -186,7 +186,7 @@ Based on the test results above, the Loop Controller is able to detect vehicles 
 | C23 | Must be a kill switch to disconnect all the power from the source. | Wall power Subsystem |
 
  ### C20
-This constraint was successful, as confirmed by the results. The power has fused to protect all the subsystems from damage caused by voltage, and there is a fuse between the outlet power and the backup battery. Also, to ensure the electrical system is safe.
+This constraint was successful, as confirmed by the results. The power subsystem has fusees that protect all the subsystems from damage caused by voltage, and there is a fuse between the outlet power and the backup battery to ensure the electrical system is safe.
 ### C21
 This constraint was successful, as confirmed by the results. If the outlet power fails, the controller immediately transforms to the backup power battery, which is a relay switch, to feed all the subsystems.
 
@@ -197,10 +197,10 @@ This constraint was successful, as confirmed by the results. The wires can withs
 This constraint was successful, as confirmed by the results. For emergencies, I used a physical kill switch to shut down all the power if something happened.
 
 ### Purpose of the Experiment
-The purpose of this experiment is to test the main wall power subsystem, which has an adapter power supply that converts AC to DC. However, we have another subsystem which is a backup battery. If the main wall power shuts down, a relay switch will activate the backup power battery to feed the two subsystems. The goal point for this testing is the resultant value deriving from both inputs for wall power and backup battery.
+The purpose of this experiment is to test the main wall power subsystem, which has an adapter power supply that converts AC to DC. However, we have another subsystem, a backup battery. If the main wall power shuts down, a relay switch will activate the backup power battery to feed the two subsystems. The goal of this test is to determine the value of the results derived from both inputs for wall power and backup battery.
 
 ### Experimental Procedure
-In this experiment, I connected the adapter power supply and the backup battery to the PCB with wires to get the voltage and current from both powers. When we connect, it will feed the two subsystems. As soon as the input voltage was connected which can, we measured the voltage reading that we expected to come out. Using wires with fuses between them are used as the output for two subsystems.
+In this experiment, I connected the adapter power supply and the backup battery to the PCB with wires to get the voltage and current from both powers. When we connect, it feeds the two subsystems. As soon as the input voltage is connected, we can measure the voltage reading that we expected to come out. Wires with fuses between them are used as the output for two subsystems.
 ### Prediction  
 ### Number of Trials
 ### Results
