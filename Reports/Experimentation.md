@@ -464,7 +464,8 @@ Despite the failure of my current hardware/software, LoRaWAN is still a viable o
 
 
 ## Solar Power Subsystem
-
+| Constraint Number | Constraint Information | Subsystem Defined | 
+|--------|------------------|----------------|
 | C30 | The solar panel and the backup battery shall be connected to the charge controller. | Solar Power Subsystem |
 | C31 | The solar panel should be installed at the right direction and angle that can capture the maximum amount of sunlight. | Solar Power Subsystem |
 | C32 | The charge controller shall maximize the output power from the solar panel. | Solar Power Subsystem |
