@@ -263,7 +263,18 @@ In the experiment, we connected an input voltage source with a range between 9 V
 
 #### C24
 
-The subsystem shall power each subsystem's demanded voltage and current with a 10% tolerance.
+
+
+<img width="385" alt="image" src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/cf73c6ce-27e4-4b35-b101-52ff9b157fc8">
+The Result shows the output of the power controller connected to the Loop Controller Subsystem while measuring both the voltage and current for five trials. The power controller input is 12V. 
+
+<img width="410" alt="image" src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/aa9dd859-6e49-461d-9158-fc3648e01b71">
+The Result shows the output of the power controller connected to the Charge Controller Subsystem while measuring both the voltage and current for five trials. The power controller input is 12V. 
+
+
+<img width="361" alt="image" src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/d11a3c03-567e-402d-bccf-ef2f015ab843">
+The Result shows the output of the power controller connected to the Data Subsystem while measuring both the voltage and current for five trials. The power controller input is 12V. 
+
 
 #### C25
 
