@@ -377,6 +377,13 @@ As the batteries are not able to be charged due to the problems encountered, thi
 | C8  | The system is constrained by the limited data rate that is inherent to the LoRaWAN protocol. Specifically, the bit rate can range between 0.3 kbps to 27 kbps depending on the spreading factor and bandwidth used.|
 | C9  | The system is constrained by the maximum payload size afforded by LoRaWAN. Depending on the spreading factor, the maximum payload size can range from 51 bytes to 222 bytes.|
 
+### Relevant Measures of Success
+| Measure of Success | Name   | Details |
+|-------------------|--------|------|
+| M2 | Wireless Communication | The sensor shall communicate with the server wirelessly.|
+| M3 | Local Space Availability Retention| **No longer relevant:** The sensor shall keep track of the amount of vehicles in a parking lot locally.|
+| M4 | Space Availability Retention | The system shall keep a local count of vehicles that enter or exit a parking lot.|
+
 ### Purpose of the Experiment
 The purpose of this experiment is to determine if the range of the LoRaWAN network is sufficient to scale to the entirety of the Tennessee Tech campus. The original constraint specifies a range of 915 meters is needed to reach all of campus if the gateway is located in Brown Hall. 
 
@@ -435,6 +442,9 @@ The tests will be:
 | 2 | 60 |
 | 3 | 65 |
 
+
+### Have Constraints and Measures of Success been Met?
+
 #### C5
 Data shall be transmitted on the unlicensed 915 MHz ISM band bounded by 902 MHz and 928 MHz.
    - This constraint is satisfied by setting the region for the end device and gateway to US915 when configuring them.
@@ -458,6 +468,22 @@ The system is constrained by the limited data rate that is inherent to the LoRaW
 #### C9 
 The system is constrained by the maximum payload size afforded by LoRaWAN. Depending on the spreading factor, the maximum payload size can range from 51 bytes to 222 bytes.
    - The data contained in the LoRaWAN frames will never exceed 3 bytes, this constraint is met.
+
+#### M2 
+Wireless Communication: The sensor shall communicate with the server wirelessly.
+
+ - This measure of success has been met because, despite the low range of the LoRaWAN network, data is still transmitted effectively to the cloud server.
+
+#### M3 
+Local Space Availability Retention: **No longer relevant:** The sensor shall track the number of vehicles in a parking lot locally.
+
+ - This measure of success is not relevant to the current system. Each end device doesn't need to know how many spots are available in a parking lot. The sensor only needs to keep track of the delta of cars that have passed by it.
+
+#### M4 
+Space Availability Retention: The system shall keep a local count of vehicles that enter or exit a parking lot.
+
+ - This measure of success has been met because the ESP32 can reliably update and store to nonvolatile storage the current delta of cars that have entered or exited the lot at the point the ESP32 is set up.
+
 
 ### Interpretation
 The experimentation does not indicate that this subsystem, in its current state, is suitable for campus-wide scale. 
