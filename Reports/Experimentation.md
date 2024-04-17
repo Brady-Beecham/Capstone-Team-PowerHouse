@@ -50,10 +50,13 @@ These measures of success are derived from the project proposal.
 ## Loop Controller Subsystem and Ground Based Sensor Subsystem Experimentation
 
 ### Design Changes
-   - Change from using Diablo DSP21 Detector to Custom Loop Controller
-   - Custom Loop Controller uses Colpitts Oscillator to generate frequency and then a Sine to Square Wave Circuit to transform the sine wave to a manageable square wave for the ESP32
-   - More cost-efficient and it fits our project better than the Diablo DSP21.
-   - Have more control over the Loop Controller versus using a pre-fabricated controller
+
+   For the Loop Controller, the original idea of the team was to use a Diablo DSP-21 Vehicle Detector to control the inductive loops and send a signal to the ESP32 MCU alerting of when a vehicle
+enters or exits a parking lot.  However, it was decided that it would be more feasible to build a Loop Controller instead of purchasing the Diablo DSP-21 Vehicle Detector.  After numerous designs
+and discussions as a team, it was decided that it would best to use a Colpitts Oscillator circuit to generate a frequency through the inductive loops as the Colpitts oscillator provides the most
+stable frequency compared to circuits such as a Hartley oscillator, etc.  In order to allow the ESP32 to monitor the frequency of the inductive loops safely, a Sine to Square Wave circuit was
+connected to the output of the Colpitts oscillator.  A voltage regulator was added to the Loop Controller to transform 9 V to 3.3 V so the output of the Sine to Square Wave circuit would send the square wave to the ESP32 at the safe voltage of 3.3 V to the GPIO pins.  By creating a Custom Loop Controller, the Loop Controller is designed with the needs of the project in mind and we have a more in-depth understanding of the Loop Controller in the event of troubleshooting any possible issues that may occur in the controller.
+
 
 ### Loop Controller Constraints
 
