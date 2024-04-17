@@ -226,7 +226,7 @@ This table shows the number of tests for each subsystem. However, the input is 1
 
 This table shows the number of tests for each subsystem. However, the input is 12 VDC, and the power source is the backup battery.
 
-Measurements of the voltage and current are given in the video.
+Measurements of the voltage and current are given in the video. For both, the power sources are input 12 VDC.
 
 
 https://www.youtube.com/watch?v=EA21rRr-S3c 
