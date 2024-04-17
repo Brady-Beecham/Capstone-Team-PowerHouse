@@ -208,11 +208,11 @@ In this experiment, I connected the adapter power supply and the backup battery 
 
 ### Number of Trials
 
-| Trial No.  | Data Subsystem | Loop Controller |
+| Trial No.  | Data Subsystem Voltage & Current   | Loop Controller Voltage & Current  |
 |------------------|----------------|------------------|
-| 1	 | 5.4186  VDC   |	9.3034 VDC |
-|2		| 5.4226   VDC   |	9.3035 VDC |
-|3		| 5.4217   VDC   |	9.3040 VDC |
+|1	   | 5.4186 VDC &     0.219597 A  |	9.3034 VDC &    0.052276 A  |
+|2		| 5.4226 VDC &     0.219818 A  |	9.3035 VDC &    0.052314  A |
+|3		| 5.4145 VDC &     0.219518 A  |	9.3040 VDC &    0.052397  A |
 
 This table shows the number of tests for each subsystem. However, the input is 12 VDC, and the power source is the wall power.
 
@@ -220,9 +220,9 @@ This table shows the number of tests for each subsystem. However, the input is 1
 
 | Trial No.  | Data Subsystem | Loop Controller |
 |------------------|---------------|------------------|
-| 1	| 5.4243  VDC   |   	9.1858 VDC |
-|2		| 5.4275  VDC   |	   9.1865 VDC |
-|3		| 5.4268  VDC   |	   9.1863 VDC |
+|1 	| 5.4243  VDC   |   	9.1858 VDC    |
+|2		| 5.4275  VDC   |	   9.1865 VDC    |
+|3		| 5.4268  VDC   |	   9.1863 VDC    |
 
 This table shows the number of tests for each subsystem. However, the input is 12 VDC, and the power source is the backup battery.
 
