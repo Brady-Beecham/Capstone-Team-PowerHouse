@@ -236,8 +236,8 @@ Wall power
 
 | No.| Subsystem    | Expected Voltage | Actual Voltage |  Expected Current | Actual Current |Tolerance | 
 | ---  | ------------------ | -------------------|--------------|------------------|-----------------|-----------|
-| a  | Sensor | 9  VDC  | 9.303 VDC  | 0.05 A  | 0.0523 A   |  8.12 %  | 
-| b  | Date interpretation, Transmission and storge | 5.5 VDC  | 5.48 VDC  | 0.25 A  | 0.2123 A  | 15.4 %  |        
+| a  | Sensor | 9  VDC  | 9.303 VDC  | 0.05 A  | 0.05232 A   |  8.12 %  | 
+| b  | Date interpretation, Transmission and storge | 5.5 VDC  | 5.48 VDC  | 0.25 A  | 0.2196 A  | 15.4 %  |        
 
 Backup battery 
 
