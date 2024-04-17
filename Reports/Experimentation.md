@@ -210,19 +210,19 @@ In this experiment, I connected the adapter power supply and the backup battery 
 
 | Trial No.  | Charge Controller | Loop Controller |
 |------------------|----------------|------------------|
-| 1	 | 5.4186     |	9.3034 |
-|2		| 5.4226      |	9.3035 |
-|3		| 5.4217      |	9.3040 |
+| 1	 | 5.4186  VDC   |	9.3034 VDC |
+|2		| 5.4226   VDC   |	9.3035 VDC |
+|3		| 5.4217   VDC   |	9.3040 VDC |
 
-This table shows the number of tests for each subsystem. However, the input 12 VDC. , and the power source is the wall power.
+This table shows the number of tests for each subsystem. However, the input is 12 VDC, and the power source is the wall power.
 
 
 
 | Trial No.  | Charge Controller | Loop Controller |
 |------------------|---------------|------------------|
-| 1	| 5.4243      |	9.1858 |
-|2		| 5.4275      |	9.1865 |
-|3		| 5.4268      |	9.1863 |
+| 1	| 5.4243  VDC    |	9.1858 VDC |
+|2		| 5.4275  VDC    |	9.1865 VDC |
+|3		| 5.4268  VDC    |	9.1863 VDC |
 
 This table shows the number of tests for each subsystem. However, the input is 12 VDC, and the power source is the backup battery.
 
