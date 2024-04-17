@@ -269,20 +269,20 @@ In the experiment, we connected an input voltage source with a range between 9 V
 
 ### Number of Trials
 
-| Trial No. | Data Subsystem | Charge Controller | Loop Controller |
+| Trial No. | Data Subsystem | Charge Controller | Loop Controller       |
 |------------------|------------------|---------------|------------------|
-| 1	      |5.472                    |5.437	         |9.495|
-|2	         |5.474	                 |5.4372	      |9.497|
-|3	         |5.4754	                 |5.4369	      |9.4953|
-|4	         |5.4755	                 |5.43691	      |9.4957|
-|5	         |5.476	                 |5.4371	      |9.4959|
+| 1	      |5.472 VDC                |5.437 VDC      |9.495 VDC         |
+|2	         |5.474 VDC                |5.4372 VDC     |9.497 VDC         |
+|3	         |5.4754 VDC               |5.4369 VDC     |9.4953 VDC        |
+|4	         |5.4755 VDC               |5.43691 VDC    |9.4957 VDC        |
+|5	         |5.476  VDC               |5.4371 VDC      |9.4959 VDC       |
 
 The table displays the number of tests conducted on each output of the power controller, with an input of 12VDC, while no outputs are connected to the loads.
 
 
 <img width="385" alt="image" src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/cf73c6ce-27e4-4b35-b101-52ff9b157fc8">
 
-The power controller input is 12V and the Result displays the voltage and current output of the Loop Controller Subsystem across five trials. 
+The power controller input is 12V, and the Result displays the voltage and current output of the Loop Controller Subsystem across five trials. 
 
 <img width="410" alt="image" src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/aa9dd859-6e49-461d-9158-fc3648e01b71">
 
@@ -344,7 +344,7 @@ This constraint was not fully achieved due to an unfinished subsystem. However, 
 
 #### C26
 
- This constraint was achieved. The power controller was able to take an input voltage with a minimum of 9 VDC and a maximum of 17 VDC. For that range of input, the power controller will deliver the needed voltages and currents for each subsystem. 
+ This constraint was achieved. The power controller could take an input voltage with a minimum of 9 VDC and a maximum of 17 VDC. For that input range, the power controller will deliver the needed voltages and currents for each subsystem. 
 
 
 ### Interpretation
