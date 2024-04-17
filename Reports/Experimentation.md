@@ -217,6 +217,12 @@ In this experiment, I connected the adapter power supply and the backup battery 
 This table shows the number of tests for each subsystem. However, the input is 12 VDC, and the power source is the wall power.
 
 
+![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/143124480/f65ca27c-9719-4408-9ca6-60bf224b01ca)
+
+
+This is the resulte output for the loop controller.
+
+
 
 | Trial No.  | Data Subsystem Voltage & Current | Loop Controller Voltage & Current |
 |------------------|---------------|------------------|
