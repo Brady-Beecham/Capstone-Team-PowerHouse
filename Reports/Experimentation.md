@@ -57,7 +57,7 @@ and discussions as a team, it was decided that it would best to use a Colpitts O
 stable frequency compared to circuits such as a Hartley oscillator, etc.  In order to allow the ESP32 to monitor the frequency of the inductive loops safely, a Sine to Square Wave circuit was
 connected to the output of the Colpitts oscillator.  A voltage regulator was added to the Loop Controller to transform 9 V to 3.3 V so the output of the Sine to Square Wave circuit would send the square wave to the ESP32 at the safe voltage of 3.3 V to the GPIO pins.  By creating a Custom Loop Controller, the Loop Controller is designed with the needs of the project in mind and we have a more in-depth understanding of the Loop Controller in the event of troubleshooting any possible issues that may occur in the controller.
 
-	For many of the constraints of the Ground Based Sensor Subsystem, they were either revised or descoped based off the decision of designing the Loop Controller in-house instead of purchasing the Diablo DSP-21.  Each constraint for the Ground Based Sensor Subsystem and the Loop Controller Subsystem is explained in the following section.	
+For many of the constraints of the Ground Based Sensor Subsystem, they were either revised or descoped based off the decision of designing the Loop Controller in-house instead of purchasing the Diablo DSP-21.  Each constraint for the Ground Based Sensor Subsystem and the Loop Controller Subsystem is explained in the following section.	
 
 
 ### Loop Controller Constraints
