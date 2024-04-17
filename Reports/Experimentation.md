@@ -309,8 +309,8 @@ The output’s power tolerance with the backup battery input can be shown below:
 While not all power outputs are within the 10% tolerance, each subsystem safely receives an ample amount of power to function properly.
 
 
-## Power Controller Subsystem Experimentation
 
+## Power Controller Subsystem Experimentation
 
 | Constraint Number | Constraint Information |
 |--|---|
@@ -326,13 +326,15 @@ To test the error of the voltage regulators.
 
 ### Experimental Procedure
 
-In the experiment, The power controller will achieve the needed voltage and current if it takes an input voltage range between 9 V and 15 V. However, we set the input voltage to 12 V. Once we connected the input voltage, we measured the voltage to ensure that we were receiving the expected voltage reading. subsystem and the second output to the loop inductive subsystem using a wire with fuses between them.
+In the experiment, the power controller will supply the required power to the Loop Controller, Data, and Charge Controller Subsystems with an input of 12 VDC. The power was measured at the output of the Power Controller PCB. Each subsystem was connected through a jumper wire and fuse.
 
 ### Prediction
 
+The Loop Controller subsystem should be sent 9 V and 0.05 A.
 
+The Data subsystem and Charge Controller subsystem should be sent 5.5 V and 0.25 A.
 
-### Number of Trials
+### Results
 
 | Trial No. | Data Subsystem | Charge Controller | Loop Controller       |
 |------------------|------------------|---------------|------------------|
@@ -342,14 +344,8 @@ In the experiment, The power controller will achieve the needed voltage and curr
 |4	         |5.4755 VDC               |5.43691 VDC    |9.4957 VDC        |
 |5	         |5.476  VDC               |5.4371 VDC      |9.4959 VDC       |
 
-The table above displays the number of tests conducted on each output of the power controller, with an input of 12VDC, while no outputs are connected to the loads.
+The table above displays the output voltages with no loads (subsystems) attached. The input voltage is 12 V.
 
-
-
-
-
-
-### Results
 
 | Subsystem        | Expected Voltage | Actual Avg Voltage| Expected Current |  Actual Avg Current |Expected Power |  Actual Avg Power |
 |------------------|------------------|-------------------|------------------|---------------------|---------------|-------------------|
@@ -370,9 +366,9 @@ The table above presents the expected and actual average results for voltage, cu
 
 
 
-The table above shows the expected & actual power and the power tolerance for each subsystem provided by the power controller. The power tolerance significantly varies in the loop controller subsystem due to inaccurate expected  current since the expected current supplied to the loop controller was 0.05 A. However, the subsystem required only 0.0318 A.  Therefore, the tolerance is high for the loop controller subsystem.
+The table above shows the expected & actual power and the power tolerance for each subsystem provided by the power controller. 
 
-
+	
 https://youtu.be/cqpJeXbbNOQ?feature=shared
 
 
@@ -389,16 +385,16 @@ The video displays the voltage and current measurements for the power controller
 
 <img width="385" alt="image" src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/cf73c6ce-27e4-4b35-b101-52ff9b157fc8">
 
-The Result shows the output of the power controller connected to the Loop Controller Subsystem while measuring both the voltage and current for five trials. The power controller input is 12V. 
+The graph above shows the output to the Loop Controller Subsystem. The power controller input is 12V. 
 
 <img width="410" alt="image" src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/aa9dd859-6e49-461d-9158-fc3648e01b71">
 
-The Result shows the output of the power controller connected to the Charge Controller Subsystem while measuring both the voltage and current for five trials. The power controller input is 12V. 
+The graph above shows the output to the Charge Controller Subsystem. The power controller input is 12V. 
 
 
 <img width="361" alt="image" src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/d11a3c03-567e-402d-bccf-ef2f015ab843">
 
-The Result shows the output of the power controller connected to the Data Subsystem while measuring both the voltage and current for five trials. The power controller input is 12V. 
+The graph above shows the output to the Data Subsystem. The power controller input is 12V. 
 
 
 #### C25
