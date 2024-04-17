@@ -294,14 +294,14 @@ The output’s power tolerance with the wall outlet input can be shown below:
 | No.| Subsystem    | Expected Voltage | Actual Voltage |  Expected Current | Actual Current |Power Tolerance | 
 | ---  | ------------------ | -------------------|--------------|------------------|-----------------|-----------|
 | a  | Sensor | 9  VDC  | 9.303 VDC  | 0.05 A  | 0.0523 A   |  8.12 %  | 
-| b  | Date interpretation, Transmission and storge | 5.5 VDC  | 5.48 VDC  | 0.25 A  | 0.2194 A  | 15.4 %  |        
+| b  | Data Subsystem | 5.5 VDC  | 5.48 VDC  | 0.25 A  | 0.2194 A  | 15.4 %  |        
 
 The output’s power tolerance with the backup battery input can be shown below:
 
 |No. | Subsystem        | Expected Voltage | Actual Voltage| Expected Current | Actual Current |Tolerance |
 |--- |------------------|-------------------| -------------|------------------|------------------|-----------|
 | a  | Sensor | 9  VDC         | 9.303 VDC      | 0.05 A  | 0.0524 A | 7.91 %  | 
-| b  | Data interpretation, Transmission and storge | 5.5 VDC   | 5.418 VDC | 0.25 A| 0.2196 A | 13.04  % |          
+| b  | Data Subsystem | 5.5 VDC   | 5.418 VDC | 0.25 A| 0.2196 A | 13.04  % |          
 
 While not all power outputs are within the 10% tolerance, each subsystem safely receives an ample amount of power to function properly.
 
