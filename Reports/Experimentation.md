@@ -205,6 +205,7 @@ The purpose of this experiment is to test the main wall power subsystem, which h
 
 ### Experimental Procedure
 In this experiment, I connected the adapter power supply and the backup battery to the PCB with wires to get the voltage and current from both powers. When we connect, it feeds the two subsystems. As soon as the input voltage is connected, we can measure the voltage reading that we expected to come out. Wires with fuses between them are used as the output for two subsystems.
+### Prediction
 
 ### Number of Trials
 
