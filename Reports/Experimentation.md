@@ -285,41 +285,32 @@ In the experiment, we connected an input voltage source with a range between 9 V
 The table displays the number of tests conducted on each output of the power controller, with an input of 12VDC, while no outputs are connected to the loads.
 
 
-![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/134f119e-7c7b-4aee-a34f-7680d77b3183)
 
-
-
-The power controller input is 12V, and the Result displays the loop controller subsystem's voltage and current output across five trials. 
-
-![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/a7af2201-1720-4ecf-9650-0967f8f10593)
-
-
-
-The Result shows the output of the power controller connected to the Charge Controller Subsystem while measuring both the voltage and current for five trials. The power controller input is 12V. 
-
-
-![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/3d927414-9ebf-4c5f-853f-d1da08697d99)
-
-
-
-The Result shows the output of the power controller connected to the Data Subsystem while measuring both the voltage and current for five trials. The power controller input is 12V. 
 
 
 
 ### Results
 
-| Subsystem        | Expected Voltage | Actual Voltage| Expected Current |  Actual Current |Expected Power |  Actual Power | Tolerance |
-|------------------|------------------|---------------|------------------|-----------------|---------------|---------------|-----------|
-| Inductive loop   | 9  VDC           | 9.52 VDC      | 0.05 A           | 0.043 A         | 0.45 W        |  0.41 W       | 8.89%     |
-| Data Subsystem   | 5.5 VDC          | 5.48 VDC      | 0.25 A           | 0.212 A         | 1.375 W       |  1.16 W       | 15.63%    |
-| Charge Controller| 5.5 VDC          | 5.44 VDC      | 0.25 A           | 0.223 A         | 1.375 W       |  1.21 W       | 12.00%    |
+| Subsystem        | Expected Voltage | Actual Avg Voltage| Expected Current |  Actual Avg Current |Expected Power |  Actual Avg Power |
+|------------------|------------------|-------------------|------------------|---------------------|---------------|-------------------|
+| Loop Controller   | 9  VDC           | 9.544 VDC      | 0.05 A           | 0.0318 A         | 0.45 W        |  0.303 W       |
+| Data Subsystem   | 5.5 VDC          | 5.407 VDC      | 0.25 A           | 0.256 A         | 1.375 W       |  1.378 W       |
+| Charge Controller| 5.5 VDC          | 5.393 VDC      | 0.25 A           | 0.255 A         | 1.375 W       |  1.382 W       | 
 
-The table presents the expected and actual results for voltage, current, and power supplied to each subsystem, along with the expected and actual tolerance.
-
-<img width="281" alt="image" src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/d088f9be-2ac9-4a02-925e-4723ae2e7fbe">
+The table presents the expected and actual average results for voltage, current, and power supplied to each subsystem.
 
 
-The graphs show the relationship between efficiency and power for each subsystem provided by the power controller. The efficiency varies due to power loss from the power controller and also because the feedback resistor values did not match our simulations in LtSpice. We encountered an issue with ordering the correct size SMD resistor for the power controller, so we soldered a through-hole resistor to the power controller's output capacitor instead. This allowed us to obtain slightly similar results for the expected power value.
+
+
+| Subsystem         | Expected Power (W) | Actual Avg Power (W) | Power Tolerance (%)   |
+|-------------------|---------------------|----------------------|----------------------|
+| Loop Controller   | 0.45                | 0.303                | 32.67%               |
+| Data Subsystem    | 1.375               | 1.378                | 0.22%                |
+| Charge Controller | 1.375               | 1.382                | 0.51%                |
+
+
+
+The table shows the expected & actual power and the power tolerance for each subsystem provided by the power controller. The power tolerance significantly varies in the loop controller subsystem due to inaccurate expected  current since the expected current supplied to the loop controller was 0.05 A. However, the subsystem required only 0.0318 A.  Therefore, the tolerance is high for the loop controller subsystem.
 
 
 https://youtu.be/cqpJeXbbNOQ?feature=shared
@@ -352,11 +343,11 @@ The Result shows the output of the power controller connected to the Data Subsys
 
 #### C25
 
-This constraint was not fully achieved due to an unfinished subsystem. However, the data and inductive loop subsystems are connected through a fuse that protects against overcurrent.
+This constraint was achieved by connecting the data and inductive loop subsystems through a fuse that protects against overcurrent.
 
 #### C26
 
- This constraint was achieved. The power controller could take an input voltage with a minimum of 9 VDC and a maximum of 17 VDC. For that input range, the power controller will deliver the needed voltages and currents for each subsystem. 
+ This constraint was achieved. The power controller could take an input voltage with a minimum of 9 VDC and a maximum of 17 VDC. The power controller will deliver the needed voltages and currents for that input range for each subsystem. 
 
 
 ### Interpretation
