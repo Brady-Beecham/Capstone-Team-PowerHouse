@@ -206,6 +206,26 @@ The purpose of this experiment is to test the main wall power subsystem, which h
 ### Experimental Procedure
 In this experiment, I connected the adapter power supply and the backup battery to the PCB with wires to get the voltage and current from both powers. When we connect, it feeds the two subsystems. As soon as the input voltage is connected, we can measure the voltage reading that we expected to come out. Wires with fuses between them are used as the output for two subsystems.
 
+### Number of Trials
+
+| Trial No.  | Charge Controller | Loop Controller |
+|------------------|----------------|------------------|
+| 1	 | 5.4186     |	9.3034 |
+|2		| 5.4226      |	9.3035 |
+|3		| 5.4217      |	9.3040 |
+
+This table shows the number of tests for each subsystem. However, the input 12 VDC. , and the power source is the wall power.
+
+
+
+| Trial No.  | Charge Controller | Loop Controller |
+|------------------|---------------|------------------|
+| 1	| 5.4243      |	9.1858 |
+|2		| 5.4275      |	9.1865 |
+|3		| 5.4268      |	9.1863 |
+
+This table shows the number of tests for each subsystem. However, the input is 12 VDC, and the power source is the backup battery.
+
 ### Results
 Wall power
 
