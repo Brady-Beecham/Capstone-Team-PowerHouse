@@ -636,23 +636,25 @@ Despite the failure of my current hardware/software, LoRaWAN is still a viable o
 
 #### 30
 
-This constraint was not fully achieved. The solar panel was connected to the charge controller and delivered the needed voltages and current. However, the battery was not connected to the charge controller due to the incompletion of the charge controller subsystem.      
-
+This constraint has been achieved. The Charge Controller can switch between battery and solar inputs.
 
 #### 31
 
-The constraint was accomplished. However, there was not much change in the output voltage from the solar panel if the solar was facing the sunlight. 
+The constraint no longer directly applies to this project as there is no housing for the solar panel to be mounted for long periods of time.
 
 #### 32
 
-The constraint was not accomplished. The reason is a change in the path for the charge controller subsystem. The new path for the charge controller subsystem was to drop the voltage coming from the solar panel and the voltage of the solar panel. Therefore, the charge controller subsystem steps down the voltage from the solar panel to the voltage needed for the power controller subsystem. 
+The constraint was not accomplished due to the problems encountered in the Charge Controller Subsystem.
 
 
 #### 33
 
-The constraint was not accomplished. The battery will not be able to charge from the solar panel through the charge controller because the battery charge controller for the charge controller subsystem was not fully accomplished. Therefore, the battery must be charged by a specific adapter, allowing it to charge at full capacity. 
+The constraint was not accomplished due to the problems encountered in the Charge Controller Subsystem.
+
+Without a way to charge the batteries, there is no way to prevent the batteries from discharging below 50%. 
 
 #### 34
 
-Constraint was not accomplished. The battery charge controller for the charge controller subsystem was not fully completed. Hence, if we connect the battery directly to the power controller subsystem, it will discharge. However, if the battery has sufficient capacity, it can deliver the required voltages and current. Therefore, before connecting the battery to the power controller, we should measure its voltage to get a good estimate of its capacity.
+This constraint has been achieved as during the expected charging cycle the batteries are placed in series with the battery charging PCB using relays. while discharging they are placed in parallel using the same relays.
+
 
