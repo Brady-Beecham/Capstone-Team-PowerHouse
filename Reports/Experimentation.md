@@ -311,9 +311,13 @@ The graphs show the relationship between efficiency and power for each subsystem
 
 
 https://youtu.be/cqpJeXbbNOQ?feature=shared
+
+
 The video displays the voltage and current measurements for each power controller output using a 12V input.
 
 https://youtube.com/shorts/ds0gY6Fl69w?feature=shared
+
+
 The video displays the voltage and current measurements for the power controller connected to the loop controller through a fuse with a 12v input. 
 
 #### C24
