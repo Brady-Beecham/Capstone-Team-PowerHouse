@@ -213,33 +213,34 @@ This proves constraint 4 is met. C4: "The Loop Controller shall be connected to 
 
 | Constraint Number | Constraint Information |
 |--|---|
-| C20 | Voltage equivalence: The main wall power subsystem needs to protect devices from the damage caused by voltage and guarantee the safety of the electrical system, as well as preserve the whole subsystem. |  Wall power Subsystem |
+| C20 | Voltage equivalence: The main wall power subsystem needs to protect devices from the damage caused by voltage and guarantee the safety of the electrical system, as well as preserve the whole subsystem. | Wall power Subsystem |
 | C21 | During main power failures, power flow is controlled by the switch controller. | Wall power Subsystem |
 | C22 | It should be within wire capabilities. | Wall power Subsystem |
 | C23 | Must be a kill switch to disconnect all the power from the source. | Wall power Subsystem |
 
- ### C20
-This constraint was successful, as confirmed by the results. The power subsystem has fusees that protect all the subsystems from damage caused by voltage, and there is a fuse between the outlet power and the backup battery to ensure the electrical system is safe.
-### C21
-This constraint was successful, as confirmed by the results. If the outlet power fails, the controller immediately transforms to the backup power battery, which is a relay switch, to feed all the subsystems.
+### C20
+The subsystem has fuses that protect all the connected subsystems from damage caused by voltage. There is also a fuse between the outlet power and the backup battery to ensure the electrical system is safe.
+This constraint has been achieved. 
+### C21 and M1
+When the outlet power is disconnected, the controller switches to use the main battery after a delay of less than a second. During this delay, the output voltage is zero.
 
+This constraint has been achieved, but M1 has not been achieved as there is a small delay where the output voltage is zero and the system is shut down.
 ### C22
-This constraint was successful, as confirmed by the results. The jumper wires can withstand voltage drops and overheating.
+This constraint was successful. Normal jumper wires can handle the voltage and amperage sent to each subsystem.
 
 ### C23
-This constraint was successful, as confirmed by the results. For emergencies, I used a physical kill switch to shut down all the power if something happened.
+This constraint was successful. A physical kill switch has been connected to shut down all the power if required.
 
 ### Purpose of the Experiment
-The purpose of this experiment is to test the main wall power subsystem, which has an adapter power supply that converts AC to DC. However, we have another subsystem, a backup battery. If the main wall power shuts down, a relay switch will activate the backup power battery to feed the two subsystems. The goal of this test is to determine the value of the results derived from both inputs for wall power and backup battery.
+This experiment will be testing the error of the voltage regulators and the switching functionality.
 
 ### Experimental Procedure
-In this experiment, I connected the wall power and the backup battery to the PCB with wires to get the voltage and current from both powers. When we connect, it feeds the two subsystems. As soon as the input voltage is connected, we can measure the voltage reading that we expected to come out. Wires with fuses between them are used as the output for two subsystems.
 
+The PCB’s input has been connected to both a wall outlet through an adapter and a backup battery. The Loop Controller PCB and the Data Subsystem has been connected to the outputs to test the power output of this subsystem’s PCB. Fuses have been used in between the outputs and the external PCB’s.
 
 ### Prediction
-predict that
- I predict that the Sensor will be 9 VDC, 0.05 A, and data interpretation, transmission, and storage will be 5.5 VDC and 0.25 A.    
-### Number of Trials
+The Loop controller should be receiving 9 VDC, 0.05 A and Data subsystem should be receiving  5.5 VDC and 0.25 A.    
+### Results
 
 | Trial No.  | Data Subsystem Voltage & Current   | Loop Controller Voltage & Current  |
 |------------------|----------------|------------------|
@@ -247,17 +248,17 @@ predict that
 |2		| 5.4226 VDC &     0.219818 A  |	9.3035 VDC &    0.052314  A |
 |3		| 5.4145 VDC &     0.219518 A  |	9.3040 VDC &    0.052397  A |
 
-This table shows the number of tests for each subsystem. However, the input is 12 VDC, and the power source is the "wall power".
+The above table shows the output of the PCB with a wall outlet through a wall adapter on the input. 
 
 
 ![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/143124480/ce856873-3b31-4bb9-9165-4d322b801326)
 
-The Date subsystem output can be seen in the Result.
+The graph above shows the power consumed by the Data Subsystem with the wall outlet input.
 
 ![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/143124480/f65ca27c-9719-4408-9ca6-60bf224b01ca)
 
 
-The loop controller subsystem output can be seen in the Result.
+The graph above shows the power consumed by the Loop Controller PCB with the wall outlet input.
 
 
 | Trial No.  | Data Subsystem Voltage & Current | Loop Controller Voltage & Current |
@@ -266,42 +267,43 @@ The loop controller subsystem output can be seen in the Result.
 |2		| 5.4226  VDC & 0.219814 mA      |	   9.1865 VDC  &  0.052438 mA    |
 |3		| 5.4187  VDC & 0.219632 mA      |	   9.1863 VDC  &  0.052419 mA     |
 
-This table shows the number of tests for each subsystem. However, the input is 12 VDC, and the power source is the "backup battery".
+The above table shows the output of the PCB with the backup battery suppling the input. 
 
 
 ![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/143124480/2eda09d2-b2aa-49d0-962b-62b01d44f9c9)
 
 
-The Date subsystem output can be seen in the Result.
+The graph above shows the power consumed by the Data Subsystem with the battery input.
 
 
 ![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/143124480/15d63920-22c5-448e-b58c-bb4a1551d6ca)
 
-The loop controller subsystem output can be seen in the Result.
+The graph above shows the power consumed by the Loop Controller PCB with the battery input.
 
 
 
-Measurements of the voltage and current are given in the video. For both, the power sources are input 12 VDC.
+Measurements of the voltage and current are given in the video link below. For both, the power sources are input 12 VDC.
 
 
 https://www.youtube.com/watch?v=EA21rRr-S3c 
 
-### Results
-Wall power
+### Experimental Interpretations
 
-| No.| Subsystem    | Expected Voltage | Actual Voltage |  Expected Current | Actual Current |Tolerance | 
+The output’s power tolerance with the wall outlet input can be shown below:
+
+| No.| Subsystem    | Expected Voltage | Actual Voltage |  Expected Current | Actual Current |Power Tolerance | 
 | ---  | ------------------ | -------------------|--------------|------------------|-----------------|-----------|
 | a  | Sensor | 9  VDC  | 9.303 VDC  | 0.05 A  | 0.0523 A   |  8.12 %  | 
 | b  | Date interpretation, Transmission and storge | 5.5 VDC  | 5.48 VDC  | 0.25 A  | 0.2194 A  | 15.4 %  |        
 
-Backup battery 
+The output’s power tolerance with the backup battery input can be shown below:
 
 |No. | Subsystem        | Expected Voltage | Actual Voltage| Expected Current | Actual Current |Tolerance |
 |--- |------------------|-------------------| -------------|------------------|------------------|-----------|
 | a  | Sensor | 9  VDC         | 9.303 VDC      | 0.05 A  | 0.0524 A | 7.91 %  | 
 | b  | Data interpretation, Transmission and storge | 5.5 VDC   | 5.418 VDC | 0.25 A| 0.2196 A | 13.04  % |          
 
-
+While not all power outputs are within the 10% tolerance, each subsystem safely receives an ample amount of power to function properly.
 
 
 ## Power Controller Subsystem Experimentation
