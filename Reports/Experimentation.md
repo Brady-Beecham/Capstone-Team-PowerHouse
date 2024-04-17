@@ -285,20 +285,25 @@ In the experiment, we connected an input voltage source with a range between 9 V
 The table displays the number of tests conducted on each output of the power controller, with an input of 12VDC, while no outputs are connected to the loads.
 
 
-<img width="563" alt="image" src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/9fcd718d-9c96-485e-9fa1-0a8deef1fc01">
+![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/134f119e-7c7b-4aee-a34f-7680d77b3183)
+
 
 
 The power controller input is 12V, and the Result displays the loop controller subsystem's voltage and current output across five trials. 
 
-<img width="452" alt="image" src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/63f62902-3595-409a-8881-2e0f0fe43267">
+![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/a7af2201-1720-4ecf-9650-0967f8f10593)
+
 
 
 The Result shows the output of the power controller connected to the Charge Controller Subsystem while measuring both the voltage and current for five trials. The power controller input is 12V. 
 
-<img width="512" alt="image" src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/252a4e24-225d-49bf-bdea-86ad35a9cc7a">
+
+![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/3d927414-9ebf-4c5f-853f-d1da08697d99)
+
 
 
 The Result shows the output of the power controller connected to the Data Subsystem while measuring both the voltage and current for five trials. The power controller input is 12V. 
+
 
 
 ### Results
