@@ -196,13 +196,13 @@ The Loop Controller PCB outputs are connected to two GPIO pins on the ESP32 micr
 
 ### ESP32 Testing - Results
 #### Frequency vs Time with Vehicle Traveling at 5 mph
-![Freq_vs_time_5mph_annotated](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/119456660/4a8d6bc3-303f-449b-9803-8fdac2ba6ef5)
+<img src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/119456660/4a8d6bc3-303f-449b-9803-8fdac2ba6ef5" width="400">
 
 #### Frequency vs Time with Vehicle Traveling at 15 mph
-![Freq_vs_time_15mph_annotated](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/119456660/ab185205-4d62-4aaf-875c-803d64e9413a)
+<img src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/119456660/ab185205-4d62-4aaf-875c-803d64e9413a" width="400">
 
 #### Frequency vs Time with Vehicle Traveling at 20 mph
-![Freq_vs_time_20mph](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/119456660/78795e42-712c-4ba9-a755-392d9869412a)
+<img src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/119456660/78795e42-712c-4ba9-a755-392d9869412a" width="400">
 
 #### Frequency vs Time with Vehicle Traveling at Random Speeds
 ![Freq_vs_time_random_zoomed](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/119456660/679e45d3-d89f-4d48-9c80-5d61eebf582e)
@@ -241,7 +241,7 @@ This experiment will be testing the error of the voltage regulators and the swit
 
 ### Experimental Procedure
 
-The PCB’s input has been connected to both a wall outlet through an adapter and a backup battery. The Loop Controller PCB and the Data Subsystem has been connected to the outputs to test the power output of this subsystem’s PCB. Fuses have been used in between the outputs and the external PCB’s.
+The PCB’s input has been connected to both a wall outlet through an adapter and a backup battery. The Loop Controller PCB and the Data Subsystem has been connected to the outputs to test the power output of this subsystem’s PCB. Fuses have been used in between the outputs and the external PCBs.
 
 ### Prediction
 The Loop controller should be receiving 9 VDC, 0.05 A and Data subsystem should be receiving  5.5 VDC and 0.25 A.    
