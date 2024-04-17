@@ -290,6 +290,12 @@ The power controller input is 12V, and the Result displays the loop controller s
 
 The Result shows the output of the power controller connected to the Charge Controller Subsystem while measuring both the voltage and current for five trials. The power controller input is 12V. 
 
+<img width="512" alt="image" src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/252a4e24-225d-49bf-bdea-86ad35a9cc7a">
+
+
+The Result shows the output of the power controller connected to the Data Subsystem while measuring both the voltage and current for five trials. The power controller input is 12V. 
+
+
 ### Results
 
 | Subsystem        | Expected Voltage | Actual Voltage| Expected Current |  Actual Current |Expected Power |  Actual Power | Tolerance |
