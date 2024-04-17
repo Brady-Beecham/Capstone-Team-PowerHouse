@@ -195,7 +195,7 @@ This constraint was successful, as confirmed by the results. The power subsystem
 This constraint was successful, as confirmed by the results. If the outlet power fails, the controller immediately transforms to the backup power battery, which is a relay switch, to feed all the subsystems.
 
 ### C22
-This constraint was successful, as confirmed by the results. The wires can withstand voltage drops and overheating.
+This constraint was successful, as confirmed by the results. The jumper wires can withstand voltage drops and overheating.
 
 ### C23
 This constraint was successful, as confirmed by the results. For emergencies, I used a physical kill switch to shut down all the power if something happened.
@@ -204,9 +204,12 @@ This constraint was successful, as confirmed by the results. For emergencies, I 
 The purpose of this experiment is to test the main wall power subsystem, which has an adapter power supply that converts AC to DC. However, we have another subsystem, a backup battery. If the main wall power shuts down, a relay switch will activate the backup power battery to feed the two subsystems. The goal of this test is to determine the value of the results derived from both inputs for wall power and backup battery.
 
 ### Experimental Procedure
-In this experiment, I connected the adapter power supply and the backup battery to the PCB with wires to get the voltage and current from both powers. When we connect, it feeds the two subsystems. As soon as the input voltage is connected, we can measure the voltage reading that we expected to come out. Wires with fuses between them are used as the output for two subsystems.
-### Prediction
+In this experiment, I connected the wall power and the backup battery to the PCB with wires to get the voltage and current from both powers. When we connect, it feeds the two subsystems. As soon as the input voltage is connected, we can measure the voltage reading that we expected to come out. Wires with fuses between them are used as the output for two subsystems.
 
+
+### Prediction
+predict that
+ I predict that the Sensor will be 9 VDC, 0.05 A, and data interpretation, transmission, and storage will be 5.5 VDC and 0.25 A.    
 ### Number of Trials
 
 | Trial No.  | Data Subsystem Voltage & Current   | Loop Controller Voltage & Current  |
@@ -267,7 +270,7 @@ Backup battery
 |No. | Subsystem        | Expected Voltage | Actual Voltage| Expected Current | Actual Current |Tolerance |
 |--- |------------------|-------------------| -------------|------------------|------------------|-----------|
 | a  | Sensor | 9  VDC         | 9.303 VDC      | 0.05 A  | 0.0524 A | 7.91 %  | 
-| b  | Date interpretation, Transmission and storge | 5.5 VDC   | 5.418 VDC | 0.25 A| 0.2196 A | 13.04  % |          
+| b  | Data interpretation, Transmission and storge | 5.5 VDC   | 5.418 VDC | 0.25 A| 0.2196 A | 13.04  % |          
 
 
 
