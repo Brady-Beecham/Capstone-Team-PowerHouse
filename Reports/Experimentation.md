@@ -72,7 +72,7 @@ Each entrance/exit of a parking lot shall use a total of one loop controller tha
 ### C4
 The Loop Controller shall be connected to the ESP32 Microcontroller that is used with the Data system of the project to communicate a change in frequency in both of the loops and determine whether a vehicle is entering or exiting a parking lot.
 
-   - This constraint was achieved and further evaluation of this constraint is located in Data Subsystem Analysis section of Experimentation.
+   - This constraint was achieved and further evaluation of this constraint is located in the experimentation of the ESP32 frequency vs time measurement section below.
 
 ### C10
 Subsystem shall detect cars/pickup trucks (vehicles) and motorcycles that are entering a parking lot at a maximum speed of 20 mph and leaving a parking lot at a maximum speed of 20 mph.
@@ -116,12 +116,12 @@ Inductive loops shall be placed a minimum of 4 ft. apart from the edge of one lo
    - This constraint was achieved as all inductive loops were placed at a distance greater than 4 ft apart from each loop.  The distance allowed the loops to avoid cross-talk between one another and all signals received from the loops were similar to the expected results.
 
 
-### Purpose of the Experiment
+### Oscilloscope Testing - Purpose of the Experiment
 
 The purpose of this experiment is test the Loop Controller and 
 its function and verify it operates as it is intended.  
 
-### Experimental Procedure
+### Oscilloscope Testing - Experimental Procedure
 
 For all tests, the loop(s) were placed in the road and the 
 vehicle passed over the loop(s) and not to the side of the loop(s).  Throughout 
@@ -133,7 +133,7 @@ entering/exiting a parking lot.  To monitor the changes in frequency in both ind
 the results for each test are found when using a Rigol DS1104 Oscilloscope.
 
 
-### Results
+### Oscilloscope Testing - Results
 
 #### No Loop(s) Connected to the Controller
 |        | Expected Results | Actual Results |
@@ -172,13 +172,39 @@ the results for each test are found when using a Rigol DS1104 Oscilloscope.
 | Loop A | 62.9 kHz      | 64.9 kHz       |
 | Loop B | 62.9 kHz      | 63.3 kHz       |
 
-### Interpretation
+### Oscilloscope Testing - Interpretation
 
 For the first two trials, one loop was connected to the Loop Controller (Loop A Output).  When one loop was connected, there was no set speed value (in mph) and the Loop Controller detected when a vehicle passed over the loop.  Two trials were completed to verify the Loop Controller did function as expected and was not by coincidence.  In both Test 1 and Test 2 (as seen in the graph), the frequency of the loop increased by more than 3 kHz every time.  From this data, we can interpret that the Loop Controller does function as expected and can detect a change in frequency due to a vehicle passing over the loop.
 
 For trials 3-7, both loops were connected to the Loop Controller (Loop A Output and Loop B Output).  The speed of the vehicle was included and increased at increments of 5 mph until it reached a maximum speed of 20 mph for a total number of four tests/trials.  For speed values of 5, 10, and 15 mph, the frequency in both loops experienced a change of +1 kHz.  This change in frequency is expected as the ESP32 MCU will be able to detect the 1 kHz change in frequency and update the delta accordingly.  For the speed value of 20 mph, Loop B Output experienced a change of less than 1 kHz (change in frequency is 400 Hz). Depending on the ESP32's algorithm for detecting changes in frequency, this may not be considered a significant enough change to count as a vehicle.
 
 Based on the test results above, the Loop Controller is able to detect vehicles passing over the loop(s) that are entering or exiting a parking lot based on the information that is received in the data tables.
+
+### ESP32 Testing - Purpose of Experiment
+The purpose of this experiment is to test that the ESP32 can read the square wave pulses from the Loop Controller PCB and determine if a vehicle is entering or exiting a parking lot (Constraint 4).
+
+### ESP32 Testing - Experimental Procedure
+The Loop Controller PCB outputs are connected to two GPIO pins on the ESP32 microcontroller. The ESP32 outputs what frequency it is reading, changes in delta, and a timestamp to the serial terminal. This output is logged and put into a CSV file so the data can be graphed. Data will be logged as vehicles drive over the loops.
+
+### ESP32 Testing - Results
+#### Frequency vs Time with Vehicle Traveling at 5 mph
+![Freq_vs_time_5mph_annotated](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/119456660/4a8d6bc3-303f-449b-9803-8fdac2ba6ef5)
+
+#### Frequency vs Time with Vehicle Traveling at 15 mph
+![Freq_vs_time_15mph_annotated](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/119456660/ab185205-4d62-4aaf-875c-803d64e9413a)
+
+#### Frequency vs Time with Vehicle Traveling at 20 mph
+![Freq_vs_time_20mph](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/119456660/78795e42-712c-4ba9-a755-392d9869412a)
+
+#### Frequency vs Time with Vehicle Traveling at Random Speeds
+![Freq_vs_time_random_zoomed](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/119456660/679e45d3-d89f-4d48-9c80-5d61eebf582e)
+The large dip in the graph can be attributed to connection problems with the wires.
+
+
+### ESP32 Testing - Interpretation
+These graphs show that the ESP32 is capable of reading the square waves generated by the Loop Controller and effectively calculate the frequency of the square wave pulses. This video demonstrates the ESP32's ability to determine the direction a vehicle is traveling and update the delta accordingly. Link to video: https://youtube.com/shorts/8B8lnqCkGT8?si=NU7qAhg_zqjL0T57 
+
+This proves constraint 4 is met. C4: "The Loop Controller shall be connected to the ESP32 Microcontroller that is used with the Data system of the project to communicate a change in frequency in both of the loops and determine whether a vehicle is entering or exiting a parking lot."
 
 ## Wall power Subsystem Experimentation
 
