@@ -220,9 +220,9 @@ This table shows the number of tests for each subsystem. However, the input is 1
 
 | Trial No.  | Charge Controller | Loop Controller |
 |------------------|---------------|------------------|
-| 1	| 5.4243  VDC    |	9.1858 VDC |
-|2		| 5.4275  VDC    |	9.1865 VDC |
-|3		| 5.4268  VDC    |	9.1863 VDC |
+| 1	| 5.4243  VDC   |   	9.1858 VDC |
+|2		| 5.4275  VDC   |	   9.1865 VDC |
+|3		| 5.4268  VDC   |	   9.1863 VDC |
 
 This table shows the number of tests for each subsystem. However, the input is 12 VDC, and the power source is the backup battery.
 
