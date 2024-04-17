@@ -8,7 +8,7 @@ These measures of success are derived from the project proposal.
 | M2 | Wireless Communication | The sensor shall communicate with the server wirelessly.|
 | M3 | Local Space Availability Retention| The sensor shall keep track of the amount of vehicles in a parking lot locally.|
 | M4 | Space Availability Retention | The system shall keep a local count of vehicles that enter or exit a parking lot.|
-# System Contraints
+# System Constraints
 | Constraint Number | Constraint Information | Subsystem Defined | 
 |--------|------------------|----------------|
 | C1  | Subsystem shall detect cars/pickup trucks (vehicles) that are entering and exiting a parking lot. | Loop Controller |
