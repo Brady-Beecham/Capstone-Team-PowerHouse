@@ -50,7 +50,10 @@ These measures of success are derived from the project proposal.
 ## Loop Controller Subsystem and Ground Based Sensor Subsystem Experimentation
 
 ### Design Changes
-   Update later and add section explaining changes
+   - Change from using Diablo DSP21 Detector to Custom Loop Controller
+   - Custom Loop Controller uses Colpitts Oscillator to generate frequency and then a Sine to Square Wave Circuit to transform the sine wave to a manageable square wave for the ESP32
+   - More cost-efficient and it fits our project better than the Diablo DSP21.
+   - Have more control over the Loop Controller versus using a pre-fabricated controller
 
 ### Loop Controller Constraints
 
