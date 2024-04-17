@@ -57,7 +57,7 @@ and discussions as a team, it was decided that it would best to use a Colpitts O
 stable frequency compared to circuits such as a Hartley oscillator, etc.  In order to allow the ESP32 to monitor the frequency of the inductive loops safely, a Sine to Square Wave circuit was
 connected to the output of the Colpitts oscillator.  A voltage regulator was added to the Loop Controller to transform 9 V to 3.3 V so the output of the Sine to Square Wave circuit would send the square wave to the ESP32 at the safe voltage of 3.3 V to the GPIO pins.  By creating a Custom Loop Controller, the Loop Controller is designed with the needs of the project in mind and we have a more in-depth understanding of the Loop Controller in the event of troubleshooting any possible issues that may occur in the controller.
 
-For many of the constraints of the Ground Based Sensor Subsystem, they were either revised or descoped based off the decision of designing the Loop Controller in-house instead of purchasing the Diablo DSP-21.  Each constraint for the Ground Based Sensor Subsystem and the Loop Controller Subsystem is explained in the following section.	
+For many of the constraints of the Ground Based Sensor Subsystem, they were either revised or descoped based on the decision of designing the Loop Controller in-house instead of purchasing the Diablo DSP-21.  Each constraint for the Ground Based Sensor Subsystem and the Loop Controller Subsystem is explained in the following section.	
 
 
 ### Loop Controller Constraints
@@ -90,7 +90,7 @@ Subsystem shall detect cars/pickup trucks (vehicles) and motorcycles that are en
 ### C11 
 Vehicle detector shall cover a range of at least 50 μH to 1000 μH at a frequency at 50 kHz
 
-   - This constraint was descoped as it was determined during the halfway point of the project that it would not apply to the Loop Controller.  The original constraint was designed around an off the shelf Loop Controller, but as it was decided to design our own, this constraint was descoped.
+   - This constraint is descoped due to the previously mentioned design changes.
 
 
 ### C14
@@ -106,7 +106,7 @@ All turns in the inductive loop shall be a 45° turn (or 135° as noted in the s
 ### C16 
 Any wire that is used as part of the loop and is connected to the vehicle detector shall be protected using a heavy-duty cable protector that is capable of protecting the wires under the weight of a vehicle or pedestrian while protecting the wires from the weather.
 
-   - This constraint was descoped as it was determined by the team that it would be unnecessary to purchase cable protectors due to the loops having more durability and resistance to wear from vehicle movement than originally expected at the beginning of the project.
+   - This constraint is descoped due to the previously mentioned design changes.
 
 ### C17
 Vehicle detector shall detect vehicles and motorcycles that are tailgating (when the front bumper of one vehicle is close to the back bumper and the two vehicles are in the same loop at the same time on one side of the roadway).
