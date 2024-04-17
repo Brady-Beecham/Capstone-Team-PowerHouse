@@ -208,7 +208,7 @@ In this experiment, I connected the adapter power supply and the backup battery 
 
 ### Number of Trials
 
-| Trial No.  | Charge Controller | Loop Controller |
+| Trial No.  | Data Subsystem | Loop Controller |
 |------------------|----------------|------------------|
 | 1	 | 5.4186  VDC   |	9.3034 VDC |
 |2		| 5.4226   VDC   |	9.3035 VDC |
@@ -218,7 +218,7 @@ This table shows the number of tests for each subsystem. However, the input is 1
 
 
 
-| Trial No.  | Charge Controller | Loop Controller |
+| Trial No.  | Data Subsystem | Loop Controller |
 |------------------|---------------|------------------|
 | 1	| 5.4243  VDC   |   	9.1858 VDC |
 |2		| 5.4275  VDC   |	   9.1865 VDC |
