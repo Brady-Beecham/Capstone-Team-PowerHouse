@@ -292,7 +292,7 @@ To test the error of the voltage regulators.
 
 ### Experimental Procedure
 
-In the experiment, we connected an input voltage source with a range between 9 VDC and 15 VDC to test its ability to supply the required voltages and current. Once we connected the input voltage, we measured the voltage to ensure that we were receiving the expected voltage reading. subsystem and the second output to the loop inductive subsystem using a wire with fuses between them.
+In the experiment, The power controller will achieve the needed voltage and current if it takes an input voltage range between 9 V and 15 V. However, we set the input voltage to 12 V. Once we connected the input voltage, we measured the voltage to ensure that we were receiving the expected voltage reading. subsystem and the second output to the loop inductive subsystem using a wire with fuses between them.
 
 ### Prediction
 
@@ -308,7 +308,7 @@ In the experiment, we connected an input voltage source with a range between 9 V
 |4	         |5.4755 VDC               |5.43691 VDC    |9.4957 VDC        |
 |5	         |5.476  VDC               |5.4371 VDC      |9.4959 VDC       |
 
-The table displays the number of tests conducted on each output of the power controller, with an input of 12VDC, while no outputs are connected to the loads.
+The table above displays the number of tests conducted on each output of the power controller, with an input of 12VDC, while no outputs are connected to the loads.
 
 
 
@@ -323,7 +323,7 @@ The table displays the number of tests conducted on each output of the power con
 | Data Subsystem   | 5.5 VDC          | 5.407 VDC      | 0.25 A           | 0.256 A         | 1.375 W       |  1.378 W       |
 | Charge Controller| 5.5 VDC          | 5.393 VDC      | 0.25 A           | 0.255 A         | 1.375 W       |  1.382 W       | 
 
-The table presents the expected and actual average results for voltage, current, and power supplied to each subsystem.
+The table above presents the expected and actual average results for voltage, current, and power supplied to each subsystem.
 
 
 
@@ -336,7 +336,7 @@ The table presents the expected and actual average results for voltage, current,
 
 
 
-The table shows the expected & actual power and the power tolerance for each subsystem provided by the power controller. The power tolerance significantly varies in the loop controller subsystem due to inaccurate expected  current since the expected current supplied to the loop controller was 0.05 A. However, the subsystem required only 0.0318 A.  Therefore, the tolerance is high for the loop controller subsystem.
+The table above shows the expected & actual power and the power tolerance for each subsystem provided by the power controller. The power tolerance significantly varies in the loop controller subsystem due to inaccurate expected  current since the expected current supplied to the loop controller was 0.05 A. However, the subsystem required only 0.0318 A.  Therefore, the tolerance is high for the loop controller subsystem.
 
 
 https://youtu.be/cqpJeXbbNOQ?feature=shared
