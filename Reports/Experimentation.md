@@ -302,6 +302,12 @@ The Result shows the output of the power controller connected to the Data Subsys
 | Data Subsystem   | 5.5 VDC          | 5.48 VDC      | 0.25 A           | 0.212 A         | 1.375 W       |  1.16 W       | 15.63%    |
 | Charge Controller| 5.5 VDC          | 5.44 VDC      | 0.25 A           | 0.223 A         | 1.375 W       |  1.21 W       | 12.00%    |
 
+The table presents the expected and actual results for voltage, current, and power supplied to each subsystem, along with the expected and actual tolerance.
+
+<img width="281" alt="image" src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/131785470/d088f9be-2ac9-4a02-925e-4723ae2e7fbe">
+
+
+The graphs show the relationship between efficiency and power for each subsystem provided by the power controller. The efficiency varies due to power loss from the power controller and also because the feedback resistor values did not match our simulations in LtSpice. We encountered an issue with ordering the correct size SMD resistor for the power controller, so we soldered a through-hole resistor to the power controller's output capacitor instead. This allowed us to obtain slightly similar results for the expected power value.
 
 
 https://youtu.be/cqpJeXbbNOQ?feature=shared
