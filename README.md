@@ -30,9 +30,29 @@ Though this project is a continuation project, it deviates away from using camer
 
 ## Project Demonstration & Images
 
-Give a link to a video of the project being demonstrated. The video should be hosted on the capstone youtube.
+### Project Video
+https://www.youtube.com/watch?v=kGD3eaTffT4
 
-Below the video link show some well-taken, appropriately sized images of the project.
+### Project Images
+
+![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/142754780/fde7480c-b60b-4e31-9aa9-efcad1b29194)
+
+*Charge Controller*
+
+![Loop Controller](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/142754780/4d87161a-fd19-44b0-83b0-ace7b408d397)
+
+*Loop Controller*
+
+![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/142754780/c3d20458-bf7e-4b03-8ca9-afbd238f23c5)
+
+*Power Controller for Solar Power*
+
+![image](https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/142754780/336cd731-19d0-4aa2-8785-ad51fbb98b71)
+
+*Wall Power Controller*
+
+
+
 
 
 ## About Us
