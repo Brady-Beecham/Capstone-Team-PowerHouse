@@ -11,7 +11,43 @@
 
 
 # Kyle Plant
+## What went well? 
+1. The utilization of the Pulse Counter hardware module of the ESP32 microcontroller. The PCNT module of the ESP32 allows for the measurement of frequencies up to 40 MHz supposedly (I have not tested that myself), so we had plenty of resolution for measuring the frequencies of the loop controller, which range from 50-75 kHz. The sampling window just needs to be adjusted to match the frequency you are trying to measure. If you have too long of a sample period and a high-frequency signal, the PCNT module can overflow and get set back to 0 in that amount of time. Each PCNT unit uses a 16-bit signed counter register and 2 channels that can either increment or decrement the count on the register. So, that means a maximum of 32767 and a minimum of -32768.
+2. LoRaWAN with The Things Stack, eventually. Once I found a good library that works how I need it to, allowing me to split up the LoRaWAN functionality into tasks under FreeRTOS, getting set up with The Things Stack was easy. I used this library https://github.com/manuelbl/ttn-esp32 with the ESP-IDF. With this library, I was able to use Over-the-air authentication (OTAA) to connect to the gateway and send and receive messages with range in excess of 1 km. Setting up the gateway was also easy. I just had to download the sx1302 hardware abstraction layer and make some changes in the global config file for it to register with my TTS application. Also, the WM1302 has u.FL connectors RFIO and ANT. The RFIO connection is on the mini PCIE PCB and the ANT is on the PiHat. The one labeled ANT IS NOT WHERE YOU PLUG IN THE ANTENNA! You plug the antenna for your gateway into the RFIO connection and ANT is for something like a GPS module. Connecting my antenna correctly increased my range from 60m  to over 1 km.
+3. The static threshold over rolling average algorithm I used for vehicle detection and directional logic in the ESP32 code. The algorithm used for directional logic as I call it is very simple but effective. Over 160 tests we got 96% accuracy. It works by comparing new frequency samples to the rolling average frequency per loop. The rolling average is calculated by taking the average of an array containing the most recent measured frequencies. The array size can be changed to make it more or less reactive to change. We compare the new frequencies to that average and see if they exceed the average by the specified threshold value. If the new frequency exceeds the threshold we push a loop event to a queue containing the loop ID, frequency, and timestamp. We read from that queue using a different task. That task is the directional logic proper. It looks for consecutive events with different loop IDs and also checks if the delta change is in "timeout" or if the event is deemed unrelated or "stale." Timeout is an easy way of debouncing. It is simply a time after the delta is changed that has to pass before the delta can be changed again. Staleness determines if the two events are close enough in time to be related to each other. Based on the conclusions, the delta will be updated based on the order of loop IDs in the queue.
+4. ESP-IDF. The ESP-IDF gives much better control of the ESP32 hardware. It is built with FreeRTOS in mind and I highly recommend the ESP-IDF be used over Arduino for more complex applications.
 
+## What did not go well?  
+1. LoRaWAN with ChirpStack. Setting up the Raspberry Pi to work with ChirpStack as its individual components and also running the Gateway OS was much more complicated than The Things Stack. I highly recommend TTS over ChirpStack if you want something straightforward.
+2. Finding good LoRaWAN libraries for Arduino/ESP-IDF that work well with FreeRTOS. I recommend the ESP-IDF if you need more control over your LoRaWAN code.
+3. Speed estimation. This was tried out in the ESP32 code. We wanted to be able to determine the speed a vehicle travels over the loops, but I could not find a good way to implement it due to the fixed sample period of the Pulse Counter task. That resulted in wildly inaccurate speeds.
+4. ESP32 with RFM95W LoRa radio transceiver still takes absolutely forever to join TTS network sometimes.
+
+
+
+## What “best practices” have you identified? 
+1.	"Being a good neighbor" with The Things Stack. To be a good neighbor with your LoRaWAN network under The Things Stack/The Things Network, you should transmit infrequently and not have excessive range. Transmitting all the time and having enormous range makes you a "noisy neighbor" because they will pick up all your transmissions, possibly causing them to miss some of their own messages.
+2.	Feeding the watchdog with ESP32 and FreeRTOS in ESP-IDF. You should subscribe tasks to the task watchdog and reset it at regular intervals while avoiding any form of blocking code or else you will trigger the watchdog. You do not want your device to enter a state where it will have to reset because the watchdog was not fed.
+
+
+## What unanticipated problems occurred? 
+1. LoRaWAN range was much lower than expected initially, but this was later solved by connecting the antenna to the correct connector on the WM1302. ANT is not where you put the antenna, RFIO is...
+
+
+## What would you do differently if you were able to do it over again? 
+1. Not spend so much time trying to get LoRa physical layer or LoRaWAN with ChirpStack to work and instead just start with LoRaWAN with The Things Stack.
+2. Develop a more sophisticated algorithm that can classify the vehicles it detects. For example, if it is a car or a truck.
+3. Test motorcycles because everyone always asks about them.
+
+
+## What new knowledge or skills did you acquire throughout Capstone? 
+1. LoRa and LoRaWAN as a whole.
+2. The Things Stack.
+3. ChirpStack.
+4. ESP32 hardware.
+5. ESP-IDF.
+6. FreeRTOS.
+7. Better teamwork skills.
 
 
 # Michael Sisk
@@ -30,7 +66,7 @@
 
 1. For the Loop Controller, the team assumed we would need two PCBs as the Engineering Quad has two entrances/exits.  In the ordering parts stage of the Loop Controller, the correct number of parts needed for two PCBs was ordered and though the team later decided to use one PCB instead of two, the parts that were for the second PCB became spares.  This proved useful as some of the components on the first PCB had issues and needed to be replaced.  By having the extra components, the Loop Controller issues were resolved and testing could continue on the Loop Controller. 
 
-2. When starting in Detail Design, having a central location to place all documentation makes the designs simpler as when you are needing help on a design, the team can easily access the documentation you have and better resolve the issue at hand without having to wait on you to send all the information via email.  This was very useful when the Loop Controller was still being completed over the Winter Break as every teammate was able to see the work done and what was still unfinished.  The team was also able to complete more in-depth research of both the Loop Controller and other subsystems that were being designed during the Winter Break. 
+2. When starting in Detail Design, having a central location to place all documentation makes the designs simpler as when you need help on a design, the team can easily access the documentation you have and better resolve the issue at hand without having to wait on you to send all the information via email.  This was very useful when the Loop Controller was still being completed over the Winter Break as every teammate was able to see the work done and what was still unfinished.  The team was also able to complete more in-depth research of both the Loop Controller and other subsystems that were being designed during the Winter Break. 
 
 ## What unanticipated problems occurred? 
 
