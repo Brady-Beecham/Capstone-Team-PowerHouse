@@ -1,4 +1,4 @@
 All individual technical presentations created by the team are located in this folder.
 
-Links to YouTube Videos:
+Links to Recordings:
 -  Kyle Plant LoRa Presentation: https://youtu.be/SCmgpAWQ79U
