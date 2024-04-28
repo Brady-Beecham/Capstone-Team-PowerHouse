@@ -1,14 +1,26 @@
 # Abdulrahman Alrudayan
-
-
+## What went well? 
+## What did not go well? 
+## What “best practices” have you identified? 
+## What unanticipated problems occurred? 
+## What would you do differently if you were able to do it over again? 
+## What new knowledge or skills did you acquire throughout Capstone? 
 
 # Khalifah Altamimi
-
-
+## What went well? 
+## What did not go well? 
+## What “best practices” have you identified? 
+## What unanticipated problems occurred? 
+## What would you do differently if you were able to do it over again? 
+## What new knowledge or skills did you acquire throughout Capstone? 
 
 # Brady Beecham
-
-
+## What went well? 
+## What did not go well? 
+## What “best practices” have you identified? 
+## What unanticipated problems occurred? 
+## What would you do differently if you were able to do it over again? 
+## What new knowledge or skills did you acquire throughout Capstone? 
 
 # Kyle Plant
 ## What went well? 
