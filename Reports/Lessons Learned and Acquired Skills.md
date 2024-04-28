@@ -16,11 +16,58 @@
 
 # Brady Beecham
 ## What went well? 
+
+We chose to have weekly meetings for just the teammates alongside having weekly meetings with our supervisor and biweekly meetings with our sponsers. Continuing to have these weekly meetings even into capstone two played a huge part into our success.
+
+Another thing that helped our team succeed is the willingness for is to work over christmas break. We met once a week over break and it saved us weeks as we were able to problem solve in a much more relaxed environment (i.e. not having four other classes to worry about.)
+
+
 ## What did not go well? 
+
+For our team, everything went very smooth due to how often we met during the project. Any problem that came up for an individual was able to be solved as a team.
+
+For my design specifically, populating and testing my pcbs did not go well. While the design should work if soldered properly, the chips chosen (QFN chips) were not novice friendly and crippled my subsystem.
+
 ## What “best practices” have you identified? 
+
+### Communication is key
+Meet once a week with just the team and another time with your supervisor (especially capstone one!!!) The team meeting can just be updates and keeping track of any problems that come up. It is surprisingly helpful explaining your problems to others who understand (helpful with problem solving and also mentally. It's a long project, lean on your teammates and let your teammates lean on you.) The supervisor meeting should be a simple check in and to get validation that what you are designing aligns with the problem / what is being asked. 
+
+### Use simple to solder ICs 
+If possible, always use IC chips that have leads. Do not use no leads ICs. Surface mount ICs are pretty simple to solder with the right equipment. 
+
+### Know about the electrical engineer on campus. He's great
+Talk to Conard (the electrical engineer on campus) for any PCB questions or advice in general. He is here to help.
+
+### Comminucation is key
+
+This is so important I'm putting two sections about it!!!
+
+Talk about the problems you are facing with your teammates, even if you feel stupid for not knowing how to solve it at that moment. It will save you time and help your teammates gain confidence about sharing problems they are facing as well. It is much better knowing about problems everybody is facing BEFORE meeting with your supervisor. 
+
+
 ## What unanticipated problems occurred? 
+
+Some problems came up after not talking to our supervisor properly. We had to scrap some subsystems and come up with new subsytem ideas near the end of capstone one. This was as frustrating as you imagine. With better communication with our supervisor earlier in capstone one, this problem would not have occured. 
+
+Another problem arose due to not being adament about _everybody_ having to share how their design was going during capstone one. Some simple problems can up that could have been easily fixed the designer was more open about the problems they were facing. 
+
 ## What would you do differently if you were able to do it over again? 
+
+I would replace all QFN ICs with ICs that have leads.
+
+I would also split up my main pcb into at least two pcbs so that once a single circuit is proven, that pcb can be set aside. (I had a circuit that broke after being proven due to having to put the whole pcb back into the heat oven for a different circuit.)
+
+Each PCB should have only one function. (Very similar to how each function in code should only have one job.) 
+
+
 ## What new knowledge or skills did you acquire throughout Capstone? 
+
+I learned about PCB design and also circuit design.
+
+While I did well in all of the circuits and electronics classes, I never really _got it_ with circuit design. Since I'm a computer engineer and not a electrical engineer it was easy to tell myself that not having a great feel for circuit design was acceptable. It is not. Getting a good feel for circuit design is the most valuable hard skill / lesson I got from capstone.
+
+Communicating engineering problems is the best soft skill that I learned. Having so many meetings made this skill nearly impossible not to learn.
 
 # Kyle Plant
 ## What went well? 
