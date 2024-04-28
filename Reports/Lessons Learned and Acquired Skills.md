@@ -8,11 +8,32 @@
 
 # Khalifah Altamimi
 ## What went well? 
+Our group's decision to hold weekly meetings proved instrumental in accomplishing our goals and resolving design phase challenges.The significant impact of these sessions was great.Each meeting was goal-oriented, ensuring efficient use of time and focused discussions.
+
+Through consistent communication, we addressed issues promptly, brainstormed solutions, and maintained a sense of unity. This commitment to regular meetings exemplified the power of structured communication in driving success in group endeavors.
+
+The Power Controller subsystem was meticulously designed and soldered to efficiently step down voltage and supply the necessary currents to all project subsystems. Moreover, it incorporated safety measures by utilizing fuses to ensure a secure power path.
+
+Meanwhile, the Solar Power subsystem was meticulously designed and implemented. The solar panel successfully provided the required voltage to the charge controller, while the backup battery ensured uninterrupted power supply. Both components were meticulously calculated to meet the system's voltage and current requirements, ensuring reliable operation.
+
 ## What did not go well? 
+A problem occurred with the Power Controller subsystem when one of its outputs had a tolerance higher than 10%. 
+
 ## What “best practices” have you identified? 
+
+I have learned that designing a PCB requires careful attention because even a small issue could cause a short circuit. Another important practice is to print the PCB and check the component sizes and layout for accuracy.
+
 ## What unanticipated problems occurred? 
+
+The only unanticipated problem I faced was selecting a very small SMD size for all resistors on my PCB. 
+
 ## What would you do differently if you were able to do it over again? 
+
+I would print the PCB design on paper, and then I would be able to see the actual size of all the components on my PCB. If an issue were found, I could change the size or redesign the PCB to get the best outcome. 
+
 ## What new knowledge or skills did you acquire throughout Capstone? 
+
+I learned many new things, such as designing PV systems, voltage regulators, and PCBs. These new skills helped me determine what I prefer to do in the future. Moreover, each skill and knowledge I acquired was the key to accomplishing my assigned subsystem. 
 
 # Brady Beecham
 ## What went well? 
