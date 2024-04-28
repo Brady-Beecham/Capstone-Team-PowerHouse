@@ -51,6 +51,10 @@ https://www.youtube.com/watch?v=kGD3eaTffT4
 
 *Wall Power Controller*
 
+<img src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/119456660/a48e1fa1-8d24-47de-8973-eb22bad1bee4" width=400>
+
+*ESP32 Microcontroller with RFM95W LoRa Transceiver*
+
 
 
 
