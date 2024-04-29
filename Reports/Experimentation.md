@@ -537,47 +537,28 @@ To get a number for the largest region (region 3), let’s assume the LoRa chirp
 
 We get r = 354 meters. Therefore 354 meters is what is needed for the LoRaWAN network to span region 3.
 
-The experiment will be conducted by setting up the LoRaWAN gateway in the Capstone Lab and then a person will walk with an end device toward purple lot until the signal is lost. The location where the signal is lost will be recorded and the distance from the gateway will be measured with Google Maps. Tests will be done with and without adaptive data rate functionality, and with different frequency plans. I will also test the range of LoRa PHY, the physical layer only implementation. This is because I can choose higher spreading factors and lower bandwidths than with LoRaWAN.
+The experiment will be conducted by setting up the LoRaWAN gateway at my apartment which is beside Tech Village and then a person will walk with an end device into campus until the signal is lost. The location where the signal is lost will be recorded and the distance from the gateway will be measured with Google Maps. Tests will be done with adaptive data rate functionality.
 
 ### Prediction
 I predict that the 354 meter range will be achieved, but the 915 meter range may not. 
 
-Based on informal testing I conducted around January, I found that the LoRa physical layer protocol could reach approximately 500-520 meters from Brown Hall using the same ESP32 microcontrollers and RFM95W transceivers. I estimated a maximum range of about 15 km in my signoff, but I now realize I do not have the hardware nor the setup for that level of coverage. The relatively cheap components of the RFM95W transceiver make frequency error a problem. This leads to problems with higher spreading factors and lower bandwidths. A higher quality crystal oscillator that is temperature compensating (TCXO) would enable the use of the lowest bandwidths such as 7.8 kHz for maximum range.  The RFM95W, with its crystal that is not temperature compensating, can only handle bandwidths as low as 62.5 kHz. Also, the antennas from Amazon likely do not produce the advertised gain numbers.
+Based on informal testing I conducted around January, I found that the LoRa physical layer protocol could reach approximately 500-520 meters from Brown Hall using the same ESP32 microcontrollers and RFM95W transceivers. I estimated a maximum range of about 15 km in my signoff, but I now realize I may not have the hardware nor the setup for that level of coverage. The relatively cheap components of the RFM95W transceiver make frequency error a problem. This leads to problems with higher spreading factors and lower bandwidths. A higher quality crystal oscillator that is temperature compensating (TCXO) would enable the use of the lowest bandwidths such as 7.8 kHz for maximum range.  The RFM95W, with its crystal that is not temperature compensating, can only handle bandwidths as low as 62.5 kHz.
 
 The propagation model I used in the signoff to predict the range of the LoRaWAN network is not well suited to this LoRaWAN network. Immense range with LoRa is achieved by having your gateway antennas elevated, with high gain, high spreading factor (11 or 12), low bandwidth, and clear line of sight. LoRaWAN, more specifically the “The Things Network” standard frequency plans tend to use the lowest spreading factors and high bandwidths. This means much lower range than what the LoRa physical layer modulation technique is truly capable of.
 
 ### Number of Trials
-There will be 3 trials of each test. The individual tests are intended to examine how different parameters affect the range achieved. Tests of more configurations were planned, but due to excessive join times, they were not tested. 
-The tests will be: 
--	LoRaWAN gateway to end device network tests:
-   1.	Adaptive data rate
-   2.	Spreading Factor 8, Bandwidth 500 kHz
-   3.	Spreading Factor 10, Bandwidth 125 kHz
+There will be 3 trials using the adaptive data rate setting in the ESP32 code. A trial is recorded by resetting the ESP32 and successfully reconnecting to the gateway.
 
 ### Results
 #### Adaptive Data Rate
 | Trial | Range achieved (meters)  |
 |-------|--------------------------|
-| 1 | 65 |
-| 2 | 65 |
-| 3 | 60 |
-
-#### Spreading Factor 8, Bandwidth 500 kHz
-| Trial | Range achieved (meters)  |
-|-------|--------------------------|
-| 1 | 65 |
-| 2 | 65 |
-| 3 | 65 |
-
-#### Spreading Factor 10, Bandwidth 125 kHz
-| Trial | Range achieved (meters)  |
-|-------|--------------------------|
-| 1 | 60 |
-| 2 | 60 |
-| 3 | 65 |
+| 1 | 980 |
+| 2 | 1050 |
+| 3 | 1000 |
 
 
-### Have Constraints and Measures of Success been Met?
+### Have Constraints and Measures of Success Been Met?
 
 #### C5
 Data shall be transmitted on the unlicensed 915 MHz ISM band bounded by 902 MHz and 928 MHz.
@@ -593,7 +574,7 @@ Data shall be transmitted according to the standards set by The LoRa Alliance th
 The system shall be able to communicate effectively over a distance of 915 meters or 1 kilometer in order to scale over all of campus. This is the approximate distance from Brown Hall to the far edge of Purple Lot. This was determined to be the farthest point on campus from Brown Hall using Google Maps. This distance must be achieved even when the signal has to pass through several layers of material. 
 
 **Update:** Additionally, for a region-based, multi-gateway approach, a range of approximately 354 meters is needed. The reasoning for this has been explained in the "Purpose of the Experiment" section.
-   - The subsystem fails to meet this constraint. The range of the previous LoRa physical layer protocol achieved in January (500-520 meters) was unable to be replicated. A maximum range of only 65 meters was achieved with LoRaWAN.
+   - The subsystem meets this constraint. All of the measured ranges were over 915 meters. I could have gone even farther, but I was already at the edge of campus by the Bryan Fine Arts building.
 
 #### C8 
 The system is constrained by the limited data rate that is inherent to the LoRaWAN protocol. Specifically, the bit rate can range between 0.3 kbps to 27 kbps depending on the spreading factor and bandwidth used.
@@ -606,7 +587,7 @@ The system is constrained by the maximum payload size afforded by LoRaWAN. Depen
 #### M2 
 Wireless Communication: The sensor shall communicate with the server wirelessly.
 
- - This measure of success has been met because, despite the low range of the LoRaWAN network, data is still transmitted effectively to the cloud server.
+ - This measure of success has been met and exceeded because the extreme range of LoRaWAN is much greater than what was initially required. Initially, we just needed something that could reach from the Capstone Lab to the parking lot outside.
 
 #### M3 
 Local Space Availability Retention: **No longer relevant:** The sensor shall track the number of vehicles in a parking lot locally.
@@ -620,11 +601,7 @@ Space Availability Retention: The system shall keep a local count of vehicles th
 
 
 ### Interpretation
-The experimentation does not indicate that this subsystem, in its current state, is suitable for campus-wide scale. 
-
-I suspect there are problems with hardware and/or software configuration. The RFM95W transceiver is intended to be a cheap LoRa transceiver for hobbyists. It is not intended to be a LoRaWAN-compliant device. The informal range testing conducted in January indicates the potential of the RFM95W transceivers for point-to-point communication but attempts to replicate those results have failed. The point-to-point setup now has similar range to the LoRaWAN range test results. LoRaWAN is known to have long-range capability, although this testing indicates my hardware is not up to the task. Better hardware would be the easy solution to this problem. 
-
-Despite the failure of my current hardware/software, LoRaWAN is still a viable option for campus-scale IoT communication based on the wide use of LoRaWAN in industry and the incredible ranges that have been achieved with the technology.
+The experimentation indicates that this subsystem is more than capable of campus-wide scale operation. 
 
 
 ## Solar Power Subsystem
