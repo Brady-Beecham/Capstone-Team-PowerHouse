@@ -17,6 +17,8 @@ I selectd a small size for resistors and Capacitors for solder.
 ## What would you do differently if you were able to do it over again? 
  If I was able to do it again. I will choose a bigger size for resistors and Capacitors for easy soldering it
 ## What new knowledge or skills did you acquire throughout Capstone? 
+I learned many things, such as Kicad, designing PCB, buck converter "step down," and the switch can be a controller between the wall power and backup battery, and this controller manages the voltage between them.
+
 
 # Khalifah Altamimi
 ## What went well? 
