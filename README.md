@@ -55,6 +55,10 @@ https://www.youtube.com/watch?v=kGD3eaTffT4
 
 *ESP32 Microcontroller with RFM95W LoRa Transceiver*
 
+<img src="https://github.com/Brady-Beecham/Capstone-Team-PowerHouse/assets/119456660/ebc342ef-36fc-4c15-ad75-069c6d9a7ac1" width=400>
+
+*Raspberry Pi 4 based LoRaWAN Gateway with WM1302 Concentrator*
+
 
 
 
