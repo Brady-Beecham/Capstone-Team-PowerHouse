@@ -1,11 +1,14 @@
 # Abdulrahman Alrudayan
-
+1. ECE 2010, ECE 2020, ECE3300 Circuit I & Circuit II and Electronics I
+2. ECE 3610 Intro to Power Systems
+3. ECE 3330 Signals and Systems
+4. ECE 3210 Control System Analysis
 
 # Khalifah Altamimi
 1. ECE 4630 Power Electronics
-2. ECE 4610 Power system Analysis
+2. ECE 4610 Power System Analysis
 3. ECE 2010, ECE 2020 Circuit I & Circuit II
-4. 
+ 
 
 # Brady Beecham
 1.  ECE 4140 Embedded System Design
