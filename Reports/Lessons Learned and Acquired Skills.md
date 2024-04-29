@@ -12,9 +12,10 @@ everything go well. In capstone one, I struggled to understand how to select som
 I really understood how to select the components and design PCBs with soldered components, especially chips. For the chips “buck converter,” do not use the Weller soldering station. You can use surface mount ICs, which are excellent.
 
 ## What unanticipated problems occurred? 
-All I selected was a small size for resistors and Capacitors for solder. 
+I selectd a small size for resistors and Capacitors for solder. 
 
 ## What would you do differently if you were able to do it over again? 
+ If I was able to do it again. I will choose a bigger size for resistors and Capacitors for easy soldering it
 ## What new knowledge or skills did you acquire throughout Capstone? 
 
 # Khalifah Altamimi
