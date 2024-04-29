@@ -5,7 +5,9 @@
 
 
 # Brady Beecham
-
+1.  ECE 4140 Embedded System Design
+2.  Circuits I & II, Electronics
+3.  CSC 2310 Object Oriented Programming/Design
 
 # Kyle Plant
 1.  ECE 4140 Embedded System Design
