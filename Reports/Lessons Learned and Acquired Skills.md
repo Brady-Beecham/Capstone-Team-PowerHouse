@@ -9,6 +9,7 @@ everything go well.But in capstone one, I struggled to understand how to select 
 
 
 ## What “best practices” have you identified? 
+I really understood how to select the components and design PCBs with soldered components, especially chips. For the chips “buck converter,” do not use the Weller soldering station. You can use surface mount ICs, which are excellent.
 
 ## What unanticipated problems occurred? 
 ## What would you do differently if you were able to do it over again? 
