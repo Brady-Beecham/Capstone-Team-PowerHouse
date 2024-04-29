@@ -1,4 +1,4 @@
-# {Parking Lot Monitoring System: Ground Based Solution}
+# Parking Lot Monitoring System: Ground-Based Solution
 
 ## Executive Summary
 
