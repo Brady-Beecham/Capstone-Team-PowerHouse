@@ -5,13 +5,15 @@ At the beginning of the Capstone one, we chose to have weekly meetings with our 
 Furthermore, the wall power subsystem was carefully designed, soldered, and selected components in specific sizes and chips, such as adapter power supply, chips “buck converters,” inductors, capacitors, resistors, relay switches, and backup batteries. The main thing for my subsystem is to step down the voltage and current to feed each of the two subsystems. Both components were carefully calculated to provide reliable results.
 
 ## What did not go well? 
-everything go well.But in capstone one, I struggled to understand how to select some components such as, chips  and switches 
+everything go well. In capstone one, I struggled to understand how to select some components such as, chips  and switches 
 
 
 ## What “best practices” have you identified? 
 I really understood how to select the components and design PCBs with soldered components, especially chips. For the chips “buck converter,” do not use the Weller soldering station. You can use surface mount ICs, which are excellent.
 
 ## What unanticipated problems occurred? 
+All I selected was a small size for resistors and Capacitors for solder. 
+
 ## What would you do differently if you were able to do it over again? 
 ## What new knowledge or skills did you acquire throughout Capstone? 
 
