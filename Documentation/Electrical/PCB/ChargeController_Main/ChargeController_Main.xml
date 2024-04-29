@@ -1,0 +1,1489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\Bkb61\OneDrive\Documents\School_Work\Capstone\ChargeController\ChargeController_Main\ChargeController_Main.kicad_sch</source>
+    <date>2/14/2024 12:39:02 PM</date>
+    <tool>Eeschema 7.0.8</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Charge Controller Main</title>
+        <company>Tennessee Technological University</company>
+        <rev>0.1</rev>
+        <date>2024-02-11</date>
+        <source>ChargeController_Main.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>10u</value>
+      <footprint>ChargeController_Main_Library:CAPPRD250W65D630H900</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0b642b71-82fe-463f-8958-ac0cad9c0d31</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>10u</value>
+      <footprint>ChargeController_Main_Library:CAPPRD250W65D630H900</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2f825656-3ec3-456c-b2f6-292b4b815442</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>10u</value>
+      <footprint>ChargeController_Main_Library:CAPPRD250W65D630H900</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e7c5dd28-2a51-46b4-8ee5-3d33943f1580</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>4n</value>
+      <footprint>Capacitor_THT:C_Disc_D14.5mm_W5.0mm_P7.50mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>36d03971-4ad5-452f-aadc-438b64ed1730</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>5u</value>
+      <footprint>Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9c65a990-98bf-4cb3-9935-da78272068cf</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>50p</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>59ad4396-54b5-4fac-b32c-9059593f9e50</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>0.22u</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>77da27ae-3e74-4cb9-833c-c68756b0314b</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>0.22u</value>
+      <footprint>Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f8fdc2f1-1aaa-4e7c-af55-6b7b3da1103a</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>150u</value>
+      <footprint>Capacitor_THT:CP_Radial_D6.3mm_P2.50mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d9eca93d-cfa8-4f04-960d-1e87c8fc3b2d</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>22n</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ef4f3a0e-6ac1-4979-a0d5-38651b86f75a</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>0.1u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>70630798-4c82-43a3-9531-8d290c5af4da</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>0.1u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b24e1e92-4ccd-4e3b-a633-5d119ec25c53</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>1n</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9f92767f-56ee-4242-910c-f7e50215a7f3</tstamps>
+    </comp>
+    <comp ref="C14">
+      <value>10n</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>916b999e-8d75-44d9-b05c-32d3927533a0</tstamps>
+    </comp>
+    <comp ref="C15">
+      <value>680p</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2460b096-066d-4375-aac9-9109cbef6ee7</tstamps>
+    </comp>
+    <comp ref="C16">
+      <value>5u</value>
+      <footprint>Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>efad2164-79f7-4f27-88c2-194419049d78</tstamps>
+    </comp>
+    <comp ref="C17">
+      <value>5u</value>
+      <footprint>Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4ebeafe7-ff8c-45d2-bbef-96cdcc599b06</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>D_Schottky</value>
+      <footprint>ChargeController_Main_Library:SOD3716X145N</footprint>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Schottky diode"/>
+      <property name="ki_keywords" value="diode Schottky"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c6742e09-3f33-4e63-b80b-69db7a9215cc</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>RFN10BM3STL</value>
+      <footprint>ChargeController_Main_Library:RD3P175SNFRATL</footprint>
+      <datasheet>https://fscdn.rohm.com/en/products/databook/datasheet/discrete/diode/fast_recovery/rfn10bm3s-e.pdf</datasheet>
+      <fields>
+        <field name="Manufacturer_Name">ROHM Semiconductor</field>
+        <field name="Manufacturer_Part_Number">RFN10BM3STL</field>
+        <field name="Mouser Part Number">755-RFN10BM3STL</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/RFN10BM3STL?qs=yrxrYnY23DGBeQPMkvckXg%3D%3D</field>
+      </fields>
+      <libsource lib="Main_Charge_Controller_Symbols" part="RFN10BM3STL" description="Super Fast Recovery Diode"/>
+      <property name="Height" value=""/>
+      <property name="Mouser Part Number" value="755-RFN10BM3STL"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/RFN10BM3STL?qs=yrxrYnY23DGBeQPMkvckXg%3D%3D"/>
+      <property name="Manufacturer_Name" value="ROHM Semiconductor"/>
+      <property name="Manufacturer_Part_Number" value="RFN10BM3STL"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Super Fast Recovery Diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>28a4c25b-f8db-4278-be45-1256f1e6e8d0</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole without connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d8ee59bf-efb3-41ab-a31c-4e3a23a4a5d0</tstamps>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole without connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e11dc868-1d44-40d8-8b95-4143d43ed5b9</tstamps>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole without connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5921ee39-8640-4be7-9a2d-bba2bdfe7b1d</tstamps>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole without connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4a07615e-8d29-4a60-9b47-d1497b9a95a7</tstamps>
+    </comp>
+    <comp ref="IC1">
+      <value>ACS724LLCTR-05AU-T</value>
+      <footprint>ChargeController_Main_Library:SOIC127P600X175-8N</footprint>
+      <datasheet>https://www.allegromicro.com/~/media/files/datasheets/acs724-datasheet.pdf</datasheet>
+      <fields>
+        <field name="Arrow Part Number">ACS724LLCTR-05AU-T</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/acs724llctr-05au-t/allegro-microsystems?region=nac</field>
+        <field name="Height">1.75</field>
+        <field name="Manufacturer_Name">Allegro Microsystems</field>
+        <field name="Manufacturer_Part_Number">ACS724LLCTR-05AU-T</field>
+        <field name="Mouser Part Number">250-724LLCTR05AUT</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Allegro-MicroSystems/ACS724LLCTR-05AU-T?qs=pUKx8fyJudC3f6AQOezPDA%3D%3D</field>
+      </fields>
+      <libsource lib="Main_Charge_Controller_Symbols" part="ACS724LLCTR-05AU-T" description="High-Accuracy, 5V Isolated Current Sensor with Stray Field Rejection"/>
+      <property name="Height" value="1.75"/>
+      <property name="Manufacturer_Name" value="Allegro Microsystems"/>
+      <property name="Manufacturer_Part_Number" value="ACS724LLCTR-05AU-T"/>
+      <property name="Mouser Part Number" value="250-724LLCTR05AUT"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Allegro-MicroSystems/ACS724LLCTR-05AU-T?qs=pUKx8fyJudC3f6AQOezPDA%3D%3D"/>
+      <property name="Arrow Part Number" value="ACS724LLCTR-05AU-T"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/acs724llctr-05au-t/allegro-microsystems?region=nac"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="High-Accuracy, 5V Isolated Current Sensor with Stray Field Rejection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>182fcbc4-7415-491a-9308-cecfaea77ae2</tstamps>
+    </comp>
+    <comp ref="IC2">
+      <value>ABX00028</value>
+      <footprint>ChargeController_Main_Library:ABX00028</footprint>
+      <libsource lib="Main_Charge_Controller_Symbols" part="ABX00028" description="Development Boards &amp; Kits - AVR Arduino Nano Every"/>
+      <property name="Height" value=""/>
+      <property name="Manufacturer_Name" value=""/>
+      <property name="Manufacturer_Part_Number" value=""/>
+      <property name="Mouser Part Number" value=""/>
+      <property name="Mouser Price/Stock" value=""/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Development Boards &amp; Kits - AVR Arduino Nano Every"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1690b5bb-910b-4a1b-81db-2150fdc81b4f</tstamps>
+    </comp>
+    <comp ref="IC3">
+      <value>TLV9361QDCKRQ1</value>
+      <footprint>ChargeController_Main_Library:SOT65P210X110-5N</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tlv9361-q1.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1698578277040&amp;ref_url=https%253A%252F%252Fwww.mouser.cn%252F</datasheet>
+      <fields>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">TLV9361QDCKRQ1</field>
+        <field name="Mouser Part Number">595-TLV9361QDCKRQ1</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TLV9361QDCKRQ1?qs=ulEaXIWI0c9OtnSeYnzTIQ%3D%3D</field>
+      </fields>
+      <libsource lib="Main_Charge_Controller_Symbols" part="TLV9361QDCKRQ1" description="Operational Amplifiers - Op Amps Automotive, single, 40-V 10.6-MHz rail-to-rail output operational amplifier"/>
+      <property name="Height" value="1.1"/>
+      <property name="Manufacturer_Name" value="Texas Instruments"/>
+      <property name="Manufacturer_Part_Number" value="TLV9361QDCKRQ1"/>
+      <property name="Mouser Part Number" value="595-TLV9361QDCKRQ1"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TLV9361QDCKRQ1?qs=ulEaXIWI0c9OtnSeYnzTIQ%3D%3D"/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Operational Amplifiers - Op Amps Automotive, single, 40-V 10.6-MHz rail-to-rail output operational amplifier"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2d6d27f4-a701-4835-9d40-e8dac287d9ee</tstamps>
+    </comp>
+    <comp ref="IC4">
+      <value>LT3120JV#PBF</value>
+      <footprint>ChargeController_Main_Library:QFN50P400X500X83-29N-D</footprint>
+      <datasheet>https://www.mouser.jp/datasheet/2/609/lt3120-2401157.pdf</datasheet>
+      <fields>
+        <field name="Arrow Part Number">LT3120JV#PBF</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/lt3120jvpbf/analog-devices?region=nac</field>
+        <field name="Height">0.83</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">LT3120JV#PBF</field>
+        <field name="Mouser Part Number">584-LT3120JV#PBF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT3120JVPBF?qs=QNEnbhJQKvYUJOxbUfIX7w%3D%3D</field>
+      </fields>
+      <libsource lib="Main_Charge_Controller_Symbols" part="LT3120JV#PBF" description="Switching Voltage Regulators 24V, 6.5A Sync Buck-Boost Converter"/>
+      <property name="Height" value="0.83"/>
+      <property name="Manufacturer_Name" value="Analog Devices"/>
+      <property name="Manufacturer_Part_Number" value="LT3120JV#PBF"/>
+      <property name="Mouser Part Number" value="584-LT3120JV#PBF"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT3120JVPBF?qs=QNEnbhJQKvYUJOxbUfIX7w%3D%3D"/>
+      <property name="Arrow Part Number" value="LT3120JV#PBF"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/lt3120jvpbf/analog-devices?region=nac"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Switching Voltage Regulators 24V, 6.5A Sync Buck-Boost Converter"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b5612b76-fa5e-4cfd-ba43-9a8c2ef374b4</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>SOLAR_PANEL</value>
+      <footprint>Connector_Wire:SolderWire-1sqmm_1x02_P5.4mm_D1.4mm_OD2.7mm</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bc61c164-3306-4998-9fae-434c48a48058</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>BAT_CHARGER1</value>
+      <footprint>Connector_Wire:SolderWire-1sqmm_1x06_P5.4mm_D1.4mm_OD2.7mm</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x06" description="Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>df8c6e79-b15b-4ec4-8e66-b057de897478</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>BAT_CHARGER2</value>
+      <footprint>Connector_Wire:SolderWire-1sqmm_1x06_P5.4mm_D1.4mm_OD2.7mm</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x06" description="Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0fab23c7-b077-4c34-9c0d-8f510e328ee2</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>BAT1</value>
+      <footprint>Connector_Wire:SolderWire-1sqmm_1x02_P5.4mm_D1.4mm_OD2.7mm</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2f1eed87-b0e4-408b-9eed-265c76dfd4c4</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>BAT2</value>
+      <footprint>Connector_Wire:SolderWire-1sqmm_1x02_P5.4mm_D1.4mm_OD2.7mm</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9115c3b0-a3b1-4b61-be00-628bd80fe1bf</tstamps>
+    </comp>
+    <comp ref="J7">
+      <value>POWER_CONTROLLER</value>
+      <footprint>Connector_Wire:SolderWire-1sqmm_1x02_P5.4mm_D1.4mm_OD2.7mm</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x02" description="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b13fb1c6-371c-4b4b-acef-ad410db0fe7b</tstamps>
+    </comp>
+    <comp ref="K1">
+      <value>G6RN-1-DC5</value>
+      <footprint>ChargeController_Main_Library:G6RN1DC5</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Omron-Electronics-G6RN-1-DC5-BY-OMB_C231394.pdf</datasheet>
+      <fields>
+        <field name="Height">15.5</field>
+        <field name="Manufacturer_Name">Omron Electronics</field>
+        <field name="Manufacturer_Part_Number">G6RN-1-DC5</field>
+        <field name="Mouser Part Number">653-G6RN-1-DC5</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Omron-Electronics/G6RN-1-DC5?qs=4BYd6zd2T8WY0IhOgkQoqg%3D%3D</field>
+      </fields>
+      <libsource lib="Main_Charge_Controller_Symbols" part="G6RN-1-DC5" description="General Purpose Relays Heavy-Duty SPDT 5VDC"/>
+      <property name="Height" value="15.5"/>
+      <property name="Manufacturer_Name" value="Omron Electronics"/>
+      <property name="Manufacturer_Part_Number" value="G6RN-1-DC5"/>
+      <property name="Mouser Part Number" value="653-G6RN-1-DC5"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Omron-Electronics/G6RN-1-DC5?qs=4BYd6zd2T8WY0IhOgkQoqg%3D%3D"/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="General Purpose Relays Heavy-Duty SPDT 5VDC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>08b559c4-1528-40cb-87a0-d35280a88b5a</tstamps>
+    </comp>
+    <comp ref="K2">
+      <value>G6RN-1-DC5</value>
+      <footprint>ChargeController_Main_Library:G6RN1DC5</footprint>
+      <datasheet>https://datasheet.lcsc.com/szlcsc/Omron-Electronics-G6RN-1-DC5-BY-OMB_C231394.pdf</datasheet>
+      <fields>
+        <field name="Height">15.5</field>
+        <field name="Manufacturer_Name">Omron Electronics</field>
+        <field name="Manufacturer_Part_Number">G6RN-1-DC5</field>
+        <field name="Mouser Part Number">653-G6RN-1-DC5</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Omron-Electronics/G6RN-1-DC5?qs=4BYd6zd2T8WY0IhOgkQoqg%3D%3D</field>
+      </fields>
+      <libsource lib="Main_Charge_Controller_Symbols" part="G6RN-1-DC5" description="General Purpose Relays Heavy-Duty SPDT 5VDC"/>
+      <property name="Height" value="15.5"/>
+      <property name="Manufacturer_Name" value="Omron Electronics"/>
+      <property name="Manufacturer_Part_Number" value="G6RN-1-DC5"/>
+      <property name="Mouser Part Number" value="653-G6RN-1-DC5"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Omron-Electronics/G6RN-1-DC5?qs=4BYd6zd2T8WY0IhOgkQoqg%3D%3D"/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="General Purpose Relays Heavy-Duty SPDT 5VDC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e59681c6-05c5-4bcb-a663-6b3486e3d727</tstamps>
+    </comp>
+    <comp ref="L1">
+      <value>15u</value>
+      <footprint>ChargeController_Main_Library:INDPM135125X500N</footprint>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Inductor"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2de2d2f6-06ba-48c7-a1a7-5dc44f1a0371</tstamps>
+    </comp>
+    <comp ref="L2">
+      <value>15u</value>
+      <footprint>ChargeController_Main_Library:INDPM135125X500N</footprint>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Inductor"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eb930a4a-0bf5-4709-951d-5905aec4a58f</tstamps>
+    </comp>
+    <comp ref="PS1">
+      <value>TPS61170DRVR</value>
+      <footprint>ChargeController_Main_Library:SON65P200X200X80-7N</footprint>
+      <datasheet>http://www.ti.com/lit/gpn/tps61170</datasheet>
+      <fields>
+        <field name="Arrow Part Number">TPS61170DRVR</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/tps61170drvr/texas-instruments?region=nac</field>
+        <field name="Height">0.8</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">TPS61170DRVR</field>
+        <field name="Mouser Part Number">595-TPS61170DRVR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS61170DRVR?qs=pZC5fsuWujFeUvvbhM8Aeg%3D%3D</field>
+      </fields>
+      <libsource lib="Main_Charge_Controller_Symbols" part="TPS61170DRVR" description="1.2A Switch, 38V High Voltage Boost Converter in 2x2mm QFN Package"/>
+      <property name="Height" value="0.8"/>
+      <property name="Manufacturer_Name" value="Texas Instruments"/>
+      <property name="Manufacturer_Part_Number" value="TPS61170DRVR"/>
+      <property name="Mouser Part Number" value="595-TPS61170DRVR"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS61170DRVR?qs=pZC5fsuWujFeUvvbhM8Aeg%3D%3D"/>
+      <property name="Arrow Part Number" value="TPS61170DRVR"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/tps61170drvr/texas-instruments?region=nac"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="1.2A Switch, 38V High Voltage Boost Converter in 2x2mm QFN Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>74224e24-2e2f-4580-8edb-7465da891e70</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>SI7272DP-T1-GE3</value>
+      <footprint>ChargeController_Main_Library:SI7288DPT1GE3</footprint>
+      <datasheet>https://www.vishay.com/docs/69026/si7272dp.pdf</datasheet>
+      <fields>
+        <field name="Arrow Part Number">SI7272DP-T1-GE3</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/si7272dp-t1-ge3/vishay</field>
+        <field name="Manufacturer_Name">Vishay</field>
+        <field name="Manufacturer_Part_Number">SI7272DP-T1-GE3</field>
+        <field name="Mouser Part Number">781-SI7272DP-GE3</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=781-SI7272DP-GE3</field>
+      </fields>
+      <libsource lib="Main_Charge_Controller_Symbols" part="SI7272DP-T1-GE3" description="VISHAY - SI7272DP-T1-GE3 - MOSFET, DUAL N-CH, 30V, 25A, POWERPAK SO"/>
+      <property name="Height" value=""/>
+      <property name="Manufacturer_Name" value="Vishay"/>
+      <property name="Manufacturer_Part_Number" value="SI7272DP-T1-GE3"/>
+      <property name="Mouser Part Number" value="781-SI7272DP-GE3"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.com/Search/Refine.aspx?Keyword=781-SI7272DP-GE3"/>
+      <property name="Arrow Part Number" value="SI7272DP-T1-GE3"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/si7272dp-t1-ge3/vishay"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="VISHAY - SI7272DP-T1-GE3 - MOSFET, DUAL N-CH, 30V, 25A, POWERPAK SO"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a338742a-b8d0-463e-94b3-a621cbafab33</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dc94ba59-843f-4286-b357-9fe9bd7f4cdc</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>14k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2fb8c9aa-46b0-4460-b295-2fee86c4f66a</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>2M</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ddea4b50-7bed-4aaa-b083-8035907951a2</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>100k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>14792ab0-f8e8-43b1-bdb9-031544d3b487</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>3.6k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a11e52fc-2616-4c2f-8731-3df1059ee3c1</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>30k</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b825b835-e872-4c09-9c4d-e25a444f0512</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d132c17f-11c5-4391-9a78-2871a3806173</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>620k</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b9343b69-6641-4312-bbc5-ed8c1cb253f0</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>76.8k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c5dbef8f-1b07-4761-9574-bd7abc84f2eb</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>33k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>359f33b3-bb10-46de-97fe-2351c269b549</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0e819ea2-5f60-45ad-b4e8-ba9eec7bfa23</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>140k</value>
+      <footprint>Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>49d09cc5-0b7f-4a6b-8768-b80dd00cc4c0</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c78f0c0d-2a5c-479d-8f15-db4eac693347</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>17k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ccdf048e-7766-4fcb-a6ba-bcf70b7d499d</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a16117e3-9c03-4054-8024-dc8c43f035f4</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>120k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ed51e3db-8c46-49b0-9eba-27a2b3de5f0d</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>10k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="ChargeController_Main.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fa62b30c-168b-4424-ad1a-d9f10483a221</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Screw_Terminal_01x02">
+      <description>Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x02</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Screw_Terminal_01x06">
+      <description>Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x06</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Main_Charge_Controller_Symbols" part="ABX00028">
+      <description>Development Boards &amp; Kits - AVR Arduino Nano Every</description>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">ABX00028</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="D13" type="passive"/>
+        <pin num="A2" name="3.3V" type="passive"/>
+        <pin num="A3" name="REF" type="passive"/>
+        <pin num="A4" name="A0" type="passive"/>
+        <pin num="A5" name="A1" type="passive"/>
+        <pin num="A6" name="A2" type="passive"/>
+        <pin num="A7" name="A3" type="passive"/>
+        <pin num="A8" name="A4" type="passive"/>
+        <pin num="A9" name="A5" type="passive"/>
+        <pin num="A10" name="A6" type="passive"/>
+        <pin num="A11" name="A7" type="passive"/>
+        <pin num="A12" name="5V" type="passive"/>
+        <pin num="A13" name="RST_1" type="passive"/>
+        <pin num="A14" name="GND_1" type="passive"/>
+        <pin num="A15" name="VIN" type="passive"/>
+        <pin num="B1" name="TX1" type="passive"/>
+        <pin num="B2" name="RX0" type="passive"/>
+        <pin num="B3" name="RST_2" type="passive"/>
+        <pin num="B4" name="GND_2" type="passive"/>
+        <pin num="B5" name="D2" type="passive"/>
+        <pin num="B6" name="D3" type="passive"/>
+        <pin num="B7" name="D4" type="passive"/>
+        <pin num="B8" name="D5" type="passive"/>
+        <pin num="B9" name="D6" type="passive"/>
+        <pin num="B10" name="D7" type="passive"/>
+        <pin num="B11" name="D8" type="passive"/>
+        <pin num="B12" name="D9" type="passive"/>
+        <pin num="B13" name="D10" type="passive"/>
+        <pin num="B14" name="D11" type="passive"/>
+        <pin num="B15" name="D12" type="passive"/>
+        <pin num="MH1" name="MH1" type="passive"/>
+        <pin num="MH2" name="MH2" type="passive"/>
+        <pin num="MH3" name="MH3" type="passive"/>
+        <pin num="MH4" name="MH4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Main_Charge_Controller_Symbols" part="ACS724LLCTR-05AU-T">
+      <description>High-Accuracy, 5V Isolated Current Sensor with Stray Field Rejection</description>
+      <docs>https://www.allegromicro.com/~/media/files/datasheets/acs724-datasheet.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">ACS724LLCTR-05AU-T</field>
+        <field name="Footprint">SOIC127P600X175-8N</field>
+        <field name="Datasheet">https://www.allegromicro.com/~/media/files/datasheets/acs724-datasheet.pdf</field>
+        <field name="Height">1.75</field>
+        <field name="Manufacturer_Name">Allegro Microsystems</field>
+        <field name="Manufacturer_Part_Number">ACS724LLCTR-05AU-T</field>
+        <field name="Mouser Part Number">250-724LLCTR05AUT</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Allegro-MicroSystems/ACS724LLCTR-05AU-T?qs=pUKx8fyJudC3f6AQOezPDA%3D%3D</field>
+        <field name="Arrow Part Number">ACS724LLCTR-05AU-T</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/acs724llctr-05au-t/allegro-microsystems?region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IP+_1" type="passive"/>
+        <pin num="2" name="IP+_2" type="passive"/>
+        <pin num="3" name="IP-_1" type="passive"/>
+        <pin num="4" name="IP-_2" type="passive"/>
+        <pin num="5" name="GND" type="passive"/>
+        <pin num="6" name="FILTER" type="passive"/>
+        <pin num="7" name="VIOUT" type="passive"/>
+        <pin num="8" name="VCC" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Main_Charge_Controller_Symbols" part="G6RN-1-DC5">
+      <description>General Purpose Relays Heavy-Duty SPDT 5VDC</description>
+      <docs>https://datasheet.lcsc.com/szlcsc/Omron-Electronics-G6RN-1-DC5-BY-OMB_C231394.pdf</docs>
+      <fields>
+        <field name="Reference">K</field>
+        <field name="Value">G6RN-1-DC5</field>
+        <field name="Footprint">G6RN1DC5</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/szlcsc/Omron-Electronics-G6RN-1-DC5-BY-OMB_C231394.pdf</field>
+        <field name="Height">15.5</field>
+        <field name="Manufacturer_Name">Omron Electronics</field>
+        <field name="Manufacturer_Part_Number">G6RN-1-DC5</field>
+        <field name="Mouser Part Number">653-G6RN-1-DC5</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Omron-Electronics/G6RN-1-DC5?qs=4BYd6zd2T8WY0IhOgkQoqg%3D%3D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="COIL_1" type="passive"/>
+        <pin num="2" name="COM" type="passive"/>
+        <pin num="3" name="NO" type="passive"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="COIL_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Main_Charge_Controller_Symbols" part="LT3120JV#PBF">
+      <description>Switching Voltage Regulators 24V, 6.5A Sync Buck-Boost Converter</description>
+      <docs>https://www.mouser.jp/datasheet/2/609/lt3120-2401157.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">LT3120JV#PBF</field>
+        <field name="Footprint">QFN50P400X500X83-29N-D</field>
+        <field name="Datasheet">https://www.mouser.jp/datasheet/2/609/lt3120-2401157.pdf</field>
+        <field name="Height">0.83</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">LT3120JV#PBF</field>
+        <field name="Mouser Part Number">584-LT3120JV#PBF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Analog-Devices/LT3120JVPBF?qs=QNEnbhJQKvYUJOxbUfIX7w%3D%3D</field>
+        <field name="Arrow Part Number">LT3120JV#PBF</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/lt3120jvpbf/analog-devices?region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="BST3" type="passive"/>
+        <pin num="2" name="PVOUT_1" type="passive"/>
+        <pin num="3" name="GND_1" type="passive"/>
+        <pin num="4" name="PVOUT_2" type="passive"/>
+        <pin num="5" name="ISP" type="passive"/>
+        <pin num="6" name="ISN" type="passive"/>
+        <pin num="7" name="PGOOD" type="passive"/>
+        <pin num="8" name="PROG" type="passive"/>
+        <pin num="9" name="FB" type="passive"/>
+        <pin num="10" name="VC" type="passive"/>
+        <pin num="11" name="GND_2" type="passive"/>
+        <pin num="12" name="MPPC" type="passive"/>
+        <pin num="13" name="VCC" type="passive"/>
+        <pin num="14" name="RT" type="passive"/>
+        <pin num="15" name="SYNC/MODE" type="passive"/>
+        <pin num="16" name="EN/UVLO" type="passive"/>
+        <pin num="17" name="VIN" type="passive"/>
+        <pin num="18" name="GND_3" type="passive"/>
+        <pin num="19" name="PVIN_1" type="passive"/>
+        <pin num="20" name="PVIN_2" type="passive"/>
+        <pin num="21" name="PVIN_3" type="passive"/>
+        <pin num="22" name="GND_4" type="passive"/>
+        <pin num="23" name="BST1" type="passive"/>
+        <pin num="24" name="SW1_1" type="passive"/>
+        <pin num="25" name="SW1_2" type="passive"/>
+        <pin num="26" name="SW2_1" type="passive"/>
+        <pin num="27" name="SW2_2" type="passive"/>
+        <pin num="28" name="BST2" type="passive"/>
+        <pin num="29" name="PGND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Main_Charge_Controller_Symbols" part="RFN10BM3STL">
+      <description>Super Fast Recovery Diode</description>
+      <docs>https://fscdn.rohm.com/en/products/databook/datasheet/discrete/diode/fast_recovery/rfn10bm3s-e.pdf</docs>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">RFN10BM3STL</field>
+        <field name="Footprint">RD3P175SNFRATL</field>
+        <field name="Datasheet">https://fscdn.rohm.com/en/products/databook/datasheet/discrete/diode/fast_recovery/rfn10bm3s-e.pdf</field>
+        <field name="Mouser Part Number">755-RFN10BM3STL</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/RFN10BM3STL?qs=yrxrYnY23DGBeQPMkvckXg%3D%3D</field>
+        <field name="Manufacturer_Name">ROHM Semiconductor</field>
+        <field name="Manufacturer_Part_Number">RFN10BM3STL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A_1" type="passive"/>
+        <pin num="2" name="K" type="passive"/>
+        <pin num="3" name="A_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Main_Charge_Controller_Symbols" part="SI7272DP-T1-GE3">
+      <description>VISHAY - SI7272DP-T1-GE3 - MOSFET, DUAL N-CH, 30V, 25A, POWERPAK SO</description>
+      <docs>https://www.vishay.com/docs/69026/si7272dp.pdf</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">SI7272DP-T1-GE3</field>
+        <field name="Footprint">SI7288DPT1GE3</field>
+        <field name="Datasheet">https://www.vishay.com/docs/69026/si7272dp.pdf</field>
+        <field name="Manufacturer_Name">Vishay</field>
+        <field name="Manufacturer_Part_Number">SI7272DP-T1-GE3</field>
+        <field name="Mouser Part Number">781-SI7272DP-GE3</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=781-SI7272DP-GE3</field>
+        <field name="Arrow Part Number">SI7272DP-T1-GE3</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/si7272dp-t1-ge3/vishay</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S1" type="passive"/>
+        <pin num="2" name="G1" type="passive"/>
+        <pin num="3" name="S2" type="passive"/>
+        <pin num="4" name="G2" type="passive"/>
+        <pin num="5" name="D2_1" type="passive"/>
+        <pin num="6" name="D2_2" type="passive"/>
+        <pin num="7" name="D1_1" type="passive"/>
+        <pin num="8" name="D1_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Main_Charge_Controller_Symbols" part="TLV9361QDCKRQ1">
+      <description>Operational Amplifiers - Op Amps Automotive, single, 40-V 10.6-MHz rail-to-rail output operational amplifier</description>
+      <docs>https://www.ti.com/lit/ds/symlink/tlv9361-q1.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1698578277040&amp;ref_url=https%253A%252F%252Fwww.mouser.cn%252F</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">TLV9361QDCKRQ1</field>
+        <field name="Footprint">SOT65P210X110-5N</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv9361-q1.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&amp;ts=1698578277040&amp;ref_url=https%253A%252F%252Fwww.mouser.cn%252F</field>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">TLV9361QDCKRQ1</field>
+        <field name="Mouser Part Number">595-TLV9361QDCKRQ1</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TLV9361QDCKRQ1?qs=ulEaXIWI0c9OtnSeYnzTIQ%3D%3D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN+" type="passive"/>
+        <pin num="2" name="V-" type="passive"/>
+        <pin num="3" name="IN-" type="passive"/>
+        <pin num="4" name="OUT" type="passive"/>
+        <pin num="5" name="V+" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Main_Charge_Controller_Symbols" part="TPS61170DRVR">
+      <description>1.2A Switch, 38V High Voltage Boost Converter in 2x2mm QFN Package</description>
+      <docs>http://www.ti.com/lit/gpn/tps61170</docs>
+      <fields>
+        <field name="Reference">PS</field>
+        <field name="Value">TPS61170DRVR</field>
+        <field name="Footprint">SON65P200X200X80-7N</field>
+        <field name="Datasheet">http://www.ti.com/lit/gpn/tps61170</field>
+        <field name="Height">0.8</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">TPS61170DRVR</field>
+        <field name="Mouser Part Number">595-TPS61170DRVR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS61170DRVR?qs=pZC5fsuWujFeUvvbhM8Aeg%3D%3D</field>
+        <field name="Arrow Part Number">TPS61170DRVR</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/tps61170drvr/texas-instruments?region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="FB" type="input"/>
+        <pin num="2" name="COMP" type="output"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="SW" type="bidirectional"/>
+        <pin num="5" name="CTRL" type="input"/>
+        <pin num="6" name="VIN" type="power_in"/>
+        <pin num="7" name="EP" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Datasheet">~</field>
+      </fields>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Main_Charge_Controller_Symbols">
+      <uri>C:\Users\Bkb61\OneDrive\Documents\School_Work\Capstone\ChargeController\ChargeController_Main/Main_Charge_Controller_Symbols.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Mechanical.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/Amplified_PWM">
+      <node ref="IC3" pin="4" pinfunction="OUT" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="G1" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="2" name="/BB_BST3">
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="IC4" pin="1" pinfunction="BST3" pintype="passive"/>
+    </net>
+    <net code="3" name="/BB_EN">
+      <node ref="IC4" pin="16" pinfunction="EN/UVLO" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+    </net>
+    <net code="4" name="/BB_HY">
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+    </net>
+    <net code="5" name="/BB_RT">
+      <node ref="IC4" pin="14" pinfunction="RT" pintype="passive"/>
+      <node ref="R11" pin="2" pintype="passive"/>
+    </net>
+    <net code="6" name="/BST1">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="IC4" pin="23" pinfunction="BST1" pintype="passive"/>
+    </net>
+    <net code="7" name="/BST2">
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="IC4" pin="28" pinfunction="BST2" pintype="passive"/>
+    </net>
+    <net code="8" name="/Boost_Comp">
+      <node ref="PS1" pin="2" pinfunction="COMP" pintype="output"/>
+      <node ref="R19" pin="1" pintype="passive"/>
+    </net>
+    <net code="9" name="/Boost_FB">
+      <node ref="PS1" pin="1" pinfunction="FB" pintype="input"/>
+      <node ref="R17" pin="2" pintype="passive"/>
+      <node ref="R18" pin="1" pintype="passive"/>
+    </net>
+    <net code="10" name="/Boost_SW">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="L2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="PS1" pin="4" pinfunction="SW" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="/Boosted_MPPC_Output">
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="IC3" pin="1" pinfunction="IN+" pintype="passive"/>
+      <node ref="R18" pin="2" pintype="passive"/>
+    </net>
+    <net code="12" name="/FB">
+      <node ref="IC4" pin="9" pinfunction="FB" pintype="passive"/>
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+    </net>
+    <net code="13" name="/MPPC">
+      <node ref="IC4" pin="12" pinfunction="MPPC" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+    </net>
+    <net code="14" name="/OpAmp_V-">
+      <node ref="IC3" pin="2" pinfunction="V-" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="15" name="/SW_1">
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="IC4" pin="24" pinfunction="SW1_1" pintype="passive"/>
+      <node ref="IC4" pin="25" pinfunction="SW1_2" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="16" name="/SW_2">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="IC4" pin="26" pinfunction="SW2_1" pintype="passive"/>
+      <node ref="IC4" pin="27" pinfunction="SW2_2" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="17" name="/VCC">
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="IC4" pin="13" pinfunction="VCC" pintype="passive"/>
+      <node ref="IC4" pin="8" pinfunction="PROG" pintype="passive"/>
+    </net>
+    <net code="18" name="BAT_1">
+      <node ref="J5" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="K1" pin="2" pinfunction="COM" pintype="passive"/>
+    </net>
+    <net code="19" name="BAT_2">
+      <node ref="J6" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="K2" pin="2" pinfunction="COM" pintype="passive"/>
+    </net>
+    <net code="20" name="BAT_DISCHARGE">
+      <node ref="D2" pin="2" pinfunction="K" pintype="passive"/>
+      <node ref="IC1" pin="3" pinfunction="IP-_1" pintype="passive"/>
+      <node ref="IC1" pin="4" pinfunction="IP-_2" pintype="passive"/>
+    </net>
+    <net code="21" name="BC1_CHARGE_OUT">
+      <node ref="J3" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="K1" pin="3" pinfunction="NO" pintype="passive"/>
+    </net>
+    <net code="22" name="BC2_CHARGE_OUT">
+      <node ref="J4" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="K2" pin="3" pinfunction="NO" pintype="passive"/>
+    </net>
+    <net code="23" name="BC_VIN">
+      <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="Q1" pin="7" pinfunction="D1_1" pintype="passive"/>
+      <node ref="Q1" pin="8" pinfunction="D1_2" pintype="passive"/>
+    </net>
+    <net code="24" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="5" pinfunction="GND" pintype="passive"/>
+      <node ref="IC2" pin="B4" pinfunction="GND_2" pintype="passive"/>
+      <node ref="IC3" pin="3" pinfunction="IN-" pintype="passive"/>
+      <node ref="IC4" pin="11" pinfunction="GND_2" pintype="passive"/>
+      <node ref="IC4" pin="15" pinfunction="SYNC/MODE" pintype="passive"/>
+      <node ref="IC4" pin="18" pinfunction="GND_3" pintype="passive"/>
+      <node ref="IC4" pin="22" pinfunction="GND_4" pintype="passive"/>
+      <node ref="IC4" pin="29" pinfunction="PGND" pintype="passive"/>
+      <node ref="IC4" pin="3" pinfunction="GND_1" pintype="passive"/>
+      <node ref="IC4" pin="7" pinfunction="PGOOD" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J4" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J6" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="K1" pin="5" pinfunction="COIL_2" pintype="passive"/>
+      <node ref="K2" pin="5" pinfunction="COIL_2" pintype="passive"/>
+      <node ref="PS1" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="R17" pin="1" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+    </net>
+    <net code="25" name="INPUT">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="IC4" pin="17" pinfunction="VIN" pintype="passive"/>
+      <node ref="IC4" pin="19" pinfunction="PVIN_1" pintype="passive"/>
+      <node ref="IC4" pin="20" pinfunction="PVIN_2" pintype="passive"/>
+      <node ref="IC4" pin="21" pinfunction="PVIN_3" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+    </net>
+    <net code="26" name="MCU_5V">
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="8" pinfunction="VCC" pintype="passive"/>
+      <node ref="IC2" pin="A12" pinfunction="5V" pintype="passive"/>
+    </net>
+    <net code="27" name="MCU_PWM">
+      <node ref="IC2" pin="B13" pinfunction="D10" pintype="passive"/>
+      <node ref="IC3" pin="5" pinfunction="V+" pintype="passive"/>
+    </net>
+    <net code="28" name="MCU_VIN">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="IC2" pin="A15" pinfunction="VIN" pintype="passive"/>
+      <node ref="J7" pin="2" pinfunction="Pin_2" pintype="passive"/>
+    </net>
+    <net code="29" name="MPPC_MCU_VOLTAGE">
+      <node ref="IC2" pin="A5" pinfunction="A1" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="R16" pin="1" pintype="passive"/>
+    </net>
+    <net code="30" name="MPPC_OUTPUT">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="A_1" pintype="passive"/>
+      <node ref="D2" pin="3" pinfunction="A_2" pintype="passive"/>
+      <node ref="IC4" pin="2" pinfunction="PVOUT_1" pintype="passive"/>
+      <node ref="IC4" pin="4" pinfunction="PVOUT_2" pintype="passive"/>
+      <node ref="IC4" pin="5" pinfunction="ISP" pintype="passive"/>
+      <node ref="IC4" pin="6" pinfunction="ISN" pintype="passive"/>
+      <node ref="K1" pin="1" pinfunction="COIL_1" pintype="passive"/>
+      <node ref="K2" pin="1" pinfunction="COIL_1" pintype="passive"/>
+      <node ref="L2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="PS1" pin="5" pinfunction="CTRL" pintype="input"/>
+      <node ref="PS1" pin="6" pinfunction="VIN" pintype="power_in"/>
+      <node ref="Q1" pin="1" pinfunction="S1" pintype="passive"/>
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="R16" pin="2" pintype="passive"/>
+    </net>
+    <net code="31" name="Net-(C4-Pad2)">
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+    </net>
+    <net code="32" name="Net-(C6-Pad2)">
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+    </net>
+    <net code="33" name="Net-(C15-Pad1)">
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="R19" pin="2" pintype="passive"/>
+    </net>
+    <net code="34" name="Net-(IC1-FILTER)">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="6" pinfunction="FILTER" pintype="passive"/>
+    </net>
+    <net code="35" name="Net-(IC4-VC)">
+      <node ref="IC4" pin="10" pinfunction="VC" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+    </net>
+    <net code="36" name="OUTPUT">
+      <node ref="IC1" pin="1" pinfunction="IP+_1" pintype="passive"/>
+      <node ref="IC1" pin="2" pinfunction="IP+_2" pintype="passive"/>
+      <node ref="J7" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="37" name="OutputCurrent">
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="7" pinfunction="VIOUT" pintype="passive"/>
+      <node ref="IC2" pin="A4" pinfunction="A0" pintype="passive"/>
+    </net>
+    <net code="38" name="unconnected-(IC2-3.3V-PadA2)">
+      <node ref="IC2" pin="A2" pinfunction="3.3V" pintype="passive+no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(IC2-A2-PadA6)">
+      <node ref="IC2" pin="A6" pinfunction="A2" pintype="passive+no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(IC2-A3-PadA7)">
+      <node ref="IC2" pin="A7" pinfunction="A3" pintype="passive+no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(IC2-A4-PadA8)">
+      <node ref="IC2" pin="A8" pinfunction="A4" pintype="passive+no_connect"/>
+    </net>
+    <net code="42" name="unconnected-(IC2-A5-PadA9)">
+      <node ref="IC2" pin="A9" pinfunction="A5" pintype="passive+no_connect"/>
+    </net>
+    <net code="43" name="unconnected-(IC2-A6-PadA10)">
+      <node ref="IC2" pin="A10" pinfunction="A6" pintype="passive+no_connect"/>
+    </net>
+    <net code="44" name="unconnected-(IC2-A7-PadA11)">
+      <node ref="IC2" pin="A11" pinfunction="A7" pintype="passive+no_connect"/>
+    </net>
+    <net code="45" name="unconnected-(IC2-D2-PadB5)">
+      <node ref="IC2" pin="B5" pinfunction="D2" pintype="passive+no_connect"/>
+    </net>
+    <net code="46" name="unconnected-(IC2-D3-PadB6)">
+      <node ref="IC2" pin="B6" pinfunction="D3" pintype="passive+no_connect"/>
+    </net>
+    <net code="47" name="unconnected-(IC2-D4-PadB7)">
+      <node ref="IC2" pin="B7" pinfunction="D4" pintype="passive+no_connect"/>
+    </net>
+    <net code="48" name="unconnected-(IC2-D5-PadB8)">
+      <node ref="IC2" pin="B8" pinfunction="D5" pintype="passive+no_connect"/>
+    </net>
+    <net code="49" name="unconnected-(IC2-D6-PadB9)">
+      <node ref="IC2" pin="B9" pinfunction="D6" pintype="passive+no_connect"/>
+    </net>
+    <net code="50" name="unconnected-(IC2-D7-PadB10)">
+      <node ref="IC2" pin="B10" pinfunction="D7" pintype="passive+no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(IC2-D8-PadB11)">
+      <node ref="IC2" pin="B11" pinfunction="D8" pintype="passive+no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(IC2-D9-PadB12)">
+      <node ref="IC2" pin="B12" pinfunction="D9" pintype="passive+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(IC2-D11-PadB14)">
+      <node ref="IC2" pin="B14" pinfunction="D11" pintype="passive+no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(IC2-D12-PadB15)">
+      <node ref="IC2" pin="B15" pinfunction="D12" pintype="passive+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(IC2-D13-PadA1)">
+      <node ref="IC2" pin="A1" pinfunction="D13" pintype="passive+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(IC2-GND_1-PadA14)">
+      <node ref="IC2" pin="A14" pinfunction="GND_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(IC2-PadMH1)">
+      <node ref="IC2" pin="MH1" pinfunction="MH1" pintype="passive+no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(IC2-PadMH2)">
+      <node ref="IC2" pin="MH2" pinfunction="MH2" pintype="passive+no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(IC2-PadMH3)">
+      <node ref="IC2" pin="MH3" pinfunction="MH3" pintype="passive+no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(IC2-PadMH4)">
+      <node ref="IC2" pin="MH4" pinfunction="MH4" pintype="passive+no_connect"/>
+    </net>
+    <net code="61" name="unconnected-(IC2-REF-PadA3)">
+      <node ref="IC2" pin="A3" pinfunction="REF" pintype="passive+no_connect"/>
+    </net>
+    <net code="62" name="unconnected-(IC2-RST_1-PadA13)">
+      <node ref="IC2" pin="A13" pinfunction="RST_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="63" name="unconnected-(IC2-RST_2-PadB3)">
+      <node ref="IC2" pin="B3" pinfunction="RST_2" pintype="passive+no_connect"/>
+    </net>
+    <net code="64" name="unconnected-(IC2-RX0-PadB2)">
+      <node ref="IC2" pin="B2" pinfunction="RX0" pintype="passive+no_connect"/>
+    </net>
+    <net code="65" name="unconnected-(IC2-TX1-PadB1)">
+      <node ref="IC2" pin="B1" pinfunction="TX1" pintype="passive+no_connect"/>
+    </net>
+    <net code="66" name="unconnected-(J3-Pin_3-Pad3)">
+      <node ref="J3" pin="3" pinfunction="Pin_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="67" name="unconnected-(J3-Pin_5-Pad5)">
+      <node ref="J3" pin="5" pinfunction="Pin_5" pintype="passive+no_connect"/>
+    </net>
+    <net code="68" name="unconnected-(J3-Pin_6-Pad6)">
+      <node ref="J3" pin="6" pinfunction="Pin_6" pintype="passive+no_connect"/>
+    </net>
+    <net code="69" name="unconnected-(J4-Pin_3-Pad3)">
+      <node ref="J4" pin="3" pinfunction="Pin_3" pintype="passive+no_connect"/>
+    </net>
+    <net code="70" name="unconnected-(J4-Pin_5-Pad5)">
+      <node ref="J4" pin="5" pinfunction="Pin_5" pintype="passive+no_connect"/>
+    </net>
+    <net code="71" name="unconnected-(J4-Pin_6-Pad6)">
+      <node ref="J4" pin="6" pinfunction="Pin_6" pintype="passive+no_connect"/>
+    </net>
+    <net code="72" name="unconnected-(K1-NC-Pad4)">
+      <node ref="K1" pin="4" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="73" name="unconnected-(K2-NC-Pad4)">
+      <node ref="K2" pin="4" pinfunction="NC" pintype="no_connect"/>
+    </net>
+    <net code="74" name="unconnected-(PS1-EP-Pad7)">
+      <node ref="PS1" pin="7" pinfunction="EP" pintype="power_in+no_connect"/>
+    </net>
+    <net code="75" name="unconnected-(Q1-D2_1-Pad5)">
+      <node ref="Q1" pin="5" pinfunction="D2_1" pintype="passive+no_connect"/>
+    </net>
+    <net code="76" name="unconnected-(Q1-D2_2-Pad6)">
+      <node ref="Q1" pin="6" pinfunction="D2_2" pintype="passive+no_connect"/>
+    </net>
+    <net code="77" name="unconnected-(Q1-G2-Pad4)">
+      <node ref="Q1" pin="4" pinfunction="G2" pintype="passive+no_connect"/>
+    </net>
+    <net code="78" name="unconnected-(Q1-S2-Pad3)">
+      <node ref="Q1" pin="3" pinfunction="S2" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>

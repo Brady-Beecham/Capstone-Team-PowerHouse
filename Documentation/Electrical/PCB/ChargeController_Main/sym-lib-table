@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Main_Charge_Controller_Symbols")(type "KiCad")(uri "${KIPRJMOD}/Main_Charge_Controller_Symbols.kicad_sym")(options "")(descr ""))
+)
