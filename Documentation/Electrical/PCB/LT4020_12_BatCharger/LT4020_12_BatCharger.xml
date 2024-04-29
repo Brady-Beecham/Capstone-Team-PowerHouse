@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\Bkb61\OneDrive\Documents\School_Work\Capstone\ChargeController\LT4020_12_BatCharger\LT4020_12_BatCharger.kicad_sch</source>
+    <date>2/14/2024 2:34:27 PM</date>
+    <tool>Eeschema 7.0.8</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>12 V Sealed Lead Acid Battery Charger w/ 12 V Input</title>
+        <company/>
+        <rev/>
+        <date>2024-01-29</date>
+        <source>LT4020_12_BatCharger.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C_BST1">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>89b49ff0-2f46-4461-9380-9d1aab6fdfce</tstamps>
+    </comp>
+    <comp ref="C_BST2">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>87f4c47d-fb49-4ef4-8834-ff2934363700</tstamps>
+    </comp>
+    <comp ref="C_CSN1">
+      <value>0.33u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2d59ddd5-f743-4b5a-9382-215ae571f213</tstamps>
+    </comp>
+    <comp ref="C_CSOUT1">
+      <value>100p</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e27e859d-dbb7-4252-ba1f-5fc0e46ad914</tstamps>
+    </comp>
+    <comp ref="C_IN1">
+      <value>0.1u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Polarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a33aa49a-e43e-4610-822e-e8a838a2400f</tstamps>
+    </comp>
+    <comp ref="C_IN2">
+      <value>15u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>584fdb41-66c2-4705-9655-1cd23d93468b</tstamps>
+    </comp>
+    <comp ref="C_IN3">
+      <value>15u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9fbaf3a9-8e20-4056-8927-63915859dae6</tstamps>
+    </comp>
+    <comp ref="C_intvcc1">
+      <value>2.2u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>77538583-d65f-4882-81e1-e5ab81a6c14b</tstamps>
+    </comp>
+    <comp ref="C_OUT1">
+      <value>0.1u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Polarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>69d77d48-1dbe-47a9-a54a-9350a24b86ed</tstamps>
+    </comp>
+    <comp ref="C_OUT2">
+      <value>68u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0fc2f436-6403-42a8-ba17-b8f2cb38e654</tstamps>
+    </comp>
+    <comp ref="C_pvin1">
+      <value>10u</value>
+      <footprint>BatChargerFootprints:CAPPRD250W65D630H900</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e0b43fae-3086-4b88-9d16-f118fe3b5450</tstamps>
+    </comp>
+    <comp ref="C_senseB1">
+      <value>68n</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1893bd7a-528b-4fec-ad52-180ff97a3b79</tstamps>
+    </comp>
+    <comp ref="C_VC1">
+      <value>680p</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>03f7ab6c-ed73-4168-81b3-a49ce5ff740c</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>SBR0560S1Q-7</value>
+      <footprint>BatChargerFootprints:SOD3716X145N</footprint>
+      <datasheet>https://www.arrow.com/en/products/sbr0560s1q-7/diodes-incorporated</datasheet>
+      <fields>
+        <field name="Arrow Part Number">SBR0560S1Q-7</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/sbr0560s1q-7/diodes-incorporated?region=nac</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">Diodes Incorporated</field>
+        <field name="Manufacturer_Part_Number">SBR0560S1Q-7</field>
+        <field name="Mouser Part Number">621-SBR0560S1Q-7</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/SBR0560S1Q-7?qs=4EhzHfbM1GiCOHzHUGtr2w%3D%3D</field>
+      </fields>
+      <libsource lib="BatChargerSymbols" part="SBR0560S1Q-7" description="Diode Super Barrier Rectifier 60V 0.5A Automotive 2-Pin SOD-123 T/R"/>
+      <property name="Height" value="1.45"/>
+      <property name="Manufacturer_Name" value="Diodes Incorporated"/>
+      <property name="Manufacturer_Part_Number" value="SBR0560S1Q-7"/>
+      <property name="Mouser Part Number" value="621-SBR0560S1Q-7"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/SBR0560S1Q-7?qs=4EhzHfbM1GiCOHzHUGtr2w%3D%3D"/>
+      <property name="Arrow Part Number" value="SBR0560S1Q-7"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/sbr0560s1q-7/diodes-incorporated?region=nac"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Diode Super Barrier Rectifier 60V 0.5A Automotive 2-Pin SOD-123 T/R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2fe71051-385e-4b54-a93c-64172ef3e3ac</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>SBR0560S1Q-7</value>
+      <footprint>BatChargerFootprints:SOD3716X145N</footprint>
+      <datasheet>https://www.arrow.com/en/products/sbr0560s1q-7/diodes-incorporated</datasheet>
+      <fields>
+        <field name="Arrow Part Number">SBR0560S1Q-7</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/sbr0560s1q-7/diodes-incorporated?region=nac</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">Diodes Incorporated</field>
+        <field name="Manufacturer_Part_Number">SBR0560S1Q-7</field>
+        <field name="Mouser Part Number">621-SBR0560S1Q-7</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/SBR0560S1Q-7?qs=4EhzHfbM1GiCOHzHUGtr2w%3D%3D</field>
+      </fields>
+      <libsource lib="ChargeControllerComponents" part="SBR0560S1Q-7" description="Diode Super Barrier Rectifier 60V 0.5A Automotive 2-Pin SOD-123 T/R"/>
+      <property name="Height" value="1.45"/>
+      <property name="Manufacturer_Name" value="Diodes Incorporated"/>
+      <property name="Manufacturer_Part_Number" value="SBR0560S1Q-7"/>
+      <property name="Mouser Part Number" value="621-SBR0560S1Q-7"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/SBR0560S1Q-7?qs=4EhzHfbM1GiCOHzHUGtr2w%3D%3D"/>
+      <property name="Arrow Part Number" value="SBR0560S1Q-7"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/sbr0560s1q-7/diodes-incorporated?region=nac"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Diode Super Barrier Rectifier 60V 0.5A Automotive 2-Pin SOD-123 T/R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e885c3b4-456d-4aca-9845-1d9eabdf5d8b</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>SBR0560S1Q-7</value>
+      <footprint>BatChargerFootprints:SOD3716X145N</footprint>
+      <datasheet>https://www.arrow.com/en/products/sbr0560s1q-7/diodes-incorporated</datasheet>
+      <fields>
+        <field name="Arrow Part Number">SBR0560S1Q-7</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/sbr0560s1q-7/diodes-incorporated?region=nac</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">Diodes Incorporated</field>
+        <field name="Manufacturer_Part_Number">SBR0560S1Q-7</field>
+        <field name="Mouser Part Number">621-SBR0560S1Q-7</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/SBR0560S1Q-7?qs=4EhzHfbM1GiCOHzHUGtr2w%3D%3D</field>
+      </fields>
+      <libsource lib="BatChargerSymbols" part="SBR0560S1Q-7" description="Diode Super Barrier Rectifier 60V 0.5A Automotive 2-Pin SOD-123 T/R"/>
+      <property name="Height" value="1.45"/>
+      <property name="Manufacturer_Name" value="Diodes Incorporated"/>
+      <property name="Manufacturer_Part_Number" value="SBR0560S1Q-7"/>
+      <property name="Mouser Part Number" value="621-SBR0560S1Q-7"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/SBR0560S1Q-7?qs=4EhzHfbM1GiCOHzHUGtr2w%3D%3D"/>
+      <property name="Arrow Part Number" value="SBR0560S1Q-7"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/sbr0560s1q-7/diodes-incorporated?region=nac"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Diode Super Barrier Rectifier 60V 0.5A Automotive 2-Pin SOD-123 T/R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cf7e51d3-9aa9-401a-90ed-fcd0e7101335</tstamps>
+    </comp>
+    <comp ref="FL1">
+      <value>PA4339.701NLT</value>
+      <footprint>BatChargerFootprints:PA4339701NLT</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/PA4339.701NLT.pdf</datasheet>
+      <fields>
+        <field name="Arrow Part Number">PA4339.701NLT</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/pa4339.701nlt/pulse-electronics-corporation?region=nac</field>
+        <field name="Height">3.8</field>
+        <field name="Manufacturer_Name">Pulse Electronics</field>
+        <field name="Manufacturer_Part_Number">PA4339.701NLT</field>
+        <field name="Mouser Part Number">673-PA4339.701NLT</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Pulse-Electronics/PA4339.701NLT?qs=byeeYqUIh0MubUfGghqscg%3D%3D</field>
+      </fields>
+      <libsource lib="BatChargerSymbols" part="PA4339.701NLT" description="Common Mode Chokes / Filters CMC 5.0uH 4A"/>
+      <property name="Height" value="3.8"/>
+      <property name="Manufacturer_Name" value="Pulse Electronics"/>
+      <property name="Manufacturer_Part_Number" value="PA4339.701NLT"/>
+      <property name="Mouser Part Number" value="673-PA4339.701NLT"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/Pulse-Electronics/PA4339.701NLT?qs=byeeYqUIh0MubUfGghqscg%3D%3D"/>
+      <property name="Arrow Part Number" value="PA4339.701NLT"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/pa4339.701nlt/pulse-electronics-corporation?region=nac"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Common Mode Chokes / Filters CMC 5.0uH 4A"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a5193149-80c2-482d-ba60-e4ef35cf0a68</tstamps>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole without connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b906997c-3ea7-4a42-8877-cf19e59c1b15</tstamps>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole without connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>852bb637-a58c-4835-8ecf-77bc5e23866f</tstamps>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole without connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>07cf22fa-f484-4a51-b2c7-a646b153eab6</tstamps>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole without connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>49a0ffe0-70d4-47d2-8966-c9b2dc7059d5</tstamps>
+    </comp>
+    <comp ref="IC1">
+      <value>LTC4020EUHF#PBF</value>
+      <footprint>BatChargerFootprints:QFN50P500X700X80-39N-D</footprint>
+      <datasheet>http://cds.linear.com/docs/en/datasheet/4020fd.pdf</datasheet>
+      <fields>
+        <field name="Arrow Part Number">LTC4020EUHF#PBF</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/ltc4020euhfpbf/analog-devices?region=nac</field>
+        <field name="Height">0.8</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">LTC4020EUHF#PBF</field>
+        <field name="Mouser Part Number">N/A</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=N%2FA</field>
+      </fields>
+      <libsource lib="BatChargerSymbols" part="LTC4020EUHF#PBF" description="LTC4020 - 55V Buck-Boost Multi-Chemistry Battery Charger"/>
+      <property name="Height" value="0.8"/>
+      <property name="Manufacturer_Name" value="Analog Devices"/>
+      <property name="Manufacturer_Part_Number" value="LTC4020EUHF#PBF"/>
+      <property name="Mouser Part Number" value="N/A"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.com/Search/Refine.aspx?Keyword=N%2FA"/>
+      <property name="Arrow Part Number" value="LTC4020EUHF#PBF"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/ltc4020euhfpbf/analog-devices?region=nac"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="LTC4020 - 55V Buck-Boost Multi-Chemistry Battery Charger"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e031c460-d1f2-4b66-a8bd-ea614f3e010f</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>ChargeController_Main</value>
+      <footprint>Connector_Wire:SolderWire-1sqmm_1x06_P7.8mm_D1.4mm_OD3.9mm</footprint>
+      <libsource lib="Connector" part="Screw_Terminal_01x06" description="Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="screw terminal"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e4a59fb4-7ccc-4849-aee1-09ffe869ffac</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>PMOS</value>
+      <footprint>BatChargerFootprints:NVD5117PLT4GVF01</footprint>
+      <fields>
+        <field name="Sim.Device">PMOS</field>
+        <field name="Sim.Pins">1=D 2=G 3=S</field>
+        <field name="Sim.Type">VDMOS</field>
+      </fields>
+      <libsource lib="Simulation_SPICE" part="PMOS" description="P-MOSFET transistor, drain/source/gate"/>
+      <property name="Sim.Device" value="PMOS"/>
+      <property name="Sim.Type" value="VDMOS"/>
+      <property name="Sim.Pins" value="1=D 2=G 3=S"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="P-MOSFET transistor, drain/source/gate"/>
+      <property name="ki_keywords" value="transistor PMOS P-MOS P-MOSFET simulation"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9f39bf3a-1f5e-47ec-bd37-b420bdb9f56a</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>SI7272DP-T1-GE3</value>
+      <footprint>BatChargerFootprints:SI7288DPT1GE3</footprint>
+      <datasheet>https://www.vishay.com/docs/69026/si7272dp.pdf</datasheet>
+      <fields>
+        <field name="Arrow Part Number">SI7272DP-T1-GE3</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/si7272dp-t1-ge3/vishay</field>
+        <field name="Manufacturer_Name">Vishay</field>
+        <field name="Manufacturer_Part_Number">SI7272DP-T1-GE3</field>
+        <field name="Mouser Part Number">781-SI7272DP-GE3</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=781-SI7272DP-GE3</field>
+      </fields>
+      <libsource lib="BatChargerSymbols" part="SI7272DP-T1-GE3" description="VISHAY - SI7272DP-T1-GE3 - MOSFET, DUAL N-CH, 30V, 25A, POWERPAK SO"/>
+      <property name="Height" value=""/>
+      <property name="Manufacturer_Name" value="Vishay"/>
+      <property name="Manufacturer_Part_Number" value="SI7272DP-T1-GE3"/>
+      <property name="Mouser Part Number" value="781-SI7272DP-GE3"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.com/Search/Refine.aspx?Keyword=781-SI7272DP-GE3"/>
+      <property name="Arrow Part Number" value="SI7272DP-T1-GE3"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/si7272dp-t1-ge3/vishay"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="VISHAY - SI7272DP-T1-GE3 - MOSFET, DUAL N-CH, 30V, 25A, POWERPAK SO"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fdecb78f-a090-4c75-a7a7-88c8fc9303ff</tstamps>
+    </comp>
+    <comp ref="Q3">
+      <value>SI7272DP-T1-GE3</value>
+      <footprint>BatChargerFootprints:SI7288DPT1GE3</footprint>
+      <datasheet>https://www.vishay.com/docs/69026/si7272dp.pdf</datasheet>
+      <fields>
+        <field name="Arrow Part Number">SI7272DP-T1-GE3</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/si7272dp-t1-ge3/vishay</field>
+        <field name="Manufacturer_Name">Vishay</field>
+        <field name="Manufacturer_Part_Number">SI7272DP-T1-GE3</field>
+        <field name="Mouser Part Number">781-SI7272DP-GE3</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=781-SI7272DP-GE3</field>
+      </fields>
+      <libsource lib="BatChargerSymbols" part="SI7272DP-T1-GE3" description="VISHAY - SI7272DP-T1-GE3 - MOSFET, DUAL N-CH, 30V, 25A, POWERPAK SO"/>
+      <property name="Height" value=""/>
+      <property name="Manufacturer_Name" value="Vishay"/>
+      <property name="Manufacturer_Part_Number" value="SI7272DP-T1-GE3"/>
+      <property name="Mouser Part Number" value="781-SI7272DP-GE3"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.com/Search/Refine.aspx?Keyword=781-SI7272DP-GE3"/>
+      <property name="Arrow Part Number" value="SI7272DP-T1-GE3"/>
+      <property name="Arrow Price/Stock" value="https://www.arrow.com/en/products/si7272dp-t1-ge3/vishay"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="VISHAY - SI7272DP-T1-GE3 - MOSFET, DUAL N-CH, 30V, 25A, POWERPAK SO"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2993084d-67c0-44f7-b1a6-1d5ba442217b</tstamps>
+    </comp>
+    <comp ref="R_CS1">
+      <value>0.014</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9946a8f5-e308-472a-bf0a-e49761585566</tstamps>
+    </comp>
+    <comp ref="R_CSN1">
+      <value>100</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>52bb21f5-8046-4f8e-b744-4f075c90cb1a</tstamps>
+    </comp>
+    <comp ref="R_CSP1">
+      <value>100</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b0f8e2d6-3e63-474a-80bf-ccc8ba2a353a</tstamps>
+    </comp>
+    <comp ref="R_FB1">
+      <value>98.8k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1a04fbb7-f413-4cd3-b5e8-e6b51ddf5dca</tstamps>
+    </comp>
+    <comp ref="R_FB2">
+      <value>20k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b0a8838e-9b56-42eb-9054-0762affecc59</tstamps>
+    </comp>
+    <comp ref="R_FBMAX_1">
+      <value>20k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7f849bb1-d43c-4a33-b75b-d06870a9be74</tstamps>
+    </comp>
+    <comp ref="R_FBMAX_2">
+      <value>98.8k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>03d1fe06-8760-4809-a7df-a07d02939717</tstamps>
+    </comp>
+    <comp ref="R_RT1">
+      <value>270k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>62431092-cb31-4a44-8185-0fb79e252bfb</tstamps>
+    </comp>
+    <comp ref="R_SENSEA1">
+      <value>0.014</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cbfe8285-d984-45c0-b681-a1b777078f2e</tstamps>
+    </comp>
+    <comp ref="R_SENSEB1">
+      <value>0.014</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b5b292ab-f8f4-4a54-bcc7-6f02fa634313</tstamps>
+    </comp>
+    <comp ref="R_VC1">
+      <value>33k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a28c73be-65c0-4830-ae22-aac14f8c4e03</tstamps>
+    </comp>
+    <comp ref="Z1">
+      <value>BZX84C6V2LT116</value>
+      <footprint>BatChargerFootprints:SOT95P240X115-3N</footprint>
+      <datasheet>https://fscdn.rohm.com/en/products/databook/datasheet/discrete/diode/zener/bzx84c6v2lt116-e.pdf</datasheet>
+      <fields>
+        <field name="Height">1.15</field>
+        <field name="Manufacturer_Name">ROHM Semiconductor</field>
+        <field name="Manufacturer_Part_Number">BZX84C6V2LT116</field>
+        <field name="Mouser Part Number">755-BZX84C6V2LT116</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/BZX84C6V2LT116?qs=4v%252BiZTmLVHH7p%2FgGW5uwkw%3D%3D</field>
+      </fields>
+      <libsource lib="BatChargerSymbols" part="BZX84C6V2LT116" description="ROHM, 6.6V Zener Diode +/-5% 250 mW SMT 3-Pin SOT-23"/>
+      <property name="Height" value="1.15"/>
+      <property name="Manufacturer_Name" value="ROHM Semiconductor"/>
+      <property name="Manufacturer_Part_Number" value="BZX84C6V2LT116"/>
+      <property name="Mouser Part Number" value="755-BZX84C6V2LT116"/>
+      <property name="Mouser Price/Stock" value="https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/BZX84C6V2LT116?qs=4v%252BiZTmLVHH7p%2FgGW5uwkw%3D%3D"/>
+      <property name="Arrow Part Number" value=""/>
+      <property name="Arrow Price/Stock" value=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="LT4020_12_BatCharger.kicad_sch"/>
+      <property name="ki_description" value="ROHM, 6.6V Zener Diode +/-5% 250 mW SMT 3-Pin SOT-23"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>46614118-7934-47f1-a099-9f56dbe5bef4</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="BatChargerSymbols" part="BZX84C6V2LT116">
+      <description>ROHM, 6.6V Zener Diode +/-5% 250 mW SMT 3-Pin SOT-23</description>
+      <docs>https://fscdn.rohm.com/en/products/databook/datasheet/discrete/diode/zener/bzx84c6v2lt116-e.pdf</docs>
+      <fields>
+        <field name="Reference">Z</field>
+        <field name="Value">BZX84C6V2LT116</field>
+        <field name="Footprint">SOT95P240X115-3N</field>
+        <field name="Datasheet">https://fscdn.rohm.com/en/products/databook/datasheet/discrete/diode/zener/bzx84c6v2lt116-e.pdf</field>
+        <field name="Height">1.15</field>
+        <field name="Manufacturer_Name">ROHM Semiconductor</field>
+        <field name="Manufacturer_Part_Number">BZX84C6V2LT116</field>
+        <field name="Mouser Part Number">755-BZX84C6V2LT116</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/ROHM-Semiconductor/BZX84C6V2LT116?qs=4v%252BiZTmLVHH7p%2FgGW5uwkw%3D%3D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="N/C" type="no_connect"/>
+        <pin num="3" name="K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BatChargerSymbols" part="LTC4020EUHF#PBF">
+      <description>LTC4020 - 55V Buck-Boost Multi-Chemistry Battery Charger</description>
+      <docs>http://cds.linear.com/docs/en/datasheet/4020fd.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">LTC4020EUHF#PBF</field>
+        <field name="Footprint">QFN50P500X700X80-39N-D</field>
+        <field name="Datasheet">http://cds.linear.com/docs/en/datasheet/4020fd.pdf</field>
+        <field name="Height">0.8</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">LTC4020EUHF#PBF</field>
+        <field name="Mouser Part Number">N/A</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=N%2FA</field>
+        <field name="Arrow Part Number">LTC4020EUHF#PBF</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/ltc4020euhfpbf/analog-devices?region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TG1" type="passive"/>
+        <pin num="2" name="BST1" type="passive"/>
+        <pin num="3" name="SGND_1" type="passive"/>
+        <pin num="4" name="SENSGND" type="passive"/>
+        <pin num="5" name="SENSBOT" type="passive"/>
+        <pin num="6" name="SENSTOP" type="passive"/>
+        <pin num="7" name="SENSVIN" type="passive"/>
+        <pin num="8" name="RT" type="passive"/>
+        <pin num="9" name="SHDN" type="passive"/>
+        <pin num="10" name="VIN_REG" type="passive"/>
+        <pin num="11" name="MODE" type="passive"/>
+        <pin num="12" name="STAT1" type="passive"/>
+        <pin num="13" name="STAT2" type="passive"/>
+        <pin num="14" name="TIMER" type="passive"/>
+        <pin num="15" name="RNG/SS" type="passive"/>
+        <pin num="16" name="NTC" type="passive"/>
+        <pin num="17" name="VFB" type="passive"/>
+        <pin num="18" name="FBG" type="passive"/>
+        <pin num="19" name="VFBMIN" type="passive"/>
+        <pin num="20" name="BAT" type="passive"/>
+        <pin num="21" name="BGATE" type="passive"/>
+        <pin num="22" name="CSN" type="passive"/>
+        <pin num="23" name="CSP" type="passive"/>
+        <pin num="24" name="CSOUT" type="passive"/>
+        <pin num="25" name="ILIMIT" type="passive"/>
+        <pin num="26" name="VFBMAX" type="passive"/>
+        <pin num="27" name="ITH" type="passive"/>
+        <pin num="28" name="VC" type="passive"/>
+        <pin num="29" name="SGND_2" type="passive"/>
+        <pin num="30" name="BST2" type="passive"/>
+        <pin num="31" name="TG2" type="passive"/>
+        <pin num="32" name="SW2" type="passive"/>
+        <pin num="33" name="BG2" type="passive"/>
+        <pin num="34" name="INTVCC" type="passive"/>
+        <pin num="35" name="PGND" type="passive"/>
+        <pin num="36" name="PVIN" type="passive"/>
+        <pin num="37" name="BG1" type="passive"/>
+        <pin num="38" name="SW1" type="passive"/>
+        <pin num="39" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BatChargerSymbols" part="PA4339.701NLT">
+      <description>Common Mode Chokes / Filters CMC 5.0uH 4A</description>
+      <docs>https://componentsearchengine.com/Datasheets/1/PA4339.701NLT.pdf</docs>
+      <fields>
+        <field name="Reference">FL</field>
+        <field name="Value">PA4339.701NLT</field>
+        <field name="Footprint">PA4339701NLT</field>
+        <field name="Datasheet">https://componentsearchengine.com/Datasheets/1/PA4339.701NLT.pdf</field>
+        <field name="Height">3.8</field>
+        <field name="Manufacturer_Name">Pulse Electronics</field>
+        <field name="Manufacturer_Part_Number">PA4339.701NLT</field>
+        <field name="Mouser Part Number">673-PA4339.701NLT</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Pulse-Electronics/PA4339.701NLT?qs=byeeYqUIh0MubUfGghqscg%3D%3D</field>
+        <field name="Arrow Part Number">PA4339.701NLT</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/pa4339.701nlt/pulse-electronics-corporation?region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BatChargerSymbols" part="SBR0560S1Q-7">
+      <description>Diode Super Barrier Rectifier 60V 0.5A Automotive 2-Pin SOD-123 T/R</description>
+      <docs>https://www.arrow.com/en/products/sbr0560s1q-7/diodes-incorporated</docs>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">SBR0560S1Q-7</field>
+        <field name="Footprint">SOD3716X145N</field>
+        <field name="Datasheet">https://www.arrow.com/en/products/sbr0560s1q-7/diodes-incorporated</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">Diodes Incorporated</field>
+        <field name="Manufacturer_Part_Number">SBR0560S1Q-7</field>
+        <field name="Mouser Part Number">621-SBR0560S1Q-7</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/SBR0560S1Q-7?qs=4EhzHfbM1GiCOHzHUGtr2w%3D%3D</field>
+        <field name="Arrow Part Number">SBR0560S1Q-7</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/sbr0560s1q-7/diodes-incorporated?region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BatChargerSymbols" part="SI7272DP-T1-GE3">
+      <description>VISHAY - SI7272DP-T1-GE3 - MOSFET, DUAL N-CH, 30V, 25A, POWERPAK SO</description>
+      <docs>https://www.vishay.com/docs/69026/si7272dp.pdf</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">SI7272DP-T1-GE3</field>
+        <field name="Footprint">SI7288DPT1GE3</field>
+        <field name="Datasheet">https://www.vishay.com/docs/69026/si7272dp.pdf</field>
+        <field name="Manufacturer_Name">Vishay</field>
+        <field name="Manufacturer_Part_Number">SI7272DP-T1-GE3</field>
+        <field name="Mouser Part Number">781-SI7272DP-GE3</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=781-SI7272DP-GE3</field>
+        <field name="Arrow Part Number">SI7272DP-T1-GE3</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/si7272dp-t1-ge3/vishay</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S1" type="passive"/>
+        <pin num="2" name="G1" type="passive"/>
+        <pin num="3" name="S2" type="passive"/>
+        <pin num="4" name="G2" type="passive"/>
+        <pin num="5" name="D2_1" type="passive"/>
+        <pin num="6" name="D2_2" type="passive"/>
+        <pin num="7" name="D1_1" type="passive"/>
+        <pin num="8" name="D1_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="ChargeControllerComponents" part="SBR0560S1Q-7">
+      <description>Diode Super Barrier Rectifier 60V 0.5A Automotive 2-Pin SOD-123 T/R</description>
+      <docs>https://www.arrow.com/en/products/sbr0560s1q-7/diodes-incorporated</docs>
+      <fields>
+        <field name="Reference">Schottky_D</field>
+        <field name="Value">SBR0560S1Q-7</field>
+        <field name="Footprint">SOD3716X145N</field>
+        <field name="Datasheet">https://www.arrow.com/en/products/sbr0560s1q-7/diodes-incorporated</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">Diodes Incorporated</field>
+        <field name="Manufacturer_Part_Number">SBR0560S1Q-7</field>
+        <field name="Mouser Part Number">621-SBR0560S1Q-7</field>
+        <field name="Mouser Price/Stock">https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/SBR0560S1Q-7?qs=4EhzHfbM1GiCOHzHUGtr2w%3D%3D</field>
+        <field name="Arrow Part Number">SBR0560S1Q-7</field>
+        <field name="Arrow Price/Stock">https://www.arrow.com/en/products/sbr0560s1q-7/diodes-incorporated?region=nac</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Screw_Terminal_01x06">
+      <description>Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TerminalBlock*:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Screw_Terminal_01x06</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Polarized">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Datasheet">~</field>
+      </fields>
+    </libpart>
+    <libpart lib="Simulation_SPICE" part="PMOS">
+      <description>P-MOSFET transistor, drain/source/gate</description>
+      <docs>https://ngspice.sourceforge.io/docs/ngspice-manual.pdf</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">PMOS</field>
+        <field name="Datasheet">https://ngspice.sourceforge.io/docs/ngspice-manual.pdf</field>
+        <field name="Sim.Device">PMOS</field>
+        <field name="Sim.Type">VDMOS</field>
+        <field name="Sim.Pins">1=D 2=G 3=S</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D" type="passive"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="BatChargerSymbols">
+      <uri>C:\Users\Bkb61\OneDrive\Documents\School_Work\Capstone\ChargeController\LT4020_12_BatCharger/BatChargerSymbols.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="Simulation_SPICE">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Simulation_SPICE.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/BG1">
+      <node ref="IC1" pin="37" pinfunction="BG1" pintype="passive"/>
+      <node ref="Q2" pin="4" pinfunction="G2" pintype="passive"/>
+    </net>
+    <net code="2" name="/BG2">
+      <node ref="IC1" pin="33" pinfunction="BG2" pintype="passive"/>
+      <node ref="Q3" pin="4" pinfunction="G2" pintype="passive"/>
+    </net>
+    <net code="3" name="/BGATE">
+      <node ref="IC1" pin="21" pinfunction="BGATE" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="4" name="/BST2">
+      <node ref="C_BST2" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="IC1" pin="30" pinfunction="BST2" pintype="passive"/>
+      <node ref="Z1" pin="1" pinfunction="A" pintype="passive"/>
+    </net>
+    <net code="5" name="/CSN">
+      <node ref="C_CSN1" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="22" pinfunction="CSN" pintype="passive"/>
+      <node ref="R_CSN1" pin="1" pintype="passive"/>
+    </net>
+    <net code="6" name="/CSP">
+      <node ref="C_CSN1" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="23" pinfunction="CSP" pintype="passive"/>
+      <node ref="R_CSP1" pin="2" pintype="passive"/>
+    </net>
+    <net code="7" name="/CS_DRAIN">
+      <node ref="Q1" pin="1" pinfunction="D" pintype="passive"/>
+      <node ref="R_CS1" pin="1" pintype="passive"/>
+      <node ref="R_CSN1" pin="2" pintype="passive"/>
+    </net>
+    <net code="8" name="/FBG">
+      <node ref="IC1" pin="18" pinfunction="FBG" pintype="passive"/>
+      <node ref="R_FB2" pin="1" pintype="passive"/>
+      <node ref="R_FBMAX_1" pin="2" pintype="passive"/>
+    </net>
+    <net code="9" name="/MODE">
+      <node ref="C_intvcc1" pin="2" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="IC1" pin="10" pinfunction="VIN_REG" pintype="passive"/>
+      <node ref="IC1" pin="11" pinfunction="MODE" pintype="passive"/>
+      <node ref="IC1" pin="34" pinfunction="INTVCC" pintype="passive"/>
+    </net>
+    <net code="10" name="/PGND">
+      <node ref="C_pvin1" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="35" pinfunction="PGND" pintype="passive"/>
+      <node ref="R_RT1" pin="1" pintype="passive"/>
+    </net>
+    <net code="11" name="/RT">
+      <node ref="IC1" pin="8" pinfunction="RT" pintype="passive"/>
+      <node ref="R_RT1" pin="2" pintype="passive"/>
+    </net>
+    <net code="12" name="/SENSEBOT">
+      <node ref="C_senseB1" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="5" pinfunction="SENSBOT" pintype="passive"/>
+      <node ref="Q2" pin="3" pinfunction="S2" pintype="passive"/>
+      <node ref="R_SENSEB1" pin="2" pintype="passive"/>
+    </net>
+    <net code="13" name="/SENSETOP">
+      <node ref="IC1" pin="6" pinfunction="SENSTOP" pintype="passive"/>
+      <node ref="Q2" pin="7" pinfunction="D1_1" pintype="passive"/>
+      <node ref="Q2" pin="8" pinfunction="D1_2" pintype="passive"/>
+      <node ref="R_SENSEA1" pin="1" pintype="passive"/>
+    </net>
+    <net code="14" name="/SW1">
+      <node ref="C_BST1" pin="1" pintype="passive"/>
+      <node ref="FL1" pin="3" pinfunction="3" pintype="passive"/>
+      <node ref="FL1" pin="4" pinfunction="4" pintype="passive"/>
+      <node ref="IC1" pin="38" pinfunction="SW1" pintype="passive"/>
+      <node ref="Q2" pin="1" pinfunction="S1" pintype="passive"/>
+      <node ref="Q2" pin="5" pinfunction="D2_1" pintype="passive"/>
+      <node ref="Q2" pin="6" pinfunction="D2_2" pintype="passive"/>
+    </net>
+    <net code="15" name="/SW2">
+      <node ref="C_BST2" pin="2" pintype="passive"/>
+      <node ref="FL1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="IC1" pin="32" pinfunction="SW2" pintype="passive"/>
+      <node ref="Q3" pin="3" pinfunction="S2" pintype="passive"/>
+      <node ref="Z1" pin="3" pinfunction="K" pintype="passive"/>
+    </net>
+    <net code="16" name="/TG2">
+      <node ref="IC1" pin="31" pinfunction="TG2" pintype="passive"/>
+      <node ref="Q3" pin="2" pinfunction="G1" pintype="passive"/>
+    </net>
+    <net code="17" name="/VC">
+      <node ref="IC1" pin="28" pinfunction="VC" pintype="passive"/>
+      <node ref="R_VC1" pin="1" pintype="passive"/>
+    </net>
+    <net code="18" name="/VFB">
+      <node ref="IC1" pin="17" pinfunction="VFB" pintype="passive"/>
+      <node ref="R_FB1" pin="1" pintype="passive"/>
+      <node ref="R_FB2" pin="2" pintype="passive"/>
+    </net>
+    <net code="19" name="/VFBMAX">
+      <node ref="IC1" pin="19" pinfunction="VFBMIN" pintype="passive"/>
+      <node ref="IC1" pin="26" pinfunction="VFBMAX" pintype="passive"/>
+      <node ref="R_FBMAX_1" pin="1" pintype="passive"/>
+      <node ref="R_FBMAX_2" pin="1" pintype="passive"/>
+    </net>
+    <net code="20" name="BAT_CHARGE_OUT">
+      <node ref="IC1" pin="20" pinfunction="BAT" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="Q1" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="R_FB1" pin="2" pintype="passive"/>
+    </net>
+    <net code="21" name="GND">
+      <node ref="C_CSOUT1" pin="2" pintype="passive"/>
+      <node ref="C_IN1" pin="2" pintype="passive"/>
+      <node ref="C_IN2" pin="2" pintype="passive"/>
+      <node ref="C_IN3" pin="2" pintype="passive"/>
+      <node ref="C_OUT1" pin="2" pintype="passive"/>
+      <node ref="C_OUT2" pin="1" pintype="passive"/>
+      <node ref="C_VC1" pin="2" pintype="passive"/>
+      <node ref="C_intvcc1" pin="1" pintype="passive"/>
+      <node ref="C_senseB1" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="14" pinfunction="TIMER" pintype="passive"/>
+      <node ref="IC1" pin="29" pinfunction="SGND_2" pintype="passive"/>
+      <node ref="IC1" pin="3" pinfunction="SGND_1" pintype="passive"/>
+      <node ref="IC1" pin="39" pinfunction="GND" pintype="passive"/>
+      <node ref="IC1" pin="4" pinfunction="SENSGND" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Q3" pin="5" pinfunction="D2_1" pintype="passive"/>
+      <node ref="Q3" pin="6" pinfunction="D2_2" pintype="passive"/>
+      <node ref="R_SENSEB1" pin="1" pintype="passive"/>
+    </net>
+    <net code="22" name="Net-(C_VC1-Pad1)">
+      <node ref="C_VC1" pin="1" pintype="passive"/>
+      <node ref="R_VC1" pin="2" pintype="passive"/>
+    </net>
+    <net code="23" name="Net-(D2-K)">
+      <node ref="C_BST1" pin="2" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="IC1" pin="2" pinfunction="BST1" pintype="passive"/>
+    </net>
+    <net code="24" name="Net-(D3-A)">
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="FL1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="Q3" pin="7" pinfunction="D1_1" pintype="passive"/>
+      <node ref="Q3" pin="8" pinfunction="D1_2" pintype="passive"/>
+    </net>
+    <net code="25" name="Net-(IC1-CSOUT)">
+      <node ref="C_CSOUT1" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="24" pinfunction="CSOUT" pintype="passive"/>
+    </net>
+    <net code="26" name="Net-(IC1-TG1)">
+      <node ref="IC1" pin="1" pinfunction="TG1" pintype="passive"/>
+      <node ref="Q2" pin="2" pinfunction="G1" pintype="passive"/>
+    </net>
+    <net code="27" name="STAT1">
+      <node ref="IC1" pin="12" pinfunction="STAT1" pintype="passive"/>
+      <node ref="J1" pin="5" pinfunction="Pin_5" pintype="passive"/>
+    </net>
+    <net code="28" name="STAT2">
+      <node ref="IC1" pin="13" pinfunction="STAT2" pintype="passive"/>
+      <node ref="J1" pin="6" pinfunction="Pin_6" pintype="passive"/>
+    </net>
+    <net code="29" name="VIN">
+      <node ref="C_IN1" pin="1" pintype="passive"/>
+      <node ref="C_IN2" pin="1" pintype="passive"/>
+      <node ref="C_IN3" pin="1" pintype="passive"/>
+      <node ref="C_pvin1" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="36" pinfunction="PVIN" pintype="passive"/>
+      <node ref="IC1" pin="7" pinfunction="SENSVIN" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R_SENSEA1" pin="2" pintype="passive"/>
+    </net>
+    <net code="30" name="VOUT">
+      <node ref="C_OUT1" pin="1" pintype="passive"/>
+      <node ref="C_OUT2" pin="2" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="Q3" pin="1" pinfunction="S1" pintype="passive"/>
+      <node ref="R_CS1" pin="2" pintype="passive"/>
+      <node ref="R_CSP1" pin="1" pintype="passive"/>
+      <node ref="R_FBMAX_2" pin="2" pintype="passive"/>
+    </net>
+    <net code="31" name="unconnected-(IC1-ILIMIT-Pad25)">
+      <node ref="IC1" pin="25" pinfunction="ILIMIT" pintype="passive+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(IC1-ITH-Pad27)">
+      <node ref="IC1" pin="27" pinfunction="ITH" pintype="passive+no_connect"/>
+    </net>
+    <net code="33" name="unconnected-(IC1-NTC-Pad16)">
+      <node ref="IC1" pin="16" pinfunction="NTC" pintype="passive+no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(IC1-RNG{slash}SS-Pad15)">
+      <node ref="IC1" pin="15" pinfunction="RNG/SS" pintype="passive+no_connect"/>
+    </net>
+    <net code="35" name="unconnected-(IC1-SHDN-Pad9)">
+      <node ref="IC1" pin="9" pinfunction="SHDN" pintype="passive+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(Z1-N{slash}C-Pad2)">
+      <node ref="Z1" pin="2" pinfunction="N/C" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

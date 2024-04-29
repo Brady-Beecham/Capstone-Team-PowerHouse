@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "BatChargerSymbols")(type "KiCad")(uri "${KIPRJMOD}/BatChargerSymbols.kicad_sym")(options "")(descr ""))
+)
