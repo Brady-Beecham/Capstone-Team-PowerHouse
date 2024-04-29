@@ -1,5 +1,9 @@
 # Abdulrahman Alrudayan
 ## What went well? 
+At the beginning of the Capstone one, we chose to have weekly meetings with our supervisor as a team. Every two weeks, we meet with our sponsors. However, at each meeting, we have a target to do something. Also, at every meeting, we made decisions about new details for each one. Also, if we face some problems, we can fix them early together as a group. We kept up these weekly meetings throughout capstone two, which kept us very successful. Even during Christmas break, we met once every week in teams. We worked on our problem and what’s the new update. That is shown as necessary to help us reach our goals.
+
+Furthermore, the wall power subsystem was carefully designed, soldered, and selected components in specific sizes and shapes, such as adapter power supply, chips “buck converters,” inductors, capacitors, resistors, relay switches, and backup batteries. The main thing for my subsystem is to step down the voltage and current to feed each of the two subsystems. Both components were carefully calculated to provide reliable results.
+
 ## What did not go well? 
 ## What “best practices” have you identified? 
 ## What unanticipated problems occurred? 
