@@ -2,7 +2,10 @@
 
 
 # Khalifah Altamimi
-
+1. ECE 4630 Power Electronics
+2. ECE 4610 Power system Analysis
+3. ECE 2010, ECE 2020 Circuit I & Circuit II
+4. 
 
 # Brady Beecham
 1.  ECE 4140 Embedded System Design
