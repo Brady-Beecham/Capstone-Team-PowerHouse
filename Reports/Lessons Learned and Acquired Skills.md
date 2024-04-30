@@ -5,17 +5,18 @@ At the beginning of the Capstone one, we chose to have weekly meetings with our 
 Furthermore, the wall power subsystem was carefully designed, soldered, and selected components in specific sizes and chips, such as adapter power supply, chips “buck converters,” inductors, capacitors, resistors, relay switches, and backup batteries. The main thing for my subsystem is to step down the voltage and current to feed each of the two subsystems. Both components were carefully calculated to provide reliable results.
 
 ## What did not go well? 
-everything go well. In capstone one, I struggled to understand how to select some components such as, chips  and switches 
+Everything goes well. In capstone one, I struggled to understand how to select some components such as, chips  and switches. 
 
 
 ## What “best practices” have you identified? 
 I really understood how to select the components and design PCBs with soldered components, especially chips. For the chips “buck converter,” do not use the Weller soldering station. You can use surface mount ICs, which are excellent.
 
 ## What unanticipated problems occurred? 
-I selectd a small size for resistors and Capacitors for solder. 
+It was hard to find a thin resistor, and I could not find much with a higher than ¼ power rating. So, I choose the thick film resistor. However, it allows me to solder by surface. Also, in PCB, “ 2512” is used for the thick film resistor.
+ 
 
 ## What would you do differently if you were able to do it over again? 
- If I was able to do it again. I will choose a bigger size for resistors and Capacitors for easy soldering it
+ If I was able to do it again. I will choose a thin film resistor.
 ## What new knowledge or skills did you acquire throughout Capstone? 
 I learned many things, such as Kicad, designing PCB, buck converter "step down," and the switch can be a controller between the wall power and backup battery, and this controller manages the voltage between them.
 
